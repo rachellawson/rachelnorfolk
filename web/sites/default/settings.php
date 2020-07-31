@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Platform.sh example settings.php file for Drupal 8.
