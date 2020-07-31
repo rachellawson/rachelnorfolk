@@ -1,0 +1,32 @@
+# Name the application the same as in your .platform.app.yaml.
+name: app
+# Use the recipe appropriate for your application.
+recipe: drupal9
+
+services:
+  cache:
+    type: redis:5
+
+  appserver:
+    build:
+      - composer install
+
+config:
+  # Lando defaults to Apache. Switch to nginx to match Platform.sh.
+  via: nginx
+
+  # Set the webroot to match your .platform.app.yaml.
+  webroot: web
+
+  # Lando defaults to the latest MySQL release, but Platform.sh uses MariaDB.
+  # Specify the version to match what's in services.yaml.
+  database: mariadb:10.4
+
+  # We will use php 7.4 on platform so also use here.
+  php: '7.4'
+
+excludes:
+  - vendor
+
+
+
