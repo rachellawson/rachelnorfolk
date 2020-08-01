@@ -56,7 +56,6 @@ module:
   views: 10
   standard: 1000
 theme:
-  bartik: 0
   seven: 0
   olivero: 0
   claro: 0
