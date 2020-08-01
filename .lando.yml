@@ -8,8 +8,7 @@ services:
     type: redis:5
 
   appserver:
-    build:
-      - composer install
+    app_mount: delegated
 
 config:
   # Lando defaults to Apache. Switch to nginx to match Platform.sh.
@@ -25,8 +24,7 @@ config:
   # We will use php 7.4 on platform so also use here.
   php: '7.4'
 
-excludes:
-  - vendor
+
 
 
 
