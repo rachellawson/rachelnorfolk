@@ -1,0 +1,10 @@
+uuid: 3c2d82e7-0bc7-4f06-afdb-162978d4f952
+langcode: en
+status: true
+dependencies: {  }
+id: author
+label: Author
+weight: 3
+is_admin: null
+permissions:
+  - 'use text format full_html'
