@@ -27,6 +27,7 @@ $settings['file_scan_ignore_directories'] = [
 // can configure a separate hash_salt in your settings.local.php file for
 // local development.
 // $settings['hash_salt'] = 'change_me';
+// Note that hash_salt should not be in a file in git.
 
 // Set up a config sync directory.
 //
