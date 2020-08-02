@@ -1,0 +1,27 @@
+uuid: 32a7fe88-3e24-44c6-ba07-91e00fb81412
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_route_file
+    - node.type.article
+  module:
+    - file
+id: node.article.field_route_file
+field_name: field_route_file
+entity_type: node
+bundle: article
+label: 'Route File'
+description: 'Upload a GPX file to be displayed on a map'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'gpx/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'txt gpx'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

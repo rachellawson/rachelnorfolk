@@ -7,12 +7,17 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_route_file
+    - field.field.node.article.field_route_geofield
     - field.field.node.article.field_tags
+    - field.field.node.article.layout_builder__layout
     - image.style.large
     - node.type.article
   module:
     - comment
     - field_layout
+    - file
+    - geofield
     - image
     - layout_builder
     - layout_discovery
@@ -73,6 +78,41 @@ third_party_settings:
               id: 'extra_field_block:node:article:links'
             additional: {  }
             weight: 3
+          059ef39c-70fd-4291-973e-4e6c77460184:
+            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_tags'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
+          651b831c-8e39-48b3-8ddc-6c15a993f1f8:
+            uuid: 651b831c-8e39-48b3-8ddc-6c15a993f1f8
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_route_file'
+              label: 'Route File'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: inline
+                type: file_default
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 6
           af2c350d-085e-40ac-adbf-14ca53c34e09:
             uuid: af2c350d-085e-40ac-adbf-14ca53c34e09
             region: content
@@ -92,24 +132,86 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 4
-          059ef39c-70fd-4291-973e-4e6c77460184:
-            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
+            weight: 7
+          5683119e-034d-4940-bca2-37cf63faa6f8:
+            uuid: 5683119e-034d-4940-bca2-37cf63faa6f8
             region: content
             configuration:
+              id: 'field_block:node:article:field_route_geofield'
+              label: 'Route Geofield'
+              provider: layout_builder
               label_display: '0'
+              formatter:
+                label: hidden
+                type: leaflet_formatter_default
+                settings:
+                  multiple_map: 0
+                  popup: 0
+                  popup_content: ''
+                  leaflet_map: 'OSM Mapnik'
+                  height: '400'
+                  height_unit: px
+                  hide_empty_map: 1
+                  disable_wheel: 1
+                  fullscreen_control: 1
+                  gesture_handling: 0
+                  reset_map:
+                    control: 0
+                    position: topright
+                  map_position:
+                    force: 0
+                    center:
+                      lat: '0'
+                      lon: '0'
+                    zoom: '12'
+                    minZoom: '1'
+                    maxZoom: '18'
+                    zoomFiner: '0'
+                  icon:
+                    iconType: marker
+                    iconUrl: ''
+                    shadowUrl: ''
+                    html: '<div></div>'
+                    html_class: leaflet-map-divicon
+                    circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0}'
+                    iconSize:
+                      x: ''
+                      'y': ''
+                    iconAnchor:
+                      x: ''
+                      'y': ''
+                    shadowSize:
+                      x: ''
+                      'y': ''
+                    shadowAnchor:
+                      x: ''
+                      'y': ''
+                    popupAnchor:
+                      x: ''
+                      'y': ''
+                  path: '{"color":"#3388ff","opacity":"0.8","stroke":true,"weight":6,"fill":false,"fillOpacity":"0.0"}'
+                  geocoder:
+                    control: 0
+                    settings:
+                      position: topright
+                      input_size: '25'
+                      providers:
+                        gpx_file:
+                          weight: '0'
+                          checked: 0
+                      min_terms: '4'
+                      delay: '800'
+                      zoom: '16'
+                      popup: 0
+                      options: ''
+                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:node:article:field_tags'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
+                view_mode: view_mode
             additional: {  }
-            weight: 0
+            weight: 5
         third_party_settings: {  }
+    allow_custom: true
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -142,6 +244,23 @@ content:
       image_link: ''
     third_party_settings: {  }
     label: hidden
+  field_route_file:
+    weight: 111
+    label: above
+    settings:
+      use_description_as_link_text: true
+    third_party_settings: {  }
+    type: file_default
+    region: content
+  field_route_geofield:
+    weight: 112
+    label: above
+    settings:
+      output_format: wkt
+      output_escape: true
+    third_party_settings: {  }
+    type: geofield_default
+    region: content
   field_tags:
     type: entity_reference_label
     weight: 10
@@ -155,4 +274,5 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
-hidden: {  }
+hidden:
+  layout_builder__layout: true
