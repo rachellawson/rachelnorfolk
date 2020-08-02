@@ -80,7 +80,7 @@ third_party_settings:
               id: 'field_block:node:article:comment'
               label: Comments
               provider: layout_builder
-              label_display: visible
+              label_display: '0'
               formatter:
                 label: above
                 type: comment_default
