@@ -276,9 +276,8 @@ display:
       style:
         type: rss
         options:
-          description: ''
-          grouping: {  }
           uses_fields: false
+          description: 'Fitting life around riding my motorbike. Ridden 🇨🇭🇪🇸🇷🇴🇲🇦🇮🇹🇬🇷🇩🇪🇧🇬🇨🇿🇸🇮🇸🇰🇱🇮🇫🇷🇳🇱🇭🇺🇧🇪🇬🇮🇱🇺🇦🇩🇦🇹🇮🇳🇨🇦 so far. Also, Community Liaison, Drupal Association'
       row:
         type: node_rss
         options:
