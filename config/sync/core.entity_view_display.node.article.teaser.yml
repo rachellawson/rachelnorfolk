@@ -7,7 +7,10 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_route_file
+    - field.field.node.article.field_route_geofield
     - field.field.node.article.field_tags
+    - field.field.node.article.layout_builder__layout
     - image.style.medium
     - node.type.article
   module:
@@ -129,3 +132,6 @@ content:
     third_party_settings: {  }
 hidden:
   comment: true
+  field_route_file: true
+  field_route_geofield: true
+  layout_builder__layout: true

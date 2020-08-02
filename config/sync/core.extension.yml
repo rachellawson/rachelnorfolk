@@ -22,12 +22,18 @@ module:
   field_ui: 0
   file: 0
   filter: 0
+  geocoder: 0
+  geocoder_field: 0
+  geocoder_geofield: 0
+  geofield: 0
+  geofield_map: 0
   help: 0
   history: 0
   image: 0
   inline_form_errors: 0
   layout_builder: 0
   layout_discovery: 0
+  leaflet: 0
   link: 0
   media: 0
   media_library: 0
