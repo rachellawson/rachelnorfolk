@@ -47,7 +47,7 @@ third_party_settings:
                 third_party_settings: {  }
                 label: hidden
             additional: {  }
-            weight: 0
+            weight: 1
           591acf08-5be8-4b5d-a33b-17d24238a832:
             uuid: 591acf08-5be8-4b5d-a33b-17d24238a832
             region: content
@@ -61,22 +61,6 @@ third_party_settings:
                 settings: {  }
                 third_party_settings: {  }
                 label: hidden
-            additional: {  }
-            weight: 1
-          059ef39c-70fd-4291-973e-4e6c77460184:
-            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_tags'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
             additional: {  }
             weight: 2
           9433cafd-2f13-4c8e-ad4c-1f1a78b916f1:
@@ -93,19 +77,38 @@ third_party_settings:
             uuid: af2c350d-085e-40ac-adbf-14ca53c34e09
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:article:comment'
+              label: Comments
+              provider: layout_builder
+              label_display: visible
               formatter:
-                type: comment_default
                 label: above
+                type: comment_default
                 settings:
                   view_mode: default
                   pager_id: 0
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 4
+          059ef39c-70fd-4291-973e-4e6c77460184:
+            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_tags'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 0
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
