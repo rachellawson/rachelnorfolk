@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Dark Mode module.
+ *
+ */
+
+/**
+ * Implements hook_page_attachments().
+ */
+ function dark_mode_page_attachments(array &$page) {
+  $page['#attached']['library'][] = 'dark_mode/dark_mode';
+}

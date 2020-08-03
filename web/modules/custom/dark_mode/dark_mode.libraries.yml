@@ -1,0 +1,6 @@
+# Custom module library for general purposes.
+dark_mode:
+  css:
+    theme:
+      css/dark-mode.css: {}
+
