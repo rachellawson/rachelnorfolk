@@ -25,6 +25,7 @@
         "drupal/geofield": "^1.15",
         "drupal/geofield_map": "^2.66",
         "drupal/leaflet": "^2.0",
+        "drupal/media_entity_twitter": "^2.4",
         "drupal/olivero": "^1.0@alpha",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
