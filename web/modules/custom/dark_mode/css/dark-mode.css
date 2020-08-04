@@ -4,7 +4,8 @@
     filter: invert(1) hue-rotate(180deg);
   }
 
-  html img {
+  html img,
+  html .site-branding__text {
     filter: invert(1) hue-rotate(180deg);
   }
 
