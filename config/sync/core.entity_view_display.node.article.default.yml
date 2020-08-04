@@ -40,17 +40,20 @@ third_party_settings:
             uuid: 824aa5f2-f2b0-4e14-805a-607f8d9f8752
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:article:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: image
                 settings:
-                  image_style: large
+                  image_style: olivero_hero
                   image_link: ''
                 third_party_settings: {  }
-                label: hidden
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 1
           591acf08-5be8-4b5d-a33b-17d24238a832:
@@ -78,22 +81,6 @@ third_party_settings:
               id: 'extra_field_block:node:article:links'
             additional: {  }
             weight: 3
-          059ef39c-70fd-4291-973e-4e6c77460184:
-            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_tags'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 0
           651b831c-8e39-48b3-8ddc-6c15a993f1f8:
             uuid: 651b831c-8e39-48b3-8ddc-6c15a993f1f8
             region: content
@@ -132,7 +119,7 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 7
+            weight: 8
           5683119e-034d-4940-bca2-37cf63faa6f8:
             uuid: 5683119e-034d-4940-bca2-37cf63faa6f8
             region: content
@@ -210,6 +197,22 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 5
+          059ef39c-70fd-4291-973e-4e6c77460184:
+            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_tags'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 7
         third_party_settings: {  }
     allow_custom: true
 _core:

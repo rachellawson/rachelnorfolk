@@ -75,7 +75,7 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:article:links'
             additional: {  }
-            weight: 3
+            weight: 4
           98f226e2-cde3-4549-9896-002b77b731d7:
             uuid: 98f226e2-cde3-4549-9896-002b77b731d7
             region: content
@@ -91,7 +91,7 @@ third_party_settings:
                 third_party_settings: {  }
                 label: above
             additional: {  }
-            weight: 0
+            weight: 3
         third_party_settings: {  }
 _core:
   default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
