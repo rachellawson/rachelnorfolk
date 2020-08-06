@@ -94,10 +94,10 @@ web:
                 # Seems reasonable to only update cache daily.
                 '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
                     allow: true
-                    expires: 1d
+                    expires: 1w
                 '^/robots\.txt$':
                     allow: true
-                    expires: 1d
+                    expires: 1w
                 # But sitemap will update every time we add content.
                 '^/sitemap\.xml$':
                     allow: true
