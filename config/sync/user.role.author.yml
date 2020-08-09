@@ -16,6 +16,7 @@ permissions:
   - 'access tour'
   - 'access user profiles'
   - 'administer comments'
+  - 'administer menu'
   - 'administer nodes'
   - 'administer redirects'
   - 'administer url aliases'
