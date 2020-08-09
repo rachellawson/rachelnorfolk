@@ -1,0 +1,13 @@
+auth:
+  social_auth_twitter:
+    route: social_auth_twitter.redirect_to_twitter
+    img_path: modules/contrib/social_auth_twitter/img/twitter_logo.svg
+post_login: /
+redirect_user_form: true
+disable_admin_login: true
+disabled_roles:
+  administrator: administrator
+  author: author
+user_allowed: register
+_core:
+  default_config_hash: 0E8z47ONguVcapiw1PGWDRs6g0NRDCzrym4mP_jcELU

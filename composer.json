@@ -30,6 +30,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
+        "drupal/social_auth_twitter": "2.x-dev",
         "drush/drush": "^10.3",
         "platformsh/config-reader": "^2.3"
     },
