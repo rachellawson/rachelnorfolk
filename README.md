@@ -1,16 +1,12 @@
-# Drupal 9 for Platform.sh
+This repo builds Drupal 9 based blog website for rachelnorfolk.me. It uses the "Drupal Recommended" Composer project.
 
-<p align="center">
-<a href="https://console.platform.sh/projects/create-project?template=https://raw.githubusercontent.com/platformsh/template-builder/master/templates/drupal9/.platform.template.yaml&utm_content=drupal9&utm_source=github&utm_medium=button&utm_campaign=deploy_on_platform">
-    <img src="https://platform.sh/images/deploy/lg-blue.svg" alt="Deploy on Platform.sh" width="180px" />
-</a>
-</p>
+Drupal is a flexible and extensible PHP-based CMS framework. Read more about it at www.drupal.org
 
-This template builds Drupal 9 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.
+## Platform.sh
 
-Drupal is a flexible and extensible PHP-based CMS framework.
+This repo is based on a template that builds Drupal 9 using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching. The Drupal installer will skip asking for database credentials as they are already provided by Platform.sh
 
-## Features
+### Features
 
 * PHP 7.4
 * MariaDB 10.4
