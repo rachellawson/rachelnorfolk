@@ -2371,17 +2371,17 @@
         },
         {
             "name": "drupal/olivero",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/olivero.git",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/olivero-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "596232057b7b3db7305420ad7fd19eafd43b775b"
+                "url": "https://ftp.drupal.org/files/projects/olivero-8.x-1.0-beta1.zip",
+                "reference": "8.x-1.0-beta1",
+                "shasum": "3fbaa8fd3d46d34a8afc4974d4e1df69a7f1ebce"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -2389,8 +2389,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1592335654",
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1597332018",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
