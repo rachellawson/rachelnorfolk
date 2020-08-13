@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - node
-    - system
   theme:
     - olivero
 id: syndicate
@@ -19,8 +18,4 @@ settings:
   provider: node
   label_display: '0'
   block_count: 10
-visibility:
-  request_path:
-    id: request_path
-    pages: '<front>'
-    negate: false
+visibility: {  }

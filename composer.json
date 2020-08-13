@@ -16,6 +16,7 @@
     ],
     "require": {
         "composer/installers": "^1.9",
+        "cweagans/composer-patches": "^1.6",
         "drupal/admin_toolbar": "^2.3",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9",
@@ -71,6 +72,15 @@
             "web/themes/custom/{$name}": [
                 "type:drupal-custom-theme"
             ]
+        },
+        "composer-exit-on-patch-failure": true,
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches": {
+            "drupal/core": {
+                "Syndicate block outputs wrong feed URL https://www.drupal.org/project/drupal/issues/3048848": "https://www.drupal.org/files/issues/2020-07-06/3048848-33.patch"
+            }
         },
         "drupal-core-project-message": {
             "include-keys": [
