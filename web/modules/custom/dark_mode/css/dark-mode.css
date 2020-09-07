@@ -5,6 +5,7 @@
   }
 
   html img,
+  html video,
   html .site-branding__text {
     filter: invert(1) hue-rotate(180deg);
   }

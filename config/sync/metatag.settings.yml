@@ -1,0 +1,11 @@
+entity_type_groups:
+  media:
+    audio:
+      basic: basic
+    document:
+      basic: basic
+      advanced: advanced
+      dublin_core: dublin_core
+      twitter_cards: twitter_cards
+    image:
+      basic: basic
