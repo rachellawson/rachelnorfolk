@@ -7,7 +7,8 @@ features:
   comment_user_verification: true
   favicon: true
 logo:
-  use_default: true
+  use_default: false
+  path: modules/custom/dark_mode/rachel-logo.svg
 favicon:
   use_default: true
 mobile_menu_all_widths: 0
