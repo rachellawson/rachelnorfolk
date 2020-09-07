@@ -1,0 +1,17 @@
+uuid: 8d4034c4-fea6-4142-8e52-dbc1fdcced49
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: rpwvgyEURXLz_JjgMCrkS1rUv-0k3L79BpO-ReN7fDI
+id: node
+label: Content
+tags:
+  title: '[node:title] | [site:name]'
+  canonical_url: '[node:url]'
+  description: '[node:summary]'
+  twitter_cards_image: '[node:field_image:entity:url]'
+  twitter_cards_image_width: '[node:field_image:width]'
+  twitter_cards_description: '[node:summary]'
+  twitter_cards_image_alt: '[node:field_image:alt]'
+  twitter_cards_image_height: '[node:field_image:height]'
