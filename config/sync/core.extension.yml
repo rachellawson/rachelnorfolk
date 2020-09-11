@@ -64,7 +64,9 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  xmlsitemap_engines: 0
   pathauto: 1
+  xmlsitemap: 1
   views: 10
   standard: 1000
 theme:
