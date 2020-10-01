@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56f32d6590f9f1aef6b9e9084b8b75b6",
+    "content-hash": "c38190ffeea8c22a19fb39364cb4c113",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2439,6 +2439,50 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/native_lazy_loading",
+            "version": "1.1.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/native_lazy_loading.git",
+                "reference": "1.1.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/native_lazy_loading-1.1.0-beta2.zip",
+                "reference": "1.1.0-beta2",
+                "shasum": "4fd9967729602fa7ebc41226d79d08a6e4c93fc6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.0-beta2",
+                    "datestamp": "1600253836",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "GaëlG",
+                    "homepage": "https://www.drupal.org/user/431210"
+                }
+            ],
+            "description": "Ensure images are natively lazy-loaded by browsers supporting the loading='lazy' img attribute.",
+            "homepage": "https://www.drupal.org/project/native_lazy_loading",
+            "support": {
+                "source": "https://git.drupalcode.org/project/native_lazy_loading"
             }
         },
         {
@@ -7058,6 +7102,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "drupal/native_lazy_loading": 10,
         "drupal/olivero": 15
     },
     "prefer-stable": true,
