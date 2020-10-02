@@ -3,7 +3,6 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_url
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
@@ -11,7 +10,6 @@ dependencies:
     - image
     - layout_builder
     - layout_discovery
-    - link
     - user
 third_party_settings:
   field_layout:
@@ -53,26 +51,6 @@ third_party_settings:
               id: 'extra_field_block:user:user:member_for'
             additional: {  }
             weight: 1
-          795ab96d-b7d5-4f8e-b9dc-d317c5894b83:
-            uuid: 795ab96d-b7d5-4f8e-b9dc-d317c5894b83
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:user:user:field_url'
-              formatter:
-                label: above
-                settings:
-                  trim_length: 80
-                  url_only: false
-                  url_plain: false
-                  rel: ''
-                  target: ''
-                third_party_settings: {  }
-                type: link
-            additional: {  }
-            weight: 2
         third_party_settings: {  }
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
@@ -81,18 +59,6 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
-  field_url:
-    weight: 6
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   member_for:
     weight: 5
     region: content

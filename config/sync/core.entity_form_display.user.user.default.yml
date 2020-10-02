@@ -3,14 +3,12 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.user.user.field_url
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
     - field_layout
     - image
     - layout_discovery
-    - link
     - path
     - user
 third_party_settings:
@@ -30,14 +28,6 @@ content:
     region: content
   contact:
     weight: 5
-    region: content
-  field_url:
-    weight: 31
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
     region: content
   language:
     weight: 0
