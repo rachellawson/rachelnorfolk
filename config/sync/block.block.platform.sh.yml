@@ -1,0 +1,25 @@
+uuid: 27354f28-cc0f-4501-8c53-e0a3200da112
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:66afb01c-b84d-4e64-984c-6249863c361b'
+  module:
+    - block_content
+  theme:
+    - olivero
+id: platform.sh
+theme: olivero
+region: footer_bottom
+weight: 1
+provider: null
+plugin: 'block_content:66afb01c-b84d-4e64-984c-6249863c361b'
+settings:
+  id: 'block_content:66afb01c-b84d-4e64-984c-6249863c361b'
+  label: platform.sh
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
