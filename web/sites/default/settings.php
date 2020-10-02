@@ -48,3 +48,6 @@ if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('IS_DDEV_PROJECT') == 'true') {
   include $app_root . '/' . $site_path . '/settings.ddev.php';
 }
+
+// Exclude any config that needs excluding.
+$settings['config_exclude_modules'] = ['openid_connect'];
