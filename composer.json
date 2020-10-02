@@ -29,6 +29,7 @@
         "drupal/metatag": "^1.14",
         "drupal/native_lazy_loading": "^1.1@beta",
         "drupal/olivero": "^1.0@alpha",
+        "drupal/openid_connect": "^1.0@RC",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
