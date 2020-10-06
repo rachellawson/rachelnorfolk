@@ -9,6 +9,8 @@
 /**
  * Implements hook_page_attachments().
  */
- function dark_mode_page_attachments(array &$page) {
+function dark_mode_page_attachments(array &$page) {
   $page['#attached']['library'][] = 'dark_mode/dark_mode';
+  $page['#attached']['library'][] = 'dark_mode/login_buttons';
+
 }

@@ -1,0 +1,15 @@
+#edit-openid-connect-client-google-login {
+  background: url('../icons/g-logo.png') no-repeat;
+  background-size: 36px;
+  background-position-y: 50%;
+  background-position-x: 5px;
+  padding-left: 56px;
+}
+
+#edit-openid-connect-client-github-login {
+  background: url('../icons/GitHub-Mark-64px.png') no-repeat;
+  background-size: 36px;
+  background-position-y: 50%;
+  background-position-x: 5px;
+  padding-left: 56px;
+}

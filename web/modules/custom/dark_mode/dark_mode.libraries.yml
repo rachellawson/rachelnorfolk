@@ -3,4 +3,7 @@ dark_mode:
   css:
     theme:
       css/dark-mode.css: {}
-
+login_buttons:
+  css:
+    theme:
+      css/login-buttons.css: {}
