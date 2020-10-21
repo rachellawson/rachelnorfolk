@@ -1,0 +1,14 @@
+uuid: 87185754-33a6-4925-ac76-f9ce18a2e459
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webformers
+  module:
+    - user
+id: user_remove_role_action.webformers
+label: 'Remove the Webformers role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: webformers

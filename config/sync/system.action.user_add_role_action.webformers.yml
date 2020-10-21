@@ -1,0 +1,14 @@
+uuid: 73dea0f4-6688-4c16-85c2-067a860f23f1
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.webformers
+  module:
+    - user
+id: user_add_role_action.webformers
+label: 'Add the Webformers role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: webformers

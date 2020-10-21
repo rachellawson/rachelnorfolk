@@ -66,6 +66,18 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  webform: 0
+  webform_access: 0
+  webform_attachment: 0
+  webform_image_select: 0
+  webform_node: 0
+  webform_options_limit: 0
+  webform_scheduled_email: 0
+  webform_shortcuts: 0
+  webform_submission_export_import: 0
+  webform_submission_log: 0
+  webform_templates: 0
+  webform_ui: 0
   xmlsitemap_engines: 0
   pathauto: 1
   xmlsitemap: 1
