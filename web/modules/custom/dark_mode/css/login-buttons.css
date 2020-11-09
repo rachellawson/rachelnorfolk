@@ -13,3 +13,11 @@
   background-position-x: 5px;
   padding-left: 56px;
 }
+
+#edit-openid-connect-client-linkedin-login {
+  background: url('../icons/linkedin.svg') no-repeat;
+  background-size: 36px;
+  background-position-y: 50%;
+  background-position-x: 5px;
+  padding-left: 56px;
+}
