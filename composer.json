@@ -90,6 +90,7 @@
             "drupal/openid_connect": {
                 "LinkedIn client broken https://www.drupal.org/project/openid_connect/issues/3078198": "https://www.drupal.org/files/issues/2020-11-10/update-openidconnect-linkedin-user-endpoint-3078198-11.patch"
             }
+        },
         "drupal-core-project-message": {
             "include-keys": [
                 "homepage",
