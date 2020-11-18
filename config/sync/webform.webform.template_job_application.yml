@@ -5,8 +5,6 @@ dependencies:
   enforced:
     module:
       - webform_templates
-_core:
-  default_config_hash: nEe31jVc1WiZbHRh7OqT04k91cGTFmkLWiA6hxCPsAg
 open: null
 close: null
 weight: 0
@@ -147,6 +145,7 @@ settings:
   results_customize: false
   token_view: false
   token_update: false
+  token_delete: false
   serial_disabled: false
 access:
   create:
@@ -234,3 +233,5 @@ handlers:
       sender_mail: ''
       sender_name: ''
 variants: {  }
+_core:
+  default_config_hash: nEe31jVc1WiZbHRh7OqT04k91cGTFmkLWiA6hxCPsAg

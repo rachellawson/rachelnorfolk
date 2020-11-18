@@ -25,6 +25,8 @@
         "drupal/geocoder": "^3.10",
         "drupal/geofield": "^1.15",
         "drupal/geofield_map": "^2.66",
+        "drupal/gin": "^3.0@alpha",
+        "drupal/gin_toolbar": "^1.0@beta",
         "drupal/leaflet": "^2.0",
         "drupal/media_entity_twitter": "^2.4",
         "drupal/metatag": "^1.14",
@@ -86,9 +88,6 @@
         "patches": {
             "drupal/core": {
                 "Syndicate block outputs wrong feed URL https://www.drupal.org/project/drupal/issues/3048848": "https://www.drupal.org/files/issues/2020-07-06/3048848-33.patch"
-            },
-            "drupal/openid_connect": {
-                "LinkedIn client broken https://www.drupal.org/project/openid_connect/issues/3078198": "https://www.drupal.org/files/issues/2020-11-10/update-openidconnect-linkedin-user-endpoint-3078198-11.patch"
             }
         },
         "drupal-core-project-message": {
