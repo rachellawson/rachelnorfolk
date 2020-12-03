@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b94bb7d9043d8bb3b6620a6f2737588b",
+    "content-hash": "76940bfda5037783c2746d9a01e93391",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1900,16 +1900,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.1.0-rc3",
+            "version": "9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "abd45076a0eee9f35e3a2d3df1a52d2d9feb1995"
+                "reference": "de8c1769ea3d8b640e1a35c9228880d0b74ca4cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/abd45076a0eee9f35e3a2d3df1a52d2d9feb1995",
-                "reference": "abd45076a0eee9f35e3a2d3df1a52d2d9feb1995",
+                "url": "https://api.github.com/repos/drupal/core/zipball/de8c1769ea3d8b640e1a35c9228880d0b74ca4cc",
+                "reference": "de8c1769ea3d8b640e1a35c9228880d0b74ca4cc",
                 "shasum": ""
             },
             "require": {
@@ -2146,22 +2146,22 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.1.0-rc3"
+                "source": "https://github.com/drupal/core/tree/9.1.0"
             },
-            "time": "2020-11-26T01:34:06+00:00"
+            "time": "2020-12-02T18:11:58+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.0.9",
+            "version": "9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "c017751a6bb9b2ffe56f0fab607ba67c21604bfd"
+                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/c017751a6bb9b2ffe56f0fab607ba67c21604bfd",
-                "reference": "c017751a6bb9b2ffe56f0fab607ba67c21604bfd",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/7b125516d6568b888945ee03ac2636dcced76e8d",
+                "reference": "7b125516d6568b888945ee03ac2636dcced76e8d",
                 "shasum": ""
             },
             "require": {
@@ -2196,22 +2196,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.0.4"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.0"
             },
-            "time": "2020-08-07T22:30:24+00:00"
+            "time": "2020-08-07T22:30:13+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.1.0-rc3",
+            "version": "9.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "64c2e914e197423767df1803a3aa833b340785fb"
+                "reference": "0e9d5f06c35fc4365864a6395812e6422ecdd62d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/64c2e914e197423767df1803a3aa833b340785fb",
-                "reference": "64c2e914e197423767df1803a3aa833b340785fb",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/0e9d5f06c35fc4365864a6395812e6422ecdd62d",
+                "reference": "0e9d5f06c35fc4365864a6395812e6422ecdd62d",
                 "shasum": ""
             },
             "require": {
@@ -2220,7 +2220,7 @@
                 "doctrine/annotations": "1.11.1",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.1.0-rc3",
+                "drupal/core": "9.1.0",
                 "egulias/email-validator": "2.1.22",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.4.0",
@@ -2281,9 +2281,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.1.0-rc3"
+                "source": "https://github.com/drupal/core-recommended/tree/9.1.0"
             },
-            "time": "2020-11-26T01:34:06+00:00"
+            "time": "2020-12-02T18:11:58+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -2764,17 +2764,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0-alpha30",
+            "version": "3.0.0-alpha31",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0-alpha30"
+                "reference": "8.x-3.0-alpha31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha30.zip",
-                "reference": "8.x-3.0-alpha30",
-                "shasum": "c8964d09c246d7fbd57cd0e95070e3791a75262e"
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-alpha31.zip",
+                "reference": "8.x-3.0-alpha31",
+                "shasum": "984eee103d3ea90de6f73ec1028054ffde49c962"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2783,8 +2783,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0-alpha30",
-                    "datestamp": "1605395013",
+                    "version": "8.x-3.0-alpha31",
+                    "datestamp": "1606944288",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
