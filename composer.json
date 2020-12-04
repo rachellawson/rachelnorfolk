@@ -32,7 +32,6 @@
         "drupal/leaflet": "^2.0",
         "drupal/media_entity_twitter": "^2.4",
         "drupal/metatag": "^1.14",
-        "drupal/native_lazy_loading": "^1.1@beta",
         "drupal/openid_connect": "^1.0@RC",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
