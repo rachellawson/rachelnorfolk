@@ -6,7 +6,8 @@
 
   html img,
   html video,
-  html .site-branding__text {
+  html .site-branding__text,
+  html iframe {
     filter: invert(1) hue-rotate(180deg);
   }
 
