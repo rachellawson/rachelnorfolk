@@ -22,6 +22,8 @@ permissions:
   - 'administer url aliases'
   - 'administer users'
   - 'administer webform templates'
+  - 'configure editable article node layout overrides'
+  - 'create and edit custom blocks'
   - 'create article content'
   - 'create audio media'
   - 'create document media'
