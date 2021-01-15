@@ -43,6 +43,29 @@ third_party_settings:
                 label: hidden
             additional: {  }
             weight: 0
+          ee6da03e-421c-4795-bc53-0535b007fb86:
+            uuid: ee6da03e-421c-4795-bc53-0535b007fb86
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_website'
+              label: Website
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: visually_hidden
+                type: link
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: '0'
+                  target: '0'
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+            additional: {  }
+            weight: 1
         third_party_settings: {  }
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'

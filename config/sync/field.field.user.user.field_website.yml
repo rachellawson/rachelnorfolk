@@ -11,8 +11,8 @@ id: user.user.field_website
 field_name: field_website
 entity_type: user
 bundle: user
-label: Website
-description: ''
+label: 'Login User Profile'
+description: 'A link to the website from which your user profile is created. This will normally be updated automatically from the login provider you used to authenticate. For example, your GitHub user profile.'
 required: false
 translatable: false
 default_value: {  }

@@ -30,17 +30,20 @@ third_party_settings:
             uuid: 51d20f56-4556-4f4a-a589-14d84f7fafce
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:user:user:user_picture'
+              label: Picture
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: image
                 settings:
                   image_style: thumbnail
                   image_link: content
                 third_party_settings: {  }
-                label: hidden
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
           9d75ffd3-834e-4ebb-b7a8-168771b274a6:
@@ -57,20 +60,23 @@ third_party_settings:
             uuid: 911521e2-2b25-40af-b312-4e1c72754c09
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:user:user:field_website'
+              label: Website
+              provider: layout_builder
+              label_display: '0'
               formatter:
-                label: above
+                label: inline
+                type: link
                 settings:
                   trim_length: 80
                   url_only: false
                   url_plain: false
-                  rel: ''
-                  target: ''
+                  rel: '0'
+                  target: '0'
                 third_party_settings: {  }
-                type: link
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 2
         third_party_settings: {  }
