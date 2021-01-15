@@ -132,28 +132,28 @@ third_party_settings:
                 label: hidden
                 type: leaflet_formatter_default
                 settings:
-                  multiple_map: 0
-                  popup: 0
+                  multiple_map: false
+                  popup: false
                   popup_content: ''
                   leaflet_map: 'OSM Mapnik'
-                  height: '400'
+                  height: 400
                   height_unit: px
-                  hide_empty_map: 1
-                  disable_wheel: 1
-                  fullscreen_control: 1
-                  gesture_handling: 0
+                  hide_empty_map: true
+                  disable_wheel: true
+                  fullscreen_control: true
+                  gesture_handling: false
                   reset_map:
-                    control: 0
+                    control: false
                     position: topright
                   map_position:
-                    force: 0
+                    force: false
                     center:
-                      lat: '0'
-                      lon: '0'
-                    zoom: '12'
-                    minZoom: '1'
-                    maxZoom: '18'
-                    zoomFiner: '0'
+                      lat: !!float 0
+                      lon: !!float 0
+                    zoom: 12
+                    minZoom: 1
+                    maxZoom: 18
+                    zoomFiner: 0
                   icon:
                     iconType: marker
                     iconUrl: ''
@@ -178,18 +178,18 @@ third_party_settings:
                       'y': ''
                   path: '{"color":"#3388ff","opacity":"0.8","stroke":true,"weight":6,"fill":false,"fillOpacity":"0.0"}'
                   geocoder:
-                    control: 0
+                    control: false
                     settings:
                       position: topright
-                      input_size: '25'
+                      input_size: 25
                       providers:
                         gpx_file:
-                          weight: '0'
-                          checked: 0
-                      min_terms: '4'
-                      delay: '800'
-                      zoom: '16'
-                      popup: 0
+                          weight: 0
+                          checked: false
+                      min_terms: 4
+                      delay: 800
+                      zoom: 16
+                      popup: false
                       options: ''
                 third_party_settings: {  }
               context_mapping:
