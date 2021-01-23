@@ -40,6 +40,8 @@ settings:
           items:
             - Blockquote
             - DrupalMediaLibrary
+            - Twitter_ckeditor_button
+            - flickr_ckeditor_button
             - Table
             - HorizontalRule
         -
