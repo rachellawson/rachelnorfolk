@@ -36,7 +36,6 @@
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
-        "drupal/webform": "^6.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
         "platformsh/config-reader": "^2.3"
