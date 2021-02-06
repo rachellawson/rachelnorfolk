@@ -64,21 +64,22 @@
         },
         {
             "name": "caxy/php-htmldiff",
-            "version": "v0.1.10",
+            "version": "v0.1.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/caxy/php-htmldiff.git",
-                "reference": "4c142a511a1140075da0ba8a5a90434aa12dfe02"
+                "reference": "6bc1c4ad59587027b09bf50c0e086b0f45d86c86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/4c142a511a1140075da0ba8a5a90434aa12dfe02",
-                "reference": "4c142a511a1140075da0ba8a5a90434aa12dfe02",
+                "url": "https://api.github.com/repos/caxy/php-htmldiff/zipball/6bc1c4ad59587027b09bf50c0e086b0f45d86c86",
+                "reference": "6bc1c4ad59587027b09bf50c0e086b0f45d86c86",
                 "shasum": ""
             },
             "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
                 "ezyang/htmlpurifier": "^4.7",
-                "kub-at/php-simple-html-dom-parser": "^1.7",
                 "php": ">=7.3"
             },
             "require-dev": {
@@ -118,9 +119,9 @@
             ],
             "support": {
                 "issues": "https://github.com/caxy/php-htmldiff/issues",
-                "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.10"
+                "source": "https://github.com/caxy/php-htmldiff/tree/v0.1.11"
             },
-            "time": "2021-01-05T11:13:56+00:00"
+            "time": "2021-02-02T11:07:36+00:00"
         },
         {
             "name": "chi-teck/drupal-code-generator",
@@ -1576,16 +1577,16 @@
         },
         {
             "name": "drupal-ckeditor-libraries-group/codesnippet",
-            "version": "4.14.1",
+            "version": "4.16.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal-ckeditor-libraries-group/codesnippet.git",
-                "reference": "940d45c76cbfc4e2ff0d65c0b41ddd42660bc5d7"
+                "reference": "cbddc36e5873323b1c34db1542a3449bcb1ff9e7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal-ckeditor-libraries-group/codesnippet/zipball/940d45c76cbfc4e2ff0d65c0b41ddd42660bc5d7",
-                "reference": "940d45c76cbfc4e2ff0d65c0b41ddd42660bc5d7",
+                "url": "https://api.github.com/repos/drupal-ckeditor-libraries-group/codesnippet/zipball/cbddc36e5873323b1c34db1542a3449bcb1ff9e7",
+                "reference": "cbddc36e5873323b1c34db1542a3449bcb1ff9e7",
                 "shasum": ""
             },
             "type": "drupal-library",
@@ -1606,7 +1607,7 @@
                 "issues": "https://github.com/ckeditor/ckeditor4/issues",
                 "source": "https://github.com/ckeditor/ckeditor4/tree/master/plugins/codesnippet"
             },
-            "time": "2020-04-23T07:13:58+00:00"
+            "time": "2021-01-25T12:06:23+00:00"
         },
         {
             "name": "drupal/admin_toolbar",
@@ -1930,16 +1931,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.1.3",
+            "version": "9.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "62f5d7d0f9f7c279b996b0f33d0ccd501adcd980"
+                "reference": "d16a7cb33b7a01e3b2e66d36e2011f27ba9786f4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/62f5d7d0f9f7c279b996b0f33d0ccd501adcd980",
-                "reference": "62f5d7d0f9f7c279b996b0f33d0ccd501adcd980",
+                "url": "https://api.github.com/repos/drupal/core/zipball/d16a7cb33b7a01e3b2e66d36e2011f27ba9786f4",
+                "reference": "d16a7cb33b7a01e3b2e66d36e2011f27ba9786f4",
                 "shasum": ""
             },
             "require": {
@@ -2176,13 +2177,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.1.3"
+                "source": "https://github.com/drupal/core/tree/9.1.4"
             },
-            "time": "2021-01-19T23:10:47+00:00"
+            "time": "2021-02-03T19:21:05+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.1.3",
+            "version": "9.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2226,22 +2227,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.3"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.1.4"
             },
             "time": "2020-08-07T22:30:13+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.1.3",
+            "version": "9.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "cc9bbc18cdd2a2aa9174d6ffc1f6428c330ba1ca"
+                "reference": "e48e05b546b0ebef74af26a6d3104dd3bd499202"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/cc9bbc18cdd2a2aa9174d6ffc1f6428c330ba1ca",
-                "reference": "cc9bbc18cdd2a2aa9174d6ffc1f6428c330ba1ca",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/e48e05b546b0ebef74af26a6d3104dd3bd499202",
+                "reference": "e48e05b546b0ebef74af26a6d3104dd3bd499202",
                 "shasum": ""
             },
             "require": {
@@ -2250,7 +2251,7 @@
                 "doctrine/annotations": "1.11.1",
                 "doctrine/lexer": "1.2.1",
                 "doctrine/reflection": "1.2.2",
-                "drupal/core": "9.1.3",
+                "drupal/core": "9.1.4",
                 "egulias/email-validator": "2.1.22",
                 "guzzlehttp/guzzle": "6.5.5",
                 "guzzlehttp/promises": "1.4.0",
@@ -2311,9 +2312,9 @@
             ],
             "description": "Locked core dependencies; require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.1.3"
+                "source": "https://github.com/drupal/core-recommended/tree/9.1.4"
             },
-            "time": "2021-01-19T23:10:47+00:00"
+            "time": "2021-02-03T19:21:05+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -2914,17 +2915,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "2.1.9",
+            "version": "2.1.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "2.1.9"
+                "reference": "2.1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-2.1.9.zip",
-                "reference": "2.1.9",
-                "shasum": "de1fde07225b5139665ab748c953f0396d5e3813"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-2.1.10.zip",
+                "reference": "2.1.10",
+                "shasum": "0cd2bc979988e564d8eb8549d938c3d31c8b5d92"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2933,8 +2934,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.9",
-                    "datestamp": "1611096358",
+                    "version": "2.1.10",
+                    "datestamp": "1611948911",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4135,56 +4136,6 @@
             "time": "2017-05-08T12:10:56+00:00"
         },
         {
-            "name": "kub-at/php-simple-html-dom-parser",
-            "version": "1.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Kub-AT/php-simple-html-dom-parser.git",
-                "reference": "ff22f98bfd9235115c128059076f3eb740d66913"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Kub-AT/php-simple-html-dom-parser/zipball/ff22f98bfd9235115c128059076f3eb740d66913",
-                "reference": "ff22f98bfd9235115c128059076f3eb740d66913",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "KubAT\\PhpSimple\\HtmlDomParser": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "S.C. Chen",
-                    "email": "me578022@gmail.com"
-                },
-                {
-                    "name": "Jakub Stawowy",
-                    "email": "Kub-AT@users.noreply.github.com"
-                }
-            ],
-            "description": "PHP Simple HTML DOM Parser with namespace and PHP 7.3 compatible",
-            "homepage": "http://simplehtmldom.sourceforge.net/",
-            "keywords": [
-                "Simple",
-                "dom",
-                "html"
-            ],
-            "support": {
-                "issues": "https://github.com/Kub-AT/php-simple-html-dom-parser/issues",
-                "source": "https://github.com/Kub-AT/php-simple-html-dom-parser/tree/master"
-            },
-            "time": "2019-10-25T12:34:43+00:00"
-        },
-        {
             "name": "laminas/laminas-diactoros",
             "version": "2.5.0",
             "source": {
@@ -5195,16 +5146,16 @@
         },
         {
             "name": "php-http/message",
-            "version": "1.10.0",
+            "version": "1.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-http/message.git",
-                "reference": "39db36d5972e9e6d00ea852b650953f928d8f10d"
+                "reference": "fb0dbce7355cad4f4f6a225f537c34d013571f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-http/message/zipball/39db36d5972e9e6d00ea852b650953f928d8f10d",
-                "reference": "39db36d5972e9e6d00ea852b650953f928d8f10d",
+                "url": "https://api.github.com/repos/php-http/message/zipball/fb0dbce7355cad4f4f6a225f537c34d013571f29",
+                "reference": "fb0dbce7355cad4f4f6a225f537c34d013571f29",
                 "shasum": ""
             },
             "require": {
@@ -5220,15 +5171,15 @@
                 "ergebnis/composer-normalize": "^2.6",
                 "ext-zlib": "*",
                 "guzzlehttp/psr7": "^1.0",
+                "laminas/laminas-diactoros": "^2.0",
                 "phpspec/phpspec": "^5.1 || ^6.3",
-                "slim/slim": "^3.0",
-                "zendframework/zend-diactoros": "^1.0"
+                "slim/slim": "^3.0"
             },
             "suggest": {
                 "ext-zlib": "Used with compressor/decompressor streams",
                 "guzzlehttp/psr7": "Used with Guzzle PSR-7 Factories",
-                "slim/slim": "Used with Slim Framework PSR-7 implementation",
-                "zendframework/zend-diactoros": "Used with Diactoros Factories"
+                "laminas/laminas-diactoros": "Used with Diactoros Factories",
+                "slim/slim": "Used with Slim Framework PSR-7 implementation"
             },
             "type": "library",
             "extra": {
@@ -5263,9 +5214,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-http/message/issues",
-                "source": "https://github.com/php-http/message/tree/1.10.0"
+                "source": "https://github.com/php-http/message/tree/1.11.0"
             },
-            "time": "2020-11-11T10:19:56+00:00"
+            "time": "2021-02-01T08:54:58+00:00"
         },
         {
             "name": "php-http/message-factory",
@@ -6397,16 +6348,16 @@
         },
         {
             "name": "symfony/filesystem",
-            "version": "v4.4.18",
+            "version": "v4.4.19",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
-                "reference": "d99fbef7e0f69bf162ae6131b31132fa3cc4bcbe"
+                "reference": "83a6feed14846d2d9f3916adbaf838819e4e3380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/filesystem/zipball/d99fbef7e0f69bf162ae6131b31132fa3cc4bcbe",
-                "reference": "d99fbef7e0f69bf162ae6131b31132fa3cc4bcbe",
+                "url": "https://api.github.com/repos/symfony/filesystem/zipball/83a6feed14846d2d9f3916adbaf838819e4e3380",
+                "reference": "83a6feed14846d2d9f3916adbaf838819e4e3380",
                 "shasum": ""
             },
             "require": {
@@ -6436,10 +6387,10 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony Filesystem Component",
+            "description": "Provides basic utilities for the filesystem",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/filesystem/tree/v4.4.18"
+                "source": "https://github.com/symfony/filesystem/tree/v4.4.19"
             },
             "funding": [
                 {
@@ -6455,20 +6406,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-11-30T13:04:35+00:00"
+            "time": "2021-01-27T09:09:26+00:00"
         },
         {
             "name": "symfony/finder",
-            "version": "v5.2.1",
+            "version": "v5.2.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
-                "reference": "0b9231a5922fd7287ba5b411893c0ecd2733e5ba"
+                "reference": "4adc8d172d602008c204c2e16956f99257248e03"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/finder/zipball/0b9231a5922fd7287ba5b411893c0ecd2733e5ba",
-                "reference": "0b9231a5922fd7287ba5b411893c0ecd2733e5ba",
+                "url": "https://api.github.com/repos/symfony/finder/zipball/4adc8d172d602008c204c2e16956f99257248e03",
+                "reference": "4adc8d172d602008c204c2e16956f99257248e03",
                 "shasum": ""
             },
             "require": {
@@ -6497,10 +6448,10 @@
                     "homepage": "https://symfony.com/contributors"
                 }
             ],
-            "description": "Symfony Finder Component",
+            "description": "Finds files and directories via an intuitive fluent interface",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/finder/tree/v5.2.1"
+                "source": "https://github.com/symfony/finder/tree/v5.2.3"
             },
             "funding": [
                 {
@@ -6516,7 +6467,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-12-08T17:02:38+00:00"
+            "time": "2021-01-28T22:06:19+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
