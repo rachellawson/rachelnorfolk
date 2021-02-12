@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9663d39388bf642791a2e25e871336a",
+    "content-hash": "77deb143deae67f4ea9f4a17d7c747e8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1611,26 +1611,29 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "2.4.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "8.x-2.4"
+                "reference": "3.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-2.4.zip",
-                "reference": "8.x-2.4",
-                "shasum": "6240047b8d91ac78f98d861ba8282af971fa0b38"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.0.0.zip",
+                "reference": "3.0.0",
+                "shasum": "204f7a0e8b62a8a54256142cf38ca139739fb65c"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0"
             },
+            "require-dev": {
+                "drupal/admin_toolbar_tools": "*"
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.4",
-                    "datestamp": "1601999178",
+                    "version": "3.0.0",
+                    "datestamp": "1611311186",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2670,17 +2673,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.18.0",
+            "version": "1.19.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.18"
+                "reference": "8.x-1.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.18.zip",
-                "reference": "8.x-1.18",
-                "shasum": "d1f20ecb66c262f8fd55fea517e4e696b91f2c10"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.19.zip",
+                "reference": "8.x-1.19",
+                "shasum": "0a4bbd647401b7e52c536423b4b2b9ca88bbd747"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2689,8 +2692,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.18",
-                    "datestamp": "1608852700",
+                    "version": "8.x-1.19",
+                    "datestamp": "1613077460",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2915,17 +2918,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "2.1.10",
+            "version": "2.1.11",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "2.1.10"
+                "reference": "2.1.11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-2.1.10.zip",
-                "reference": "2.1.10",
-                "shasum": "0cd2bc979988e564d8eb8549d938c3d31c8b5d92"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-2.1.11.zip",
+                "reference": "2.1.11",
+                "shasum": "72e260a4f29f1335f304719dcedb8af1db6ce492"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -2934,8 +2937,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.10",
-                    "datestamp": "1611948911",
+                    "version": "2.1.11",
+                    "datestamp": "1612696834",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
