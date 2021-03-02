@@ -11,7 +11,6 @@ dependencies:
     - image
     - layout_discovery
     - link
-    - path
     - user
 third_party_settings:
   field_layout:
@@ -28,6 +27,8 @@ content:
   account:
     weight: -10
     region: content
+    settings: {  }
+    third_party_settings: {  }
   contact:
     weight: 5
     region: content
@@ -42,15 +43,13 @@ content:
   language:
     weight: 0
     region: content
-  path:
-    type: path
-    weight: 30
-    region: content
     settings: {  }
     third_party_settings: {  }
   timezone:
     weight: 6
     region: content
+    settings: {  }
+    third_party_settings: {  }
   user_picture:
     type: image_image
     settings:
@@ -59,4 +58,5 @@ content:
     third_party_settings: {  }
     weight: -1
     region: content
-hidden: {  }
+hidden:
+  path: true

@@ -22,13 +22,14 @@ third_party_settings:
     enabled: true
     sections:
       -
-        layout_id: layout_onecol
+        layout_id: layout_twocol_section
         layout_settings:
           label: ''
+          column_widths: 33-67
         components:
           51d20f56-4556-4f4a-a589-14d84f7fafce:
             uuid: 51d20f56-4556-4f4a-a589-14d84f7fafce
-            region: content
+            region: first
             configuration:
               id: 'field_block:user:user:user_picture'
               label: Picture
@@ -48,7 +49,7 @@ third_party_settings:
             weight: 0
           9d75ffd3-834e-4ebb-b7a8-168771b274a6:
             uuid: 9d75ffd3-834e-4ebb-b7a8-168771b274a6
-            region: content
+            region: second
             configuration:
               label_display: '0'
               context_mapping:
@@ -58,7 +59,7 @@ third_party_settings:
             weight: 1
           911521e2-2b25-40af-b312-4e1c72754c09:
             uuid: 911521e2-2b25-40af-b312-4e1c72754c09
-            region: content
+            region: second
             configuration:
               id: 'field_block:user:user:field_website'
               label: Website
@@ -78,7 +79,13 @@ third_party_settings:
                 entity: layout_builder.entity
                 view_mode: view_mode
             additional: {  }
-            weight: 2
+            weight: 0
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: V51QPCKkgNREKtSmB9Iu2wmAMEpktVpnzklWaZV8UYo
