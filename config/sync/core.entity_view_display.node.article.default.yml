@@ -89,12 +89,12 @@ third_party_settings:
                   vanilla: false
                   optionset: default
                   style: column
-                  skin: fullwidth
+                  skin: boxed
                   background: false
                   layout: below
                   caption:
-                    title: title
                     alt: alt
+                    title: '0'
                   view_mode: default
                   optionset_thumbnail: ''
                   skin_thumbnail: ''
