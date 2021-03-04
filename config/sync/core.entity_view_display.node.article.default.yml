@@ -11,6 +11,7 @@ dependencies:
     - field.field.node.article.field_route_geofield
     - field.field.node.article.field_slides
     - field.field.node.article.field_tags
+    - field.field.node.article.layout_builder__layout
     - image.style.large
     - node.type.article
   module:
@@ -42,17 +43,20 @@ third_party_settings:
             uuid: 81a867ac-69ac-42e3-ad91-3b0b351df7d2
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:article:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: image
                 settings:
-                  image_style: large
+                  image_style: wide
                   image_link: ''
                 third_party_settings: {  }
-                label: hidden
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 0
           bc49a5c3-2ef3-4a5e-b540-83eb6b97c414:
@@ -74,44 +78,42 @@ third_party_settings:
             uuid: b867d2d8-52c2-4b1a-9417-e0880b19d7eb
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:article:field_slides'
+              label: Slides
+              provider: layout_builder
+              label_display: '0'
               formatter:
-                type: slick_media
                 label: hidden
+                type: slick_media
                 settings:
-                  style: column
+                  vanilla: false
                   optionset: default
+                  style: column
+                  skin: fullwidth
+                  background: false
+                  layout: below
+                  caption:
+                    title: title
+                    alt: alt
+                  view_mode: default
                   optionset_thumbnail: ''
-                  skin: boxed
                   skin_thumbnail: ''
+                  thumbnail_position: ''
                   image_style: ''
+                  thumbnail_style: ''
                   responsive_image_style: ''
                   thumbnail_effect: ''
-                  thumbnail_position: ''
                   media_switch: ''
-                  thumbnail_style: ''
                   ratio: '16:9'
-                  view_mode: default
                   grid: null
                   grid_medium: null
                   grid_small: null
                   visible_items: null
+                  preserve_keys: false
                   image: ''
                   title: title
                   link: ''
-                  layout: below
                   class: ''
-                  caption:
-                    alt: alt
-                    title: '0'
-                  cache: 0
-                  current_view_mode: default
-                  vanilla: false
-                  background: false
-                  preserve_keys: false
                   override: false
                   overridables:
                     arrows: '0'
@@ -122,23 +124,12 @@ third_party_settings:
                     mouseWheel: '0'
                     randomize: '0'
                     variableWidth: '0'
-                  thumbnail: ''
-                  thumbnail_caption: ''
-                  skin_arrows: ''
-                  skin_dots: ''
-                  fx: ''
-                  icon: ''
-                  box_caption: ''
-                  box_caption_custom: ''
-                  box_media_style: ''
-                  box_style: ''
-                  _uri: ''
-                  breakpoints: {  }
-                  sizes: ''
-                  grid_header: ''
-                  id: ''
-                  overlay: ''
+                  cache: 0
+                  current_view_mode: _custom
                 third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 2
           6a979ffd-72af-46ce-8acf-7ed33861cf38:
