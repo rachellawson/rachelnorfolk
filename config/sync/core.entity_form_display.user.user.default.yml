@@ -10,7 +10,6 @@ dependencies:
     - field_layout
     - image
     - layout_discovery
-    - link
     - user
 third_party_settings:
   field_layout:
@@ -32,14 +31,6 @@ content:
   contact:
     weight: 5
     region: content
-  field_website:
-    weight: 31
-    settings:
-      placeholder_url: ''
-      placeholder_title: ''
-    third_party_settings: {  }
-    type: link_default
-    region: content
   language:
     weight: 0
     region: content
@@ -59,4 +50,5 @@ content:
     weight: -1
     region: content
 hidden:
+  field_website: true
   path: true
