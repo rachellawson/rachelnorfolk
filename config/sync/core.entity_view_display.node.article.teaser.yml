@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_route_file
     - field.field.node.article.field_route_geofield
+    - field.field.node.article.field_slides
     - field.field.node.article.field_tags
     - field.field.node.article.layout_builder__layout
     - image.style.medium
@@ -134,4 +135,5 @@ hidden:
   comment: true
   field_route_file: true
   field_route_geofield: true
+  field_slides: true
   layout_builder__layout: true

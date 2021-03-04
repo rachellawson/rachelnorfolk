@@ -9,8 +9,8 @@ dependencies:
     - field.field.node.article.field_image
     - field.field.node.article.field_route_file
     - field.field.node.article.field_route_geofield
+    - field.field.node.article.field_slides
     - field.field.node.article.field_tags
-    - field.field.node.article.layout_builder__layout
     - image.style.large
     - node.type.article
   module:
@@ -21,6 +21,7 @@ dependencies:
     - image
     - layout_builder
     - layout_discovery
+    - slick
     - text
     - user
 third_party_settings:
@@ -30,34 +31,32 @@ third_party_settings:
       label: ''
   layout_builder:
     enabled: true
+    allow_custom: true
     sections:
       -
         layout_id: layout_onecol
         layout_settings:
           label: ''
         components:
-          824aa5f2-f2b0-4e14-805a-607f8d9f8752:
-            uuid: 824aa5f2-f2b0-4e14-805a-607f8d9f8752
+          81a867ac-69ac-42e3-ad91-3b0b351df7d2:
+            uuid: 81a867ac-69ac-42e3-ad91-3b0b351df7d2
             region: content
             configuration:
-              id: 'field_block:node:article:field_image'
-              label: Image
-              provider: layout_builder
               label_display: '0'
-              formatter:
-                label: hidden
-                type: image
-                settings:
-                  image_style: olivero_hero
-                  image_link: ''
-                third_party_settings: {  }
               context_mapping:
                 entity: layout_builder.entity
-                view_mode: view_mode
+              id: 'field_block:node:article:field_image'
+              formatter:
+                type: image
+                settings:
+                  image_style: large
+                  image_link: ''
+                third_party_settings: {  }
+                label: hidden
             additional: {  }
-            weight: 1
-          591acf08-5be8-4b5d-a33b-17d24238a832:
-            uuid: 591acf08-5be8-4b5d-a33b-17d24238a832
+            weight: 0
+          bc49a5c3-2ef3-4a5e-b540-83eb6b97c414:
+            uuid: bc49a5c3-2ef3-4a5e-b540-83eb6b97c414
             region: content
             configuration:
               label_display: '0'
@@ -70,135 +69,80 @@ third_party_settings:
                 third_party_settings: {  }
                 label: hidden
             additional: {  }
-            weight: 2
-          9433cafd-2f13-4c8e-ad4c-1f1a78b916f1:
-            uuid: 9433cafd-2f13-4c8e-ad4c-1f1a78b916f1
+            weight: 1
+          b867d2d8-52c2-4b1a-9417-e0880b19d7eb:
+            uuid: b867d2d8-52c2-4b1a-9417-e0880b19d7eb
             region: content
             configuration:
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'extra_field_block:node:article:links'
-            additional: {  }
-            weight: 3
-          651b831c-8e39-48b3-8ddc-6c15a993f1f8:
-            uuid: 651b831c-8e39-48b3-8ddc-6c15a993f1f8
-            region: content
-            configuration:
-              id: 'field_block:node:article:field_route_file'
-              label: 'Route File'
-              provider: layout_builder
-              label_display: '0'
+              id: 'field_block:node:article:field_slides'
               formatter:
-                label: inline
-                type: file_default
-                settings:
-                  use_description_as_link_text: true
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 6
-          af2c350d-085e-40ac-adbf-14ca53c34e09:
-            uuid: af2c350d-085e-40ac-adbf-14ca53c34e09
-            region: content
-            configuration:
-              id: 'field_block:node:article:comment'
-              label: Comments
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: above
-                type: comment_default
-                settings:
-                  view_mode: default
-                  pager_id: 0
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 8
-          5683119e-034d-4940-bca2-37cf63faa6f8:
-            uuid: 5683119e-034d-4940-bca2-37cf63faa6f8
-            region: content
-            configuration:
-              id: 'field_block:node:article:field_route_geofield'
-              label: 'Route Geofield'
-              provider: layout_builder
-              label_display: '0'
-              formatter:
+                type: slick_media
                 label: hidden
-                type: leaflet_formatter_default
                 settings:
-                  multiple_map: false
-                  popup: false
-                  popup_content: ''
-                  leaflet_map: 'OSM Mapnik'
-                  height: 400
-                  height_unit: px
-                  hide_empty_map: true
-                  disable_wheel: true
-                  fullscreen_control: true
-                  gesture_handling: false
-                  reset_map:
-                    control: false
-                    position: topright
-                  map_position:
-                    force: false
-                    center:
-                      lat: !!float 0
-                      lon: !!float 0
-                    zoom: 12
-                    minZoom: 1
-                    maxZoom: 18
-                    zoomFiner: 0
-                  icon:
-                    iconType: marker
-                    iconUrl: ''
-                    shadowUrl: ''
-                    html: '<div></div>'
-                    html_class: leaflet-map-divicon
-                    circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0}'
-                    iconSize:
-                      x: ''
-                      'y': ''
-                    iconAnchor:
-                      x: ''
-                      'y': ''
-                    shadowSize:
-                      x: ''
-                      'y': ''
-                    shadowAnchor:
-                      x: ''
-                      'y': ''
-                    popupAnchor:
-                      x: ''
-                      'y': ''
-                  path: '{"color":"#3388ff","opacity":"0.8","stroke":true,"weight":6,"fill":false,"fillOpacity":"0.0"}'
-                  geocoder:
-                    control: false
-                    settings:
-                      position: topright
-                      input_size: 25
-                      providers:
-                        gpx_file:
-                          weight: 0
-                          checked: false
-                      min_terms: 4
-                      delay: 800
-                      zoom: 16
-                      popup: false
-                      options: ''
+                  style: column
+                  optionset: default
+                  optionset_thumbnail: ''
+                  skin: boxed
+                  skin_thumbnail: ''
+                  image_style: ''
+                  responsive_image_style: ''
+                  thumbnail_effect: ''
+                  thumbnail_position: ''
+                  media_switch: ''
+                  thumbnail_style: ''
+                  ratio: '16:9'
+                  view_mode: default
+                  grid: null
+                  grid_medium: null
+                  grid_small: null
+                  visible_items: null
+                  image: ''
+                  title: title
+                  link: ''
+                  layout: below
+                  class: ''
+                  caption:
+                    alt: alt
+                    title: '0'
+                  cache: 0
+                  current_view_mode: default
+                  vanilla: false
+                  background: false
+                  preserve_keys: false
+                  override: false
+                  overridables:
+                    arrows: '0'
+                    autoplay: '0'
+                    dots: '0'
+                    draggable: '0'
+                    infinite: '0'
+                    mouseWheel: '0'
+                    randomize: '0'
+                    variableWidth: '0'
+                  thumbnail: ''
+                  thumbnail_caption: ''
+                  skin_arrows: ''
+                  skin_dots: ''
+                  fx: ''
+                  icon: ''
+                  box_caption: ''
+                  box_caption_custom: ''
+                  box_media_style: ''
+                  box_style: ''
+                  _uri: ''
+                  breakpoints: {  }
+                  sizes: ''
+                  grid_header: ''
+                  id: ''
+                  overlay: ''
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
             additional: {  }
-            weight: 5
-          059ef39c-70fd-4291-973e-4e6c77460184:
-            uuid: 059ef39c-70fd-4291-973e-4e6c77460184
+            weight: 2
+          6a979ffd-72af-46ce-8acf-7ed33861cf38:
+            uuid: 6a979ffd-72af-46ce-8acf-7ed33861cf38
             region: content
             configuration:
               label_display: '0'
@@ -212,9 +156,68 @@ third_party_settings:
                   link: true
                 third_party_settings: {  }
             additional: {  }
+            weight: 3
+          edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7:
+            uuid: edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:links'
+            additional: {  }
+            weight: 4
+          0f657d92-651c-40d7-bb24-3d1b17f184ff:
+            uuid: 0f657d92-651c-40d7-bb24-3d1b17f184ff
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:comment'
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            additional: {  }
+            weight: 5
+          148e1844-92cf-4a94-8aca-6e463f104c37:
+            uuid: 148e1844-92cf-4a94-8aca-6e463f104c37
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_route_file'
+              formatter:
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
+            weight: 6
+          dc987baf-3ec0-463f-a25d-7bdfc0b7a965:
+            uuid: dc987baf-3ec0-463f-a25d-7bdfc0b7a965
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_route_geofield'
+              formatter:
+                label: above
+                settings:
+                  output_format: wkt
+                  output_escape: true
+                third_party_settings: {  }
+                type: geofield_default
+            additional: {  }
             weight: 7
         third_party_settings: {  }
-    allow_custom: true
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
 id: node.article.default
@@ -224,14 +227,14 @@ mode: default
 content:
   body:
     type: text_default
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
     label: hidden
   comment:
     type: comment_default
-    weight: 110
+    weight: 5
     region: content
     label: above
     settings:
@@ -240,7 +243,7 @@ content:
     third_party_settings: {  }
   field_image:
     type: image
-    weight: -1
+    weight: 0
     region: content
     settings:
       image_style: large
@@ -248,7 +251,7 @@ content:
     third_party_settings: {  }
     label: hidden
   field_route_file:
-    weight: 111
+    weight: 6
     label: above
     settings:
       use_description_as_link_text: true
@@ -256,7 +259,7 @@ content:
     type: file_default
     region: content
   field_route_geofield:
-    weight: 112
+    weight: 7
     label: above
     settings:
       output_format: wkt
@@ -264,16 +267,79 @@ content:
     third_party_settings: {  }
     type: geofield_default
     region: content
+  field_slides:
+    type: slick_media
+    weight: 2
+    label: hidden
+    settings:
+      style: column
+      optionset: default
+      optionset_thumbnail: ''
+      skin: boxed
+      skin_thumbnail: ''
+      image_style: ''
+      responsive_image_style: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      thumbnail_style: ''
+      ratio: '16:9'
+      view_mode: default
+      grid: null
+      grid_medium: null
+      grid_small: null
+      visible_items: null
+      image: ''
+      title: title
+      link: ''
+      layout: below
+      class: ''
+      caption:
+        alt: alt
+        title: '0'
+      cache: 0
+      current_view_mode: default
+      vanilla: false
+      background: false
+      preserve_keys: false
+      override: false
+      overridables:
+        arrows: '0'
+        autoplay: '0'
+        dots: '0'
+        draggable: '0'
+        infinite: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      thumbnail: ''
+      thumbnail_caption: ''
+      skin_arrows: ''
+      skin_dots: ''
+      fx: ''
+      icon: ''
+      box_caption: ''
+      box_caption_custom: ''
+      box_media_style: ''
+      box_style: ''
+      _uri: ''
+      breakpoints: {  }
+      sizes: ''
+      grid_header: ''
+      id: ''
+      overlay: ''
+    third_party_settings: {  }
+    region: content
   field_tags:
     type: entity_reference_label
-    weight: 10
+    weight: 3
     region: content
     label: above
     settings:
       link: true
     third_party_settings: {  }
   links:
-    weight: 100
+    weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
