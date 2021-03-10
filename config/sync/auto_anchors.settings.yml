@@ -1,0 +1,5 @@
+root_elements: article.node__type_article
+anchor_elements: 'h2, h3, h4, h5, h6'
+link_content: '#'
+_core:
+  default_config_hash: RPeVpRUTcVg-pFFLPERIb4VxXLF1GapAQbOs3AdyO-A
