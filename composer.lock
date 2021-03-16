@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c4af5fa67e491415f8e26821b0e61d55",
+    "content-hash": "ed8ef50dd09941393c027af88ec8d734",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1697,6 +1697,50 @@
             "homepage": "https://www.drupal.org/project/auto_anchors",
             "support": {
                 "source": "https://git.drupalcode.org/project/auto_anchors"
+            }
+        },
+        {
+            "name": "drupal/autosave_form",
+            "version": "1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/autosave_form.git",
+                "reference": "8.x-1.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/autosave_form-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "e7a893dfdba574b74cd77e16be2140d82bb353a6"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.2",
+                    "datestamp": "1591627224",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "hchonov",
+                    "homepage": "https://www.drupal.org/user/2901211"
+                }
+            ],
+            "description": "Adds autosave feature on forms.",
+            "homepage": "https://www.drupal.org/project/autosave_form",
+            "support": {
+                "source": "https://git.drupalcode.org/project/autosave_form"
             }
         },
         {
