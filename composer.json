@@ -94,7 +94,7 @@
                 "Syndicate block outputs wrong feed URL https://www.drupal.org/project/drupal/issues/3048848": "https://www.drupal.org/files/issues/2020-07-06/3048848-33.patch"
             },
             "drupal/openid_connect": {
-                "Picture with no extension results in Content-Type: application/octet-stream https://www.drupal.org/project/openid_connect/issues/3186294": "https://www.drupal.org/files/issues/2020-12-03/openid_connect-picture-content-type-3186294-1.patch",
+                "Picture with no extension results in Content-Type: application/octet-stream https://www.drupal.org/project/openid_connect/issues/3186294": "https://www.drupal.org/files/issues/2021-04-16/openid_connect-picture-content-type-3186294-4.patch",
                 "Allow updating of a link property type in the user account https://www.drupal.org/project/openid_connect/issues/3193039": "https://www.drupal.org/files/issues/2021-01-15/add-link-to-supported-property-types.patch"
             }
         },
