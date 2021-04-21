@@ -27,6 +27,7 @@
         "drupal/core-recommended": "^9.1",
         "drupal/diff": "^1.0",
         "drupal/environment_indicator": "^4.0",
+        "drupal/flocblock": "^1.0",
         "drupal/geocoder": "^3.10",
         "drupal/geofield": "^1.15",
         "drupal/geofield_map": "^2.66",
