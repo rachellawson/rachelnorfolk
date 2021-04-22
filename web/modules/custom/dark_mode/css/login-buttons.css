@@ -25,3 +25,8 @@ form.openid-connect-login-form>div {
   background-position-x: 5px;
   padding-left: 56px;
 }
+
+#edit-notify-type .form-item-notify-type {
+  display: block;
+  margin-left: 2.25rem;
+}
