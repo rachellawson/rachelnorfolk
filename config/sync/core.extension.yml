@@ -81,6 +81,7 @@ module:
   xmlsitemap_engines: 0
   pathauto: 1
   xmlsitemap: 1
+  comment_notify: 10
   externalauth: 10
   views: 10
   standard: 1000

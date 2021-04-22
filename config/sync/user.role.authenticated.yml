@@ -16,4 +16,5 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
+  - 'subscribe to comments'
   - 'view media'
