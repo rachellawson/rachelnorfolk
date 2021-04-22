@@ -1,3 +1,7 @@
+form.openid-connect-login-form>div {
+  display: inline-block;
+}
+
 #edit-openid-connect-client-google-login {
   background: url('../icons/g-logo.png') no-repeat;
   background-size: 36px;
