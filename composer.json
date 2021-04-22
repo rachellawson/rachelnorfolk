@@ -36,6 +36,7 @@
         "drupal/leaflet": "^2.0",
         "drupal/media_entity_twitter": "^2.4",
         "drupal/metatag": "^1.14",
+        "drupal/noreqnewpass": "^1.2",
         "drupal/openid_connect": "^2",
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
