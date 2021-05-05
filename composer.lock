@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce993d1944c078a966e5bb17e867875a",
+    "content-hash": "6ba0ca8a7507a03d32a372aaa33a80c2",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3411,17 +3411,17 @@
         },
         {
             "name": "drupal/openid_connect",
-            "version": "2.0.0-alpha6",
+            "version": "2.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/openid_connect.git",
-                "reference": "2.0.0-alpha6"
+                "reference": "2.0.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/openid_connect-2.0.0-alpha6.zip",
-                "reference": "2.0.0-alpha6",
-                "shasum": "13b94ff3209ec78579062b3927c412c637bb596a"
+                "url": "https://ftp.drupal.org/files/projects/openid_connect-2.0.0-alpha5.zip",
+                "reference": "2.0.0-alpha5",
+                "shasum": "7b531c0a2a89cfdff032c5542cc09dba79cc93d5"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3432,8 +3432,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha6",
-                    "datestamp": "1619048283",
+                    "version": "2.0.0-alpha5",
+                    "datestamp": "1618424512",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
