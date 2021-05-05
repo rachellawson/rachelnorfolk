@@ -94,7 +94,8 @@
         },
         "patches": {
             "drupal/core": {
-                "Syndicate block outputs wrong feed URL https://www.drupal.org/project/drupal/issues/3048848": "https://www.drupal.org/files/issues/2020-07-06/3048848-33.patch"
+                "Syndicate block outputs wrong feed URL https://www.drupal.org/project/drupal/issues/3048848": "https://www.drupal.org/files/issues/2020-07-06/3048848-33.patch",
+                "Node RSS Views plugin causes wrong entity_view output to be cached https://www.drupal.org/project/drupal/issues/2885098": "https://www.drupal.org/files/issues/2020-11-17/2885098-42.patch"
             },
             "drupal/openid_connect": {
                 "Picture with no extension results in Content-Type: application/octet-stream https://www.drupal.org/project/openid_connect/issues/3186294": "https://www.drupal.org/files/issues/2021-04-16/openid_connect-picture-content-type-3186294-4.patch",
