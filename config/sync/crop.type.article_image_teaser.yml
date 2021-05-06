@@ -1,0 +1,12 @@
+uuid: bfe4a20d-01ea-423a-9df0-e41a50361d25
+langcode: en
+status: true
+dependencies: {  }
+id: article_image_teaser
+label: 'Article Image teaser'
+description: 'The crop for when we are showing as a teaser'
+aspect_ratio: '1:1'
+soft_limit_width: 200
+soft_limit_height: 200
+hard_limit_width: 100
+hard_limit_height: 100

@@ -17,7 +17,7 @@ dependencies:
     - comment
     - field_layout
     - file
-    - image
+    - image_widget_crop
     - layout_discovery
     - media_library
     - path
@@ -57,12 +57,21 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_image:
-    type: image_image
+    type: image_widget_crop
     weight: 3
     region: content
     settings:
-      progress_indicator: throbber
+      show_default_crop: true
+      warn_multiple_usages: true
       preview_image_style: thumbnail
+      crop_preview_image_style: crop_thumbnail
+      progress_indicator: throbber
+      crop_list:
+        - article_image_full
+        - article_image_teaser
+      crop_types_required:
+        - article_image_full
+      show_crop_area: false
     third_party_settings: {  }
   field_route_file:
     weight: 13

@@ -38,17 +38,20 @@ third_party_settings:
             uuid: f9bb519d-54ad-4ca3-bac2-c49091559574
             region: content
             configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
               id: 'field_block:node:article:field_image'
+              label: Image
+              provider: layout_builder
+              label_display: '0'
               formatter:
+                label: hidden
                 type: image
                 settings:
-                  image_style: medium
+                  image_style: round_teaser
                   image_link: content
                 third_party_settings: {  }
-                label: hidden
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
             additional: {  }
             weight: 1
           24d85b21-fc95-45c0-9033-3265e49fc3e1:
