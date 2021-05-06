@@ -1,15 +1,17 @@
 uuid: 6d67bb9e-0e0a-4426-8a19-b1fbc1312625
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - crop.type.article_image_full
+  module:
+    - crop
 name: wide
 label: Wide
 effects:
-  36c84696-4f1a-4c8f-8611-5d200b09c753:
-    uuid: 36c84696-4f1a-4c8f-8611-5d200b09c753
-    id: image_scale_and_crop
-    weight: 1
+  166c5d13-beca-41fc-af62-5740b1f4e07e:
+    uuid: 166c5d13-beca-41fc-af62-5740b1f4e07e
+    id: crop_crop
+    weight: 2
     data:
-      width: 1090
-      height: 180
-      anchor: center-top
+      crop_type: article_image_full

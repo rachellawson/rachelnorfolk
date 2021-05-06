@@ -1,0 +1,17 @@
+uuid: 4f355801-5f33-4780-8c72-9e57fe5798e7
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.article_image_teaser
+  module:
+    - crop
+name: round_teaser
+label: 'Round Teaser'
+effects:
+  49720219-cec1-4a8a-b81c-b9a373847445:
+    uuid: 49720219-cec1-4a8a-b81c-b9a373847445
+    id: crop_crop
+    weight: 1
+    data:
+      crop_type: article_image_teaser
