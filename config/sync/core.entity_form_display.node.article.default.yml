@@ -61,8 +61,8 @@ content:
     weight: 3
     region: content
     settings:
+      show_crop_area: true
       show_default_crop: true
-      warn_multiple_usages: true
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
       progress_indicator: throbber
@@ -71,7 +71,7 @@ content:
         - article_image_teaser
       crop_types_required:
         - article_image_full
-      show_crop_area: false
+      warn_multiple_usages: false
     third_party_settings: {  }
   field_route_file:
     weight: 13

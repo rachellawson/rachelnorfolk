@@ -15,3 +15,11 @@ effects:
     weight: 2
     data:
       crop_type: article_image_full
+  b6998eb8-67d6-4481-8191-d95e0cd26896:
+    uuid: b6998eb8-67d6-4481-8191-d95e0cd26896
+    id: image_scale_and_crop
+    weight: 2
+    data:
+      width: 1090
+      height: 180
+      anchor: center-center
