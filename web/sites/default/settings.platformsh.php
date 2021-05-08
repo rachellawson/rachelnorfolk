@@ -78,6 +78,10 @@ if ($platformsh->hasRelationship('redis') && !InstallerKernel::installationAttem
 }
 
 if ($platformsh->inRuntime()) {
+  // Mark the environment as development.
+  $config['environment_indicator.indicator']['bg_color'] = 'FireBrick';
+  $config['environment_indicator.indicator']['name'] = 'LIVE';
+
   // Configure private and temporary file paths.
   if (!isset($settings['file_private_path'])) {
     $settings['file_private_path'] = $platformsh->appDir . '/private';
