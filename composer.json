@@ -48,6 +48,7 @@
         "drupal/slick_extras": "^1.0@RC",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
+        "joachim-n/composer-manifest": "^1.1",
         "platformsh/config-reader": "^2.3"
     },
     "conflict": {
