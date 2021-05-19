@@ -15,3 +15,8 @@
 "https://www.{default}/":
     type: redirect
     to: "https://{default}/"
+
+# Special location for the Umami analytics.
+"https://umami.{default}/":
+    type: upstream
+    upstream: "umami:http"
