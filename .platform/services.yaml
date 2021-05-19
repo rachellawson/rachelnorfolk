@@ -10,15 +10,15 @@ db:
         schemas:
           - main
           - umami
-    endpoints:
-        mysql:
-            default_schema: main
-            privileges:
-                main: admin
-        umami:
-            default_schema: umami
-            privileges:
-                umami: admin
+        endpoints:
+            mysql:
+                default_schema: main
+                privileges:
+                    main: admin
+            umami:
+                default_schema: umami
+                privileges:
+                    umami: admin
 
 
 cache:
