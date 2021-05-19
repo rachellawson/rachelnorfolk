@@ -17,10 +17,16 @@ type: nodejs:14
 relationships:
   database: "db:mysql"
 
+# The hooks executed at various points in the lifecycle of the application.
+hooks:
+  # The build hook runs after Composer to finish preparing up your code.
+  build: |
+    npm build
+
 # The configuration of app when it is exposed to the web.
 web:
   commands:
-    start: "npm run build && npm start"
+    start: "npm start"
 
 # The size of the persistent disk of the application (in MB).
 disk: 512
