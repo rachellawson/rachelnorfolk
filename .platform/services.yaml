@@ -6,6 +6,20 @@
 db:
     type: mariadb:10.4
     disk: 2048
+    configuration:
+        schemas:
+          - main
+          - umami
+    endpoints:
+        mysql:
+            default_schema: main
+            privileges:
+                main: admin
+        umami:
+            default_schema: umami
+            privileges:
+                umami: admin
+
 
 cache:
     type: redis:5.0

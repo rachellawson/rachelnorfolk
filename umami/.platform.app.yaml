@@ -15,7 +15,7 @@ type: nodejs:14
 # to the application in the PLATFORM_RELATIONSHIPS variable. The right-hand
 # side is in the form `<service name>:<endpoint name>`.
 relationships:
-  database: "db:mysql"
+  database: "db:umami"
 
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
@@ -26,7 +26,7 @@ hooks:
 # The configuration of app when it is exposed to the web.
 web:
   commands:
-    start: "npm start"
+    start: "npx start -p $PORT"
 
 # The size of the persistent disk of the application (in MB).
 disk: 512
