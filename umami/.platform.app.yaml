@@ -17,11 +17,14 @@ type: nodejs:14
 relationships:
   database: "db:umami"
 
+build:
+  flavor: none
+
 # The hooks executed at various points in the lifecycle of the application.
 hooks:
-  # The build hook runs after Composer to finish preparing up your code.
   build: |
-    npm build
+    npm install
+    npm run build
 
 # The configuration of app when it is exposed to the web.
 web:
