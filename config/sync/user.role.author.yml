@@ -8,6 +8,7 @@ weight: 3
 is_admin: null
 permissions:
   - 'access content overview'
+  - 'access matomo reports'
   - 'access media overview'
   - 'access site in maintenance mode'
   - 'access site reports'
