@@ -148,33 +148,6 @@ third_party_settings:
                 third_party_settings: {  }
             additional: {  }
             weight: 3
-          edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7:
-            uuid: edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:article:links'
-            additional: {  }
-            weight: 4
-          0f657d92-651c-40d7-bb24-3d1b17f184ff:
-            uuid: 0f657d92-651c-40d7-bb24-3d1b17f184ff
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:comment'
-              formatter:
-                type: comment_default
-                label: above
-                settings:
-                  view_mode: default
-                  pager_id: 0
-                third_party_settings: {  }
-            additional: {  }
-            weight: 5
           148e1844-92cf-4a94-8aca-6e463f104c37:
             uuid: 148e1844-92cf-4a94-8aca-6e463f104c37
             region: content
@@ -249,7 +222,7 @@ third_party_settings:
                     popupAnchor:
                       x: ''
                       'y': ''
-                  path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0.2","radius":"6"}'
+                  path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0","radius":"6"}'
                   geocoder:
                     control: false
                     settings:
@@ -270,6 +243,33 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 7
+          0f657d92-651c-40d7-bb24-3d1b17f184ff:
+            uuid: 0f657d92-651c-40d7-bb24-3d1b17f184ff
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:comment'
+              formatter:
+                type: comment_default
+                label: above
+                settings:
+                  view_mode: default
+                  pager_id: 0
+                third_party_settings: {  }
+            additional: {  }
+            weight: 9
+          edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7:
+            uuid: edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:article:links'
+            additional: {  }
+            weight: 8
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
