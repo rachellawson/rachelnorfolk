@@ -28,7 +28,7 @@ id: node.article.field_route_geofield
 field_name: field_route_geofield
 entity_type: node
 bundle: article
-label: 'Route Geofield'
+label: Route
 description: 'Holds the calculated data for displaying the GPX File'
 required: false
 translatable: false

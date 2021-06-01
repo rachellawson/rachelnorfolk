@@ -132,48 +132,16 @@ third_party_settings:
                 view_mode: view_mode
             additional: {  }
             weight: 2
-          6a979ffd-72af-46ce-8acf-7ed33861cf38:
-            uuid: 6a979ffd-72af-46ce-8acf-7ed33861cf38
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_tags'
-              formatter:
-                type: entity_reference_label
-                label: above
-                settings:
-                  link: true
-                third_party_settings: {  }
-            additional: {  }
-            weight: 3
-          148e1844-92cf-4a94-8aca-6e463f104c37:
-            uuid: 148e1844-92cf-4a94-8aca-6e463f104c37
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_route_file'
-              formatter:
-                label: above
-                settings:
-                  use_description_as_link_text: true
-                third_party_settings: {  }
-                type: file_default
-            additional: {  }
-            weight: 6
           dc987baf-3ec0-463f-a25d-7bdfc0b7a965:
             uuid: dc987baf-3ec0-463f-a25d-7bdfc0b7a965
             region: content
             configuration:
               id: 'field_block:node:article:field_route_geofield'
-              label: 'Route Geofield'
+              label: Route
               provider: layout_builder
               label_display: '0'
               formatter:
-                label: hidden
+                label: above
                 type: leaflet_formatter_default
                 settings:
                   multiple_map: false
@@ -259,7 +227,7 @@ third_party_settings:
                   pager_id: 0
                 third_party_settings: {  }
             additional: {  }
-            weight: 9
+            weight: 11
           edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7:
             uuid: edcf71f0-c85b-4c5b-ad12-cb04fc4f11d7
             region: content
@@ -269,7 +237,39 @@ third_party_settings:
                 entity: layout_builder.entity
               id: 'extra_field_block:node:article:links'
             additional: {  }
+            weight: 10
+          148e1844-92cf-4a94-8aca-6e463f104c37:
+            uuid: 148e1844-92cf-4a94-8aca-6e463f104c37
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_route_file'
+              formatter:
+                label: above
+                settings:
+                  use_description_as_link_text: true
+                third_party_settings: {  }
+                type: file_default
+            additional: {  }
             weight: 8
+          6a979ffd-72af-46ce-8acf-7ed33861cf38:
+            uuid: 6a979ffd-72af-46ce-8acf-7ed33861cf38
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:article:field_tags'
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            additional: {  }
+            weight: 9
         third_party_settings: {  }
 _core:
   default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
