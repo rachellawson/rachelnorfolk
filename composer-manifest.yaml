@@ -21,8 +21,8 @@ packages:
     doctrine/annotations: 1.11.1
     doctrine/lexer: 1.2.1
     doctrine/reflection: 1.2.2
-    drupal-ckeditor-libraries-group/codesnippet: 4.16.0
-    drupal/admin_toolbar: 3.0.0
+    drupal-ckeditor-libraries-group/codesnippet: 4.16.1
+    drupal/admin_toolbar: 3.0.1
     drupal/auto_anchors: 1.0.0-alpha1
     drupal/autosave_form: 1.2.0
     drupal/blazy: 2.2.0
@@ -43,13 +43,13 @@ packages:
     drupal/file_mdm: 2.1.0
     drupal/flocblock: 1.0.0
     drupal/geocoder: 3.20.0
-    drupal/geofield: 1.22.0
-    drupal/geofield_map: 2.67.0
-    drupal/gin: 3.0.0-alpha34
-    drupal/gin_toolbar: 1.0.0-beta15
+    drupal/geofield: 1.31.0
+    drupal/geofield_map: 2.68.0
+    drupal/gin: 3.0.0-alpha35
+    drupal/gin_toolbar: 1.0.0-beta17
     drupal/image_widget_crop: 2.3.0
-    drupal/imagemagick: 3.1.0
-    drupal/leaflet: 2.1.13
+    drupal/imagemagick: 3.2.0
+    drupal/leaflet: 2.1.14
     drupal/matomo: 1.11.0
     drupal/matomo_reports: 1.0.0
     drupal/media_entity_twitter: 2.7.0
@@ -113,8 +113,8 @@ packages:
     symfony/error-handler: v4.4.19
     symfony/event-dispatcher: v4.4.19
     symfony/event-dispatcher-contracts: v1.1.9
-    symfony/filesystem: v4.4.22
-    symfony/finder: v5.2.9
+    symfony/filesystem: v4.4.25
+    symfony/finder: v5.3.0
     symfony/http-client-contracts: v2.3.1
     symfony/http-foundation: v4.4.19
     symfony/http-kernel: v4.4.19
@@ -124,8 +124,8 @@ packages:
     symfony/polyfill-intl-idn: v1.20.0
     symfony/polyfill-intl-normalizer: v1.20.0
     symfony/polyfill-mbstring: v1.20.0
-    symfony/polyfill-php72: v1.22.1
-    symfony/polyfill-php73: v1.22.1
+    symfony/polyfill-php72: v1.23.0
+    symfony/polyfill-php73: v1.23.0
     symfony/polyfill-php80: v1.20.0
     symfony/process: v4.4.19
     symfony/psr-http-message-bridge: v2.0.2
