@@ -68,7 +68,6 @@ module:
   responsive_image: 0
   search: 0
   serialization: 0
-  shortcut: 0
   slick: 0
   slick_extras: 0
   slick_ui: 0
