@@ -32,7 +32,6 @@ module:
   field_ui: 0
   file: 0
   filter: 0
-  flocblock: 0
   geocoder: 0
   geocoder_field: 0
   geocoder_geofield: 0
