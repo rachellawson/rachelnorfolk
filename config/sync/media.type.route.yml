@@ -1,0 +1,14 @@
+uuid: cf7262dd-53e5-4cfe-9b00-a5307ea2bd43
+langcode: en
+status: true
+dependencies: {  }
+id: route
+label: Route
+description: 'A route takes a gpx/kml file and displays it on a map'
+source: file
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

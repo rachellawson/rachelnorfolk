@@ -1,0 +1,39 @@
+uuid: 95ff9f1e-5cbc-4c63-adc8-89ad466db757
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_route
+    - media.type.route
+  module:
+    - geocoder_field
+    - geofield
+third_party_settings:
+  geocoder_field:
+    method: geocode
+    weight: 0
+    skip_not_empty_value: false
+    disabled: true
+    hidden: true
+    providers:
+      - gpx_file
+      - kml_file
+    dumper: wkt
+    failure:
+      handling: preserve
+      status_message: true
+      log: true
+    field: field_media_file
+    delta_handling: default
+id: media.route.field_route
+field_name: field_route
+entity_type: media
+bundle: route
+label: Route
+description: 'Stores the geocoded data from the file field'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geofield

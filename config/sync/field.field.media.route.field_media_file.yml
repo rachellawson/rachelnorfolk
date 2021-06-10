@@ -1,0 +1,27 @@
+uuid: f73f9535-7284-4c79-b09a-4666784871ef
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.media.field_media_file
+    - media.type.route
+  module:
+    - file
+id: media.route.field_media_file
+field_name: field_media_file
+entity_type: media
+bundle: route
+label: File
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: 'route/[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'gpx kml'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

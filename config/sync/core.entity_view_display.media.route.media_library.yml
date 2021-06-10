@@ -1,0 +1,32 @@
+uuid: 10b1fae7-c2a7-424f-b036-97bbdcc768e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.route.field_media_file
+    - field.field.media.route.field_route
+    - image.style.thumbnail
+    - media.type.route
+  module:
+    - image
+id: media.route.media_library
+targetEntityType: media
+bundle: route
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    weight: 0
+    region: content
+    label: above
+    settings:
+      image_style: thumbnail
+      image_link: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  field_media_file: true
+  field_route: true
+  name: true
+  uid: true
