@@ -1,0 +1,30 @@
+uuid: 02e80232-954c-4528-b469-a807ab0e5572
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.media.media_library
+    - field.field.media.route.field_media_file
+    - field.field.media.route.field_route
+    - media.type.route
+  module:
+    - field_layout
+    - layout_discovery
+third_party_settings:
+  field_layout:
+    id: layout_onecol
+    settings:
+      label: ''
+id: media.route.media_library
+targetEntityType: media
+bundle: route
+mode: media_library
+content: {  }
+hidden:
+  created: true
+  field_media_file: true
+  field_route: true
+  name: true
+  path: true
+  status: true
+  uid: true
