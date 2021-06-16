@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e27ef042428d8678da772dab63f887f8",
+    "content-hash": "caa0ddcf7b13824293a1251c6b3ca604",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2919,52 +2919,6 @@
             "homepage": "https://www.drupal.org/project/file_mdm",
             "support": {
                 "source": "https://git.drupalcode.org/project/file_mdm"
-            }
-        },
-        {
-            "name": "drupal/flocblock",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/flocblock.git",
-                "reference": "1.0.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/flocblock-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "9551d576ae4e9bfe0d6163548a03b4621dfae49f"
-            },
-            "require": {
-                "drupal/core": "^8.7.7 || ^9"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1618496627",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Antonio Savorelli (antiorario)",
-                    "homepage": "https://www.drupal.org/u/antiorario",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Adds a Permissions-Policy header to block G**gle FLoC.",
-            "homepage": "https://drupal.org/project/flocblock",
-            "support": {
-                "source": "https://git.drupalcode.org/project/flocblock",
-                "issues": "https://drupal.org/project/issues/flocblock"
             }
         },
         {

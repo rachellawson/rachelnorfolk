@@ -41,7 +41,6 @@ packages:
     drupal/environment_indicator: 4.0.3
     drupal/externalauth: 1.3.0
     drupal/file_mdm: 2.1.0
-    drupal/flocblock: 1.0.0
     drupal/geocoder: 3.20.0
     drupal/geofield: 1.31.0
     drupal/geofield_map: 2.69.0
