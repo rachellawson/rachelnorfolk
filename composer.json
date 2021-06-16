@@ -46,8 +46,6 @@
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
-        "drupal/slick": "^2.2",
-        "drupal/slick_extras": "^1.0@RC",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
         "joachim-n/composer-manifest": "^1.1",
