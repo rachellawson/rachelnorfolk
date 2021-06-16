@@ -50,7 +50,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('
 }
 
 // Exclude any config that needs excluding.
-$settings['config_exclude_modules'] = ['openid_connect', 'matomo_reports'];
+$settings['config_exclude_modules'] = ['openid_connect'];
 
 // String overrides.
 $settings['locale_custom_strings_en'][''] = array(
