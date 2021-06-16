@@ -1,0 +1,30 @@
+uuid: 0b533ff9-8fd2-4cd4-bdf2-b8b2ca73921e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.media_library
+    - field.field.media.slides.field_media_image_1
+    - image.style.medium
+    - media.type.slides
+  module:
+    - image
+id: media.slides.media_library
+targetEntityType: media
+bundle: slides
+mode: media_library
+content:
+  thumbnail:
+    type: image
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: ''
+    weight: 0
+    third_party_settings: {  }
+    region: content
+hidden:
+  created: true
+  field_media_image_1: true
+  name: true
+  uid: true

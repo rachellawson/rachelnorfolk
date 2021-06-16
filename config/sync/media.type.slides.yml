@@ -1,0 +1,14 @@
+uuid: 9c440573-85ff-4b54-b3bb-3b6a7e526b66
+langcode: en
+status: true
+dependencies: {  }
+id: slides
+label: Slides
+description: 'Show presentation slides. Multiple slides can be uploaded into a single presentation. Yes, they are all images and most tools, like Keynote, can create these.'
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image_1
+field_map:
+  name: name
