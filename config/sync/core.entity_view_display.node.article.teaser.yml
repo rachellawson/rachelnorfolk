@@ -11,7 +11,6 @@ dependencies:
     - field.field.node.article.field_route_geofield
     - field.field.node.article.field_slides
     - field.field.node.article.field_tags
-    - field.field.node.article.layout_builder__layout
     - image.style.medium
     - node.type.article
   module:
@@ -27,76 +26,8 @@ third_party_settings:
     settings:
       label: ''
   layout_builder:
-    enabled: true
-    sections:
-      -
-        layout_id: layout_onecol
-        layout_settings:
-          label: ''
-        components:
-          f9bb519d-54ad-4ca3-bac2-c49091559574:
-            uuid: f9bb519d-54ad-4ca3-bac2-c49091559574
-            region: content
-            configuration:
-              id: 'field_block:node:article:field_image'
-              label: Image
-              provider: layout_builder
-              label_display: '0'
-              formatter:
-                label: hidden
-                type: image
-                settings:
-                  image_style: round_teaser
-                  image_link: content
-                third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
-            weight: 1
-          24d85b21-fc95-45c0-9033-3265e49fc3e1:
-            uuid: 24d85b21-fc95-45c0-9033-3265e49fc3e1
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:body'
-              formatter:
-                type: text_summary_or_trimmed
-                settings:
-                  trim_length: 600
-                third_party_settings: {  }
-                label: hidden
-            additional: {  }
-            weight: 2
-          91ac8463-b1d1-4abb-a164-4857e43fabff:
-            uuid: 91ac8463-b1d1-4abb-a164-4857e43fabff
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'extra_field_block:node:article:links'
-            additional: {  }
-            weight: 4
-          98f226e2-cde3-4549-9896-002b77b731d7:
-            uuid: 98f226e2-cde3-4549-9896-002b77b731d7
-            region: content
-            configuration:
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              id: 'field_block:node:article:field_tags'
-              formatter:
-                type: entity_reference_label
-                settings:
-                  link: true
-                third_party_settings: {  }
-                label: above
-            additional: {  }
-            weight: 3
-        third_party_settings: {  }
+    enabled: false
+    allow_custom: false
 _core:
   default_config_hash: 4NcL2hSQZBpJbYtNuh5jC6kyQTcAc1m5bQpTegEWEso
 id: node.article.teaser
@@ -139,4 +70,3 @@ hidden:
   field_route_file: true
   field_route_geofield: true
   field_slides: true
-  layout_builder__layout: true
