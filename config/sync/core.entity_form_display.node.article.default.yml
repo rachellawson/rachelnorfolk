@@ -63,6 +63,7 @@ content:
       crop_list:
         - article_image_full
         - article_image_teaser
+        - twitter_card
       crop_types_required:
         - article_image_full
       warn_multiple_usages: false

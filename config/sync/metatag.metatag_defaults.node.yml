@@ -10,9 +10,10 @@ tags:
   title: '[node:title] | [site:name]'
   canonical_url: '[node:url]'
   description: '[node:summary]'
-  twitter_cards_image: '[node:field_image:large:url]'
-  twitter_cards_image_width: '[node:field_image:large:width]'
+  twitter_cards_image: '[node:field_image:twitter_card:url]'
+  twitter_cards_image_width: '[node:field_image:twitter_card:width]'
   twitter_cards_description: '[node:summary]'
   twitter_cards_image_alt: '[node:field_image:alt]'
-  twitter_cards_image_height: '[node:field_image:large:height]'
+  twitter_cards_type: summary_large_image
+  twitter_cards_image_height: '[node:field_image:twitter_card:height]'
   twitter_cards_title: '[node:title]'

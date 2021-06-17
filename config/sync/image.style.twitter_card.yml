@@ -1,0 +1,31 @@
+uuid: 12aa8a8b-47e5-4479-ac41-beddff370ad9
+langcode: en
+status: true
+dependencies:
+  config:
+    - crop.type.twitter_card
+  module:
+    - crop
+name: twitter_card
+label: 'Twitter Card'
+effects:
+  7ef2ab70-f1dc-409f-94f4-71b491ce6834:
+    uuid: 7ef2ab70-f1dc-409f-94f4-71b491ce6834
+    id: crop_crop
+    weight: -10
+    data:
+      crop_type: twitter_card
+  0725549f-5184-41c9-a4c4-3e24de2e2c86:
+    uuid: 0725549f-5184-41c9-a4c4-3e24de2e2c86
+    id: image_convert
+    weight: -8
+    data:
+      extension: jpg
+  f7c0b50a-bad6-4cb1-897c-506ddd27ca0f:
+    uuid: f7c0b50a-bad6-4cb1-897c-506ddd27ca0f
+    id: image_scale
+    weight: -9
+    data:
+      width: 800
+      height: null
+      upscale: false

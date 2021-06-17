@@ -1,0 +1,12 @@
+uuid: d4ffb9ba-bd7b-45bc-8c65-d00ce10a330e
+langcode: en
+status: true
+dependencies: {  }
+id: twitter_card
+label: 'Twitter Card'
+description: 'Crops appropriate for a twitter card'
+aspect_ratio: '2:1'
+soft_limit_width: 800
+soft_limit_height: 400
+hard_limit_width: 200
+hard_limit_height: 100
