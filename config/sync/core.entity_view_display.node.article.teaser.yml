@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.medium
+    - image.style.round_teaser
     - node.type.article
   module:
     - field_layout
@@ -44,7 +44,7 @@ content:
     weight: -1
     region: content
     settings:
-      image_style: medium
+      image_style: round_teaser
       image_link: content
     third_party_settings: {  }
     label: hidden
