@@ -50,7 +50,7 @@ if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('
 }
 
 // Exclude any config that needs excluding.
-$settings['config_exclude_modules'] = ['openid_connect'];
+$settings['config_exclude_modules'] = ['openid_connect', 'stage_file_proxy'];
 
 // String overrides.
 $settings['locale_custom_strings_en'][''] = array(

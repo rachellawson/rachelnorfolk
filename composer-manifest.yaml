@@ -56,6 +56,7 @@ packages:
     drupal/redirect: 1.6.0
     drupal/redis: 1.5.0
     drupal/sophron: 1.1.0
+    drupal/stage_file_proxy: 1.1.0
     drupal/token: 1.9.0
     drupal/xmlsitemap: 1.0.0
     drush/drush: 10.5.0

@@ -44,6 +44,7 @@
         "drupal/pathauto": "^1.8",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
+        "drupal/stage_file_proxy": "^1.1",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^10",
         "joachim-n/composer-manifest": "^1.1",
