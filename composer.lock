@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "33c3676808675dba0a09f14e0aae1f50",
+    "content-hash": "bcbc48ffcaeb021c58dc9005ce7b50b9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3129,7 +3129,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-alpha35",
-                    "datestamp": "1622412154",
+                    "datestamp": "1622635855",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3647,17 +3647,17 @@
         },
         {
             "name": "drupal/openid_connect",
-            "version": "2.0.0-alpha5",
+            "version": "2.0.0-alpha8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/openid_connect.git",
-                "reference": "2.0.0-alpha5"
+                "reference": "2.0.0-alpha8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/openid_connect-2.0.0-alpha5.zip",
-                "reference": "2.0.0-alpha5",
-                "shasum": "7b531c0a2a89cfdff032c5542cc09dba79cc93d5"
+                "url": "https://ftp.drupal.org/files/projects/openid_connect-2.0.0-alpha8.zip",
+                "reference": "2.0.0-alpha8",
+                "shasum": "fd180210ba063c21912d3a8deb32c8382c1aafb6"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3668,8 +3668,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0-alpha5",
-                    "datestamp": "1618424512",
+                    "version": "2.0.0-alpha8",
+                    "datestamp": "1623950994",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -9707,7 +9707,8 @@
     "stability-flags": {
         "drupal/auto_anchors": 15,
         "drupal/gin": 15,
-        "drupal/gin_toolbar": 10
+        "drupal/gin_toolbar": 10,
+        "drupal/openid_connect": 15
     },
     "prefer-stable": true,
     "prefer-lowest": false,
