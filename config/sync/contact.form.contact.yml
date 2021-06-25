@@ -1,0 +1,12 @@
+uuid: 7e8b9ec3-9d48-417f-b4d9-e095bdf5863a
+langcode: en
+status: true
+dependencies: {  }
+id: contact
+label: Contact
+recipients:
+  - rachellawson@me.com
+reply: ''
+weight: 0
+message: 'Thank you for sending through your message - I''ll try to get back to you as soon as I can!'
+redirect: /
