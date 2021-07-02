@@ -13,8 +13,3 @@
 
 }
 
-/* monochrome for end of Pride Month */
-body {
-  -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
-}

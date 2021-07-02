@@ -13,4 +13,12 @@ function dark_mode_page_attachments(array &$page) {
   $page['#attached']['library'][] = 'dark_mode/dark_mode';
   $page['#attached']['library'][] = 'dark_mode/login_buttons';
 
+  // Overly complicated check for the after pride post.
+  /* @var \Drupal\node\Entity\Node $node */
+  $node = \Drupal::routeMatch()->getParameter('node');
+  if($node) {
+    if ($node->id() == 42) {
+      $page['#attached']['library'][] = 'dark_mode/grey-pride';
+    }
+  }
 }
