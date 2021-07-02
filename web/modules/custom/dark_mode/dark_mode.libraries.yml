@@ -7,3 +7,8 @@ login_buttons:
   css:
     theme:
       css/login-buttons.css: {}
+grey-pride:
+  css:
+    theme:
+      css/grey-pride.css: {}
+      
