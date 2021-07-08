@@ -31,9 +31,9 @@ packages:
     drupal/comment_notify: 1.2.0
     drupal/config_filter: 2.2.0
     drupal/config_ignore: 2.3.0
-    drupal/core: 9.2.0
-    drupal/core-composer-scaffold: 9.2.0
-    drupal/core-recommended: 9.2.0
+    drupal/core: 9.2.1
+    drupal/core-composer-scaffold: 9.2.1
+    drupal/core-recommended: 9.2.1
     drupal/crop: 2.1.0
     drupal/ctools: 3.7.0
     drupal/diff: 1.0.0
@@ -43,15 +43,15 @@ packages:
     drupal/geocoder: 3.20.0
     drupal/geofield: 1.32.0
     drupal/geofield_map: 2.69.0
-    drupal/gin: 3.0.0-alpha35
-    drupal/gin_toolbar: 1.0.0-beta17
+    drupal/gin: 3.0.0-alpha36
+    drupal/gin_toolbar: 1.0.0-beta18
     drupal/image_widget_crop: 2.3.0
     drupal/imagemagick: 3.2.0
     drupal/leaflet: 2.1.14
     drupal/media_entity_twitter: 2.7.0
     drupal/metatag: 1.16.0
     drupal/noreqnewpass: 1.2.0
-    drupal/openid_connect: 2.0.0-alpha8
+    drupal/openid_connect: 2.0.0-alpha9
     drupal/pathauto: 1.8.0
     drupal/redirect: 1.6.0
     drupal/redis: 1.5.0
@@ -80,7 +80,7 @@ packages:
     lsolesen/pel: 0.9.10
     masterminds/html5: 2.7.4
     mkalkbrenner/php-htmldiff-advanced: 0.0.8
-    nikic/php-parser: v4.10.5
+    nikic/php-parser: v4.11.0
     pear/archive_tar: 1.4.13
     pear/console_getopt: v1.4.3
     pear/pear-core-minimal: v1.10.10
@@ -110,7 +110,7 @@ packages:
     symfony/error-handler: v4.4.25
     symfony/event-dispatcher: v4.4.25
     symfony/event-dispatcher-contracts: v1.1.9
-    symfony/filesystem: v4.4.25
+    symfony/filesystem: v4.4.26
     symfony/finder: v5.3.0
     symfony/http-client-contracts: v2.4.0
     symfony/http-foundation: v4.4.25

@@ -96,7 +96,6 @@
         },
         "patches": {
             "drupal/core": {
-                "Syndicate block outputs wrong feed URL https://www.drupal.org/project/drupal/issues/3048848": "https://www.drupal.org/files/issues/2020-07-06/3048848-33.patch",
                 "Node RSS Views plugin causes wrong entity_view output to be cached https://www.drupal.org/project/drupal/issues/2885098": "https://www.drupal.org/files/issues/2020-11-17/2885098-42.patch"
             },
             "drupal/openid_connect": {
