@@ -42,8 +42,8 @@ packages:
     drupal/externalauth: 1.4.0
     drupal/file_mdm: 2.1.0
     drupal/geocoder: 3.20.0
-    drupal/geofield: 1.32.0
-    drupal/geofield_map: 2.69.0
+    drupal/geofield: 1.33.0
+    drupal/geofield_map: 2.70.0
     drupal/gin: 3.0.0-alpha36
     drupal/gin_toolbar: 1.0.0-beta18
     drupal/image_widget_crop: 2.3.0
