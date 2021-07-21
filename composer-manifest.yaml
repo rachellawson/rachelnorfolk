@@ -45,7 +45,7 @@ packages:
     drupal/geofield: 1.33.0
     drupal/geofield_map: 2.70.0
     drupal/gin: 3.0.0-alpha36
-    drupal/gin_toolbar: 1.0.0-beta18
+    drupal/gin_toolbar: 1.0.0-beta19
     drupal/image_widget_crop: 2.3.0
     drupal/imagemagick: 3.2.0
     drupal/leaflet: 2.1.14
@@ -81,7 +81,7 @@ packages:
     lsolesen/pel: 0.9.10
     masterminds/html5: 2.7.4
     mkalkbrenner/php-htmldiff-advanced: 0.0.8
-    nikic/php-parser: v4.11.0
+    nikic/php-parser: v4.12.0
     pear/archive_tar: 1.4.13
     pear/console_getopt: v1.4.3
     pear/pear-core-minimal: v1.10.10
