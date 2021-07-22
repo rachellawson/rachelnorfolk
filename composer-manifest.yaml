@@ -32,9 +32,9 @@ packages:
     drupal/comment_notify: 1.2.0
     drupal/config_filter: 2.2.0
     drupal/config_ignore: 2.3.0
-    drupal/core: 9.2.1
-    drupal/core-composer-scaffold: 9.2.1
-    drupal/core-recommended: 9.2.1
+    drupal/core: 9.2.2
+    drupal/core-composer-scaffold: 9.2.2
+    drupal/core-recommended: 9.2.2
     drupal/crop: 2.1.0
     drupal/ctools: 3.7.0
     drupal/diff: 1.0.0
@@ -42,7 +42,7 @@ packages:
     drupal/externalauth: 1.4.0
     drupal/file_mdm: 2.1.0
     drupal/geocoder: 3.20.0
-    drupal/geofield: 1.33.0
+    drupal/geofield: 1.34.0
     drupal/geofield_map: 2.70.0
     drupal/gin: 3.0.0-alpha36
     drupal/gin_toolbar: 1.0.0-beta19
@@ -82,7 +82,7 @@ packages:
     masterminds/html5: 2.7.4
     mkalkbrenner/php-htmldiff-advanced: 0.0.8
     nikic/php-parser: v4.12.0
-    pear/archive_tar: 1.4.13
+    pear/archive_tar: 1.4.14
     pear/console_getopt: v1.4.3
     pear/pear-core-minimal: v1.10.10
     pear/pear_exception: v1.0.2
