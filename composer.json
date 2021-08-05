@@ -33,7 +33,7 @@
         "drupal/geocoder": "^3.10",
         "drupal/geofield": "^1.15",
         "drupal/geofield_map": "^2.66",
-        "drupal/gin": "^3.0@alpha",
+        "drupal/gin": "3.0.0-alpha9",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/image_widget_crop": "^2.3",
         "drupal/imagemagick": "^3.1",
