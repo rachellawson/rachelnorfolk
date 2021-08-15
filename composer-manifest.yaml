@@ -32,9 +32,9 @@ packages:
     drupal/comment_notify: 1.2.0
     drupal/config_filter: 2.2.0
     drupal/config_ignore: 2.3.0
-    drupal/core: 9.2.3
-    drupal/core-composer-scaffold: 9.2.3
-    drupal/core-recommended: 9.2.3
+    drupal/core: 9.2.4
+    drupal/core-composer-scaffold: 9.2.4
+    drupal/core-recommended: 9.2.4
     drupal/crop: 2.1.0
     drupal/ctools: 3.7.0
     drupal/diff: 1.0.0
@@ -60,7 +60,7 @@ packages:
     drupal/stage_file_proxy: 1.1.0
     drupal/token: 1.9.0
     drupal/xmlsitemap: 1.0.0
-    drush/drush: 10.5.0
+    drush/drush: 10.6.0
     egulias/email-validator: 2.1.25
     enlightn/security-checker: v1.9.0
     ezyang/htmlpurifier: v4.13.0
