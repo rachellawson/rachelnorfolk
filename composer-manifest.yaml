@@ -21,8 +21,8 @@ packages:
     doctrine/annotations: 1.13.1
     doctrine/lexer: 1.2.1
     doctrine/reflection: 1.2.2
-    drupal-ckeditor-libraries-group/codesnippet: 4.16.1
-    drupal/admin_toolbar: 3.0.1
+    drupal-ckeditor-libraries-group/codesnippet: 4.16.2
+    drupal/admin_toolbar: 3.0.2
     drupal/advagg: 4.1.0
     drupal/auto_anchors: 1.0.0-alpha1
     drupal/autosave_form: 1.2.0
