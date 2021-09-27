@@ -5,14 +5,14 @@ packages:
     clue/stream-filter: v1.5.0
     composer/installers: v1.12.0
     composer/semver: 3.2.5
-    consolidation/annotated-command: 4.3.1
+    consolidation/annotated-command: 4.3.3
     consolidation/config: 1.2.1
     consolidation/filter-via-dot-access-data: 1.0.0
     consolidation/log: 2.0.2
     consolidation/output-formatters: 4.1.2
     consolidation/robo: 2.2.2
     consolidation/self-update: 1.2.0
-    consolidation/site-alias: 3.1.0
+    consolidation/site-alias: 3.1.1
     consolidation/site-process: 4.1.0
     container-interop/container-interop: 1.2.0
     cweagans/composer-patches: 1.7.1
@@ -22,9 +22,9 @@ packages:
     doctrine/lexer: 1.2.1
     doctrine/reflection: 1.2.2
     drupal-ckeditor-libraries-group/codesnippet: 4.16.2
-    drupal/admin_toolbar: 3.0.2
+    drupal/admin_toolbar: 3.0.3
     drupal/admin_toolbar_content: 1.3.3
-    drupal/admin_toolbar_tools: 3.0.2
+    drupal/admin_toolbar_tools: 3.0.3
     drupal/advagg: 4.1.0
     drupal/auto_anchors: 1.0.0-alpha1
     drupal/autosave_form: 1.2.0
@@ -66,7 +66,7 @@ packages:
     egulias/email-validator: 2.1.25
     enlightn/security-checker: v1.9.0
     ezyang/htmlpurifier: v4.13.0
-    fileeye/mimemap: 1.1.5
+    fileeye/mimemap: 1.2.0
     grasmash/expander: 1.0.0
     grasmash/yaml-expander: 1.4.0
     guzzlehttp/guzzle: 6.5.5
@@ -83,7 +83,7 @@ packages:
     lsolesen/pel: 0.9.10
     masterminds/html5: 2.7.4
     mkalkbrenner/php-htmldiff-advanced: 0.0.8
-    nikic/php-parser: v4.12.0
+    nikic/php-parser: v4.13.0
     pear/archive_tar: 1.4.14
     pear/console_getopt: v1.4.3
     pear/pear-core-minimal: v1.10.10
