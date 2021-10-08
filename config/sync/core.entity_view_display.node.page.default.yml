@@ -50,6 +50,7 @@ third_party_settings:
             additional: {  }
             weight: 1
         third_party_settings: {  }
+    allow_custom: true
 _core:
   default_config_hash: g1S3_GLaxq4l3I9RIca5Mlz02MxI2KmOquZpHw59akM
 id: node.page.default
