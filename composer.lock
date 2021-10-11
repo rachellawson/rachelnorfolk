@@ -1583,17 +1583,17 @@
         },
         {
             "name": "drupal/admin_toolbar_content",
-            "version": "1.3.3",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar_content.git",
-                "reference": "1.3.3"
+                "reference": "1.3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar_content-1.3.3.zip",
-                "reference": "1.3.3",
-                "shasum": "a21d70490c26606e93d243d505b8118260be17ef"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar_content-1.3.6.zip",
+                "reference": "1.3.6",
+                "shasum": "d8597e29a05581be3d796aee1b0e5a2b750c5907"
             },
             "require": {
                 "drupal/admin_toolbar": "*",
@@ -1603,8 +1603,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.3.3",
-                    "datestamp": "1631260563",
+                    "version": "1.3.6",
+                    "datestamp": "1633952520",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6451,16 +6451,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.10.8",
+            "version": "v0.10.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3"
+                "reference": "01281336c4ae557fe4a994544f30d3a1bc204375"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/e4573f47750dd6c92dca5aee543fa77513cbd8d3",
-                "reference": "e4573f47750dd6c92dca5aee543fa77513cbd8d3",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/01281336c4ae557fe4a994544f30d3a1bc204375",
+                "reference": "01281336c4ae557fe4a994544f30d3a1bc204375",
                 "shasum": ""
             },
             "require": {
@@ -6520,9 +6520,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.10.8"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.10.9"
             },
-            "time": "2021-04-10T16:23:39+00:00"
+            "time": "2021-10-10T13:37:39+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
