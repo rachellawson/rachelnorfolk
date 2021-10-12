@@ -3,7 +3,7 @@ packages:
     caxy/php-htmldiff: v0.1.13
     chi-teck/drupal-code-generator: 1.33.1
     clue/stream-filter: v1.5.0
-    composer/installers: v1.12.0
+    composer/installers: v2.0.1
     composer/semver: 3.2.5
     consolidation/annotated-command: 4.4.0
     consolidation/config: 1.2.1
