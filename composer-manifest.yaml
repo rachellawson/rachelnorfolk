@@ -46,6 +46,7 @@ packages:
     drupal/geofield_map: 2.70.0
     drupal/gin: 3.0.0-alpha37
     drupal/gin_toolbar: 1.0.0-beta19
+    drupal/honeypot: 2.0.1
     drupal/image_widget_crop: 2.3.0
     drupal/leaflet: 2.1.14
     drupal/media_entity_twitter: 2.7.0
