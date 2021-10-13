@@ -1,6 +1,5 @@
 module:
   admin_toolbar: 0
-  admin_toolbar_content: 0
   admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   advagg: 0
