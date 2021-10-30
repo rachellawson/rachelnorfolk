@@ -1,0 +1,13 @@
+{% for link,url in data %}
+  <div style="float: left;margin-right: 2em;">
+  <a href="{{ url }}"{{ attributes.addClass('feed-icon') }}>
+    <span class="feed-icon__label">
+      {{ link }}
+    </span>
+    <span class="feed-icon__icon" aria-hidden="true">
+      {% set svg = '@rachelnorfolk_blocks/../images/' ~ link ~ '.svg' %}
+      {% include svg %}
+    </span>
+  </a>
+  </div>
+{% endfor%}

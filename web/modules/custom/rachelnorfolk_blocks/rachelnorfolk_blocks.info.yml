@@ -1,0 +1,6 @@
+name: rachelnorfolk blocks
+type: module
+description: Provides blocks for use on the site
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

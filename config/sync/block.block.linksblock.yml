@@ -1,0 +1,20 @@
+uuid: cc3fcb4b-95b6-4d31-8307-7a0906607942
+langcode: en
+status: true
+dependencies:
+  module:
+    - rachelnorfolk_blocks
+  theme:
+    - olivero
+id: linksblock
+theme: olivero
+region: social
+weight: 0
+provider: null
+plugin: rachelnorfolk_blocks_links
+settings:
+  id: rachelnorfolk_blocks_links
+  label: 'Links Block'
+  provider: rachelnorfolk_blocks
+  label_display: '0'
+visibility: {  }
