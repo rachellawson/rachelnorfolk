@@ -1,3 +1,5 @@
+_core:
+  default_config_hash: 0cOpr1OyXWdffdvJFlXdoNQpPest7EYeepdwUe7U9pQ
 gmap_api_key: ''
 gmap_api_localization: default
 theming:
@@ -10,5 +12,3 @@ theming:
 geocoder:
   caching:
     clientside: session_storage
-_core:
-  default_config_hash: 0cOpr1OyXWdffdvJFlXdoNQpPest7EYeepdwUe7U9pQ

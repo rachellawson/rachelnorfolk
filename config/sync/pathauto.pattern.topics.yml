@@ -12,12 +12,12 @@ pattern: 'topics/[term:name]'
 selection_criteria:
   95c53809-a9a5-4b82-b812-fe848c404160:
     id: 'entity_bundle:taxonomy_term'
-    bundles:
-      tags: tags
     negate: false
+    uuid: 95c53809-a9a5-4b82-b812-fe848c404160
     context_mapping:
       taxonomy_term: taxonomy_term
-    uuid: 95c53809-a9a5-4b82-b812-fe848c404160
+    bundles:
+      tags: tags
 selection_logic: and
 weight: -5
 relationships: {  }

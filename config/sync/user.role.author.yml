@@ -1,14 +1,35 @@
 uuid: 3c2d82e7-0bc7-4f06-afdb-162978d4f952
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.full_html
+    - media.type.audio
+    - media.type.document
+    - media.type.image
+    - media.type.remote_video
+    - media.type.video
+    - node.type.article
+    - node.type.page
+    - taxonomy.vocabulary.tags
+  module:
+    - comment
+    - filter
+    - layout_builder
+    - media
+    - node
+    - path
+    - redirect
+    - system
+    - taxonomy
+    - toolbar
+    - tour
 id: author
 label: Author
 weight: 3
 is_admin: null
 permissions:
   - 'access content overview'
-  - 'access matomo reports'
   - 'access media overview'
   - 'access site in maintenance mode'
   - 'access site reports'
@@ -22,8 +43,6 @@ permissions:
   - 'administer redirects'
   - 'administer url aliases'
   - 'administer users'
-  - 'administer webform templates'
-  - 'configure editable article node layout overrides'
   - 'create and edit custom blocks'
   - 'create article content'
   - 'create audio media'
@@ -35,14 +54,9 @@ permissions:
   - 'create terms in tags'
   - 'create url aliases'
   - 'create video media'
-  - 'create webform'
-  - 'create webform content'
   - 'delete all revisions'
   - 'delete any article content'
   - 'delete any page content'
-  - 'delete any webform'
-  - 'delete any webform content'
-  - 'delete any webform submission'
   - 'delete article revisions'
   - 'delete media'
   - 'delete own article content'
@@ -51,15 +65,10 @@ permissions:
   - 'delete own page content'
   - 'delete own remote_video media'
   - 'delete own video media'
-  - 'delete own webform content'
   - 'delete page revisions'
   - 'delete terms in tags'
-  - 'delete webform revisions'
-  - 'delete webform submissions any node'
-  - 'delete webform submissions own node'
   - 'edit any article content'
   - 'edit any page content'
-  - 'edit any webform content'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own document media'
@@ -67,23 +76,15 @@ permissions:
   - 'edit own page content'
   - 'edit own remote_video media'
   - 'edit own video media'
-  - 'edit own webform content'
   - 'edit terms in tags'
-  - 'edit webform submissions any node'
-  - 'edit webform submissions own node'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert page revisions'
-  - 'revert webform revisions'
   - 'update media'
   - 'use text format full_html'
   - 'view all revisions'
-  - 'view any webform submission'
   - 'view article revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view page revisions'
   - 'view the administration theme'
-  - 'view webform revisions'
-  - 'view webform submissions any node'
-  - 'view webform submissions own node'

@@ -33,21 +33,21 @@ mode: rss
 content:
   body:
     type: text_summary_or_trimmed
-    weight: 1
-    region: content
     label: hidden
     settings:
       trim_length: 350
     third_party_settings: {  }
+    weight: 1
+    region: content
   field_image:
     type: image
-    weight: 0
-    region: content
     label: hidden
     settings:
-      image_style: max_650x650
       image_link: ''
+      image_style: max_650x650
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   comment: true
   field_tags: true

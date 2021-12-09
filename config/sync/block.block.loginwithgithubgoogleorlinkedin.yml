@@ -19,20 +19,20 @@ plugin: 'block_content:189bd2c2-4bc8-4241-aa4d-6c619bb86214'
 settings:
   id: 'block_content:189bd2c2-4bc8-4241-aa4d-6c619bb86214'
   label: 'Login with GitHub, Google, or LinkedIn'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /user/login
     negate: false
+    pages: /user/login
   user_role:
     id: user_role
-    roles:
-      anonymous: anonymous
     negate: false
     context_mapping:
       user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

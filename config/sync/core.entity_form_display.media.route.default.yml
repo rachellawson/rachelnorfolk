@@ -29,19 +29,19 @@ content:
     settings: {  }
     third_party_settings: {  }
   field_media_file:
+    type: file_generic
     weight: 0
+    region: content
     settings:
       progress_indicator: throbber
     third_party_settings: {  }
-    type: file_generic
-    region: content
   field_route:
+    type: geofield_latlon
     weight: 101
+    region: content
     settings:
       html5_geolocation: false
     third_party_settings: {  }
-    type: geofield_latlon
-    region: content
   name:
     type: string_textfield
     weight: -5
@@ -58,19 +58,19 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 100
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
     weight: 5
+    region: content
     settings:
       match_operator: CONTAINS
+      match_limit: 10
       size: 60
       placeholder: ''
-      match_limit: 10
-    region: content
     third_party_settings: {  }
 hidden: {  }

@@ -1,7 +1,14 @@
 uuid: 9e999658-f1d7-4c5d-8caf-0cac6e8aa67d
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - comment_notify
+    - contact
+    - media
+    - search
+    - system
 _core:
   default_config_hash: btW6TFHajhy7Eo6YUvdFiPh4TcPggo8GBXYctjV6zag
 id: authenticated
@@ -13,7 +20,6 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user profiles'
-  - 'opt-in or out of matomo tracking'
   - 'post comments'
   - 'search content'
   - 'skip comment approval'

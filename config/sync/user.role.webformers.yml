@@ -1,7 +1,15 @@
 uuid: de24cc37-4fd5-40a8-ac55-75f5d019c6af
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - filter
+    - node
+    - path
+    - toolbar
+    - tour
 id: webformers
 label: Webformers
 weight: 4
@@ -9,19 +17,6 @@ is_admin: null
 permissions:
   - 'access toolbar'
   - 'access tour'
-  - 'access webform help'
-  - 'access webform overview'
-  - 'access webform submission user'
-  - 'administer webform element access'
   - 'create url aliases'
-  - 'create webform'
-  - 'create webform content'
-  - 'delete own webform'
-  - 'delete own webform content'
-  - 'delete webform submissions own node'
-  - 'edit own webform'
-  - 'revert webform revisions'
   - 'use text format restricted_html'
   - 'view own unpublished content'
-  - 'view webform revisions'
-  - 'view webform submissions own node'

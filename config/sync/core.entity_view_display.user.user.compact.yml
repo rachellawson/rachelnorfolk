@@ -30,30 +30,33 @@ third_party_settings:
             uuid: 85615fd0-7764-453a-8dde-ae946a20d09a
             region: content
             configuration:
+              id: 'field_block:user:user:user_picture'
               label_display: '0'
               context_mapping:
                 entity: layout_builder.entity
-              id: 'field_block:user:user:user_picture'
               formatter:
                 type: image
-                settings:
-                  image_style: thumbnail
-                  image_link: content
-                third_party_settings: {  }
                 label: hidden
-            additional: {  }
+                settings:
+                  image_link: content
+                  image_style: thumbnail
+                third_party_settings: {  }
             weight: 0
+            additional: {  }
           ee6da03e-421c-4795-bc53-0535b007fb86:
             uuid: ee6da03e-421c-4795-bc53-0535b007fb86
             region: content
             configuration:
               id: 'field_block:user:user:field_website'
               label: Website
-              provider: layout_builder
               label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
               formatter:
-                label: visually_hidden
                 type: link
+                label: visually_hidden
                 settings:
                   trim_length: 80
                   url_only: false
@@ -61,11 +64,8 @@ third_party_settings:
                   rel: '0'
                   target: '0'
                 third_party_settings: {  }
-              context_mapping:
-                entity: layout_builder.entity
-                view_mode: view_mode
-            additional: {  }
             weight: 1
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: '-cLsS3M3JycipXQt9rEb81_HxKneReoGuRh8ijcOPXs'
@@ -76,13 +76,13 @@ mode: compact
 content:
   user_picture:
     type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: thumbnail
+    third_party_settings: {  }
     weight: 0
     region: content
-    settings:
-      image_style: thumbnail
-      image_link: content
-    third_party_settings: {  }
-    label: hidden
 hidden:
   field_website: true
   member_for: true

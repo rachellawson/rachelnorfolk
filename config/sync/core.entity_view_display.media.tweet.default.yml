@@ -15,12 +15,12 @@ bundle: tweet
 mode: default
 content:
   field_media_twitter:
+    type: twitter_embed
     label: visually_hidden
-    weight: 0
     settings:
       conversation: true
     third_party_settings: {  }
-    type: twitter_embed
+    weight: 0
     region: content
 hidden:
   created: true

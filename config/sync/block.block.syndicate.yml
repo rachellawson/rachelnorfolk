@@ -15,7 +15,7 @@ plugin: node_syndicate_block
 settings:
   id: node_syndicate_block
   label: Syndicate
-  provider: node
   label_display: '0'
+  provider: node
   block_count: 10
 visibility: {  }

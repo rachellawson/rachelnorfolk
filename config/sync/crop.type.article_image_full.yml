@@ -2,8 +2,8 @@ uuid: be420aa4-e80c-4c5a-94f2-3ba1745c03dd
 langcode: en
 status: true
 dependencies: {  }
-id: article_image_full
 label: 'Article Image Full'
+id: article_image_full
 description: 'Provide a consistent image crop for the Olivero article image field'
 aspect_ratio: '1090:180'
 soft_limit_width: 1090

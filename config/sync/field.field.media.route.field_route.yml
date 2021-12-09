@@ -12,6 +12,7 @@ third_party_settings:
   geocoder_field:
     method: geocode
     weight: 0
+    field: field_media_file
     skip_not_empty_value: false
     disabled: true
     hidden: true
@@ -19,12 +20,11 @@ third_party_settings:
       - gpx_file
       - kml_file
     dumper: wkt
+    delta_handling: default
     failure:
       handling: preserve
       status_message: true
       log: true
-    field: field_media_file
-    delta_handling: default
 id: media.route.field_route
 field_name: field_route
 entity_type: media

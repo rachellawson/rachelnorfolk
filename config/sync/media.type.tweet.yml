@@ -17,11 +17,11 @@ new_revision: false
 source_configuration:
   source_field: field_media_twitter
   use_twitter_api: false
-  generate_thumbnails: true
   consumer_key: ''
   consumer_secret: ''
   oauth_access_token: ''
   oauth_access_token_secret: ''
+  generate_thumbnails: true
 field_map:
   id: field_tweet_id
   user: field_tweet_author

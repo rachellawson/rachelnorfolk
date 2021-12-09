@@ -15,29 +15,32 @@ bundle: route
 mode: default
 content:
   field_media_file:
+    type: file_default
     label: visually_hidden
-    weight: 1
     settings:
       use_description_as_link_text: true
     third_party_settings: {  }
-    type: file_default
+    weight: 1
     region: content
   field_route:
-    weight: 0
+    type: leaflet_formatter_default
     label: visually_hidden
     settings:
       multiple_map: false
-      popup_content: ''
       leaflet_map: 'OSM Mapnik'
       height: 400
       height_unit: px
       hide_empty_map: true
       disable_wheel: true
       fullscreen_control: true
+      gesture_handling: false
       reset_map:
-        position: topright
         control: false
+        position: topright
+      popup: false
+      popup_content: ''
       map_position:
+        force: false
         center:
           lat: !!float 0
           lon: !!float 0
@@ -45,16 +48,12 @@ content:
         minZoom: 1
         maxZoom: 18
         zoomFiner: 0
-        force: false
       weight: ''
       icon:
         iconType: marker
         iconUrl: ''
         shadowUrl: ''
         className: ''
-        html: '<div></div>'
-        html_class: leaflet-map-divicon
-        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
         iconSize:
           x: ''
           'y': ''
@@ -70,8 +69,16 @@ content:
         popupAnchor:
           x: ''
           'y': ''
+        html: '<div></div>'
+        html_class: leaflet-map-divicon
+        circle_marker_options: '{"radius":100,"color":"red","fillColor":"#f03","fillOpacity":0.5}'
+      leaflet_markercluster:
+        control: false
+        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        include_path: false
       path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0","radius":"6"}'
       geocoder:
+        control: false
         settings:
           position: topright
           input_size: 25
@@ -85,17 +92,10 @@ content:
           min_terms: 4
           delay: 800
           zoom: 16
-          options: ''
           popup: false
-        control: false
-      popup: false
-      gesture_handling: false
-      leaflet_markercluster:
-        control: false
-        options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
-        include_path: false
+          options: ''
     third_party_settings: {  }
-    type: leaflet_formatter_default
+    weight: 0
     region: content
 hidden:
   created: true

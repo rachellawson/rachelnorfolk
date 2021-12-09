@@ -1,7 +1,13 @@
 uuid: e876d929-1862-4154-8603-051079b4de66
 langcode: en
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - comment
+    - contact
+    - media
+    - search
+    - system
 _core:
   default_config_hash: pq_mEIu_B4widZN7Ap81iCJSjShFFdcL0jEiCi8VrDk
 id: anonymous

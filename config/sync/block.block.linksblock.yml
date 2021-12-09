@@ -15,6 +15,6 @@ plugin: rachelnorfolk_blocks_links
 settings:
   id: rachelnorfolk_blocks_links
   label: 'Links Block'
-  provider: rachelnorfolk_blocks
   label_display: '0'
+  provider: rachelnorfolk_blocks
 visibility: {  }

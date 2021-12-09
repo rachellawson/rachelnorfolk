@@ -55,11 +55,9 @@ content:
     weight: 3
     region: content
     settings:
-      show_crop_area: true
-      show_default_crop: true
+      progress_indicator: throbber
       preview_image_style: thumbnail
       crop_preview_image_style: crop_thumbnail
-      progress_indicator: throbber
       crop_list:
         - article_image_full
         - article_image_teaser
@@ -67,6 +65,8 @@ content:
       crop_types_required:
         - article_image_full
       warn_multiple_usages: false
+      show_crop_area: true
+      show_default_crop: true
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
@@ -86,24 +86,24 @@ content:
     third_party_settings: {  }
   promote:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 7
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 12
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   sticky:
     type: boolean_checkbox
-    settings:
-      display_label: true
     weight: 8
     region: content
+    settings:
+      display_label: true
     third_party_settings: {  }
   title:
     type: string_textfield

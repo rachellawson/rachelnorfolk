@@ -17,8 +17,8 @@ plugin: 'block_content:66afb01c-b84d-4e64-984c-6249863c361b'
 settings:
   id: 'block_content:66afb01c-b84d-4e64-984c-6249863c361b'
   label: platform.sh
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

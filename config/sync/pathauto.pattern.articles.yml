@@ -11,12 +11,12 @@ pattern: '[node:created:html_year]/[node:title]'
 selection_criteria:
   fd6bdd8b-4827-4414-85de-c895f6a07c1d:
     id: node_type
-    bundles:
-      article: article
     negate: false
+    uuid: fd6bdd8b-4827-4414-85de-c895f6a07c1d
     context_mapping:
       node: node
-    uuid: fd6bdd8b-4827-4414-85de-c895f6a07c1d
+    bundles:
+      article: article
 selection_logic: and
 weight: -5
 relationships: {  }
