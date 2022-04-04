@@ -475,16 +475,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.5.2",
+            "version": "4.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "24c1529436b4f4beec3d19aab71fd127817f47ef"
+                "reference": "1941a743e63993288e09d0686a4cb7ed47813213"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/24c1529436b4f4beec3d19aab71fd127817f47ef",
-                "reference": "24c1529436b4f4beec3d19aab71fd127817f47ef",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/1941a743e63993288e09d0686a4cb7ed47813213",
+                "reference": "1941a743e63993288e09d0686a4cb7ed47813213",
                 "shasum": ""
             },
             "require": {
@@ -504,7 +504,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "4.x-dev"
+                    "dev-main": "5.x-dev"
                 }
             },
             "autoload": {
@@ -525,9 +525,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.5.2"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.5.3"
             },
-            "time": "2022-02-20T16:36:18+00:00"
+            "time": "2022-04-02T00:17:53+00:00"
         },
         {
             "name": "consolidation/config",
@@ -3220,7 +3220,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0-beta1",
-                    "datestamp": "1646986688",
+                    "datestamp": "1648220588",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3276,7 +3276,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.0-beta21",
-                    "datestamp": "1646929714",
+                    "datestamp": "1648220706",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -3458,17 +3458,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "2.1.20",
+            "version": "2.1.23",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "2.1.20"
+                "reference": "2.1.23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-2.1.20.zip",
-                "reference": "2.1.20",
-                "shasum": "fd473626341bd83f55e80530ba08b7ce55ddafc7"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-2.1.23.zip",
+                "reference": "2.1.23",
+                "shasum": "ae488b28c40e73fd589f088dee3ada293cb0232e"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9",
@@ -3477,8 +3477,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.1.20",
-                    "datestamp": "1643578866",
+                    "version": "2.1.23",
+                    "datestamp": "1648934436",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
