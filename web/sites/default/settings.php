@@ -56,3 +56,8 @@ $settings['config_exclude_modules'] = ['openid_connect', 'stage_file_proxy'];
 $settings['locale_custom_strings_en'][''] = array(
   '<a href=":login">Log in</a> to post comments' => '<a href=":login">Log in with GitHub, LinkedIn, or Google</a> to post comments',
 );
+
+// Include settings required for Redis cache.
+if ((file_exists(__DIR__ . '/settings.ddev.redis.php') && getenv('IS_DDEV_PROJECT') == 'true')) {
+  include __DIR__ . '/settings.ddev.redis.php';
+}
