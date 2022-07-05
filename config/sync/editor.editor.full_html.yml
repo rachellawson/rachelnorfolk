@@ -1,89 +1,52 @@
-uuid: 2950b963-1052-4e20-b61d-9fea207c5c16
+uuid: 488f2d4d-bd0a-46ed-9553-4471b07cb635
 langcode: en
 status: true
 dependencies:
   config:
     - filter.format.full_html
   module:
-    - ckeditor
-_core:
-  default_config_hash: 967ijj7p6i7rwrYl7r08WQFeCY_c23YAh0h8u-w_CXM
+    - ckeditor5
 format: full_html
-editor: ckeditor
+editor: ckeditor5
 settings:
   toolbar:
-    rows:
-      -
-        -
-          name: Formatting
-          items:
-            - Bold
-            - Italic
-            - Strike
-            - Superscript
-            - Subscript
-            - '-'
-            - CodeSnippet
-            - RemoveFormat
-        -
-          name: Linking
-          items:
-            - DrupalLink
-            - DrupalUnlink
-        -
-          name: Lists
-          items:
-            - BulletedList
-            - NumberedList
-        -
-          name: Media
-          items:
-            - Blockquote
-            - DrupalMediaLibrary
-            - Table
-            - HorizontalRule
-        -
-          name: 'Block Formatting'
-          items:
-            - Format
-        -
-          name: Tools
-          items:
-            - ShowBlocks
-            - Source
+    items:
+      - bold
+      - italic
+      - strikethrough
+      - superscript
+      - subscript
+      - removeFormat
+      - '|'
+      - link
+      - '|'
+      - bulletedList
+      - numberedList
+      - '|'
+      - blockQuote
+      - drupalMedia
+      - insertTable
+      - horizontalLine
+      - '|'
+      - heading
+      - codeBlock
+      - '|'
+      - sourceEditing
   plugins:
-    stylescombo:
-      styles: ''
-    language:
-      language_list: un
-    codesnippet:
-      highlight_style: solarized_dark
-      highlight_languages:
-        apache: apache
-        bash: bash
-        cs: cs
-        cpp: cpp
-        coffeescript: coffeescript
-        css: css
-        diff: diff
-        html: html
-        http: http
-        ini: ini
-        java: java
-        javascript: javascript
-        json: json
-        makefile: makefile
-        markdown: markdown
-        nginx: nginx
-        objectivec: objectivec
-        perl: perl
-        php: php
-        python: python
-        ruby: ruby
-        sql: sql
-        vbscript: vbscript
-        xhtml: xhtml
-        xml: xml
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_sourceEditing:
+      allowed_tags: {  }
+    ckeditor5_list:
+      reversed: true
+      startIndex: true
+    media_media:
+      allow_view_mode_override: false
 image_upload:
   status: true
   scheme: public
