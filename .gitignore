@@ -24,3 +24,6 @@ console/
 # Ignore .env files as they are personal
 /.env
 /.editorconfig
+
+# Ignore any sql files downloaded
+/*.sql
