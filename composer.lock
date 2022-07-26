@@ -1495,17 +1495,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar.git",
-                "reference": "3.1.0"
+                "reference": "3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.1.0.zip",
-                "reference": "3.1.0",
-                "shasum": "7b596d7de04faca747ba3e5216c2e819aae71f40"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-3.1.1.zip",
+                "reference": "3.1.1",
+                "shasum": "a66ce69cd7e56f1cc43797dc2a58d6eab367d353"
             },
             "require": {
                 "drupal/core": "^8.8.0 || ^9.0 || ^10.0"
@@ -1516,8 +1516,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.1.0",
-                    "datestamp": "1643742891",
+                    "version": "3.1.1",
+                    "datestamp": "1658802262",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1551,12 +1551,12 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "fethi.krout",
-                    "homepage": "https://www.drupal.org/user/3206765"
-                },
-                {
                     "name": "matio89",
                     "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "Musa.thomas",
+                    "homepage": "https://www.drupal.org/user/1213824"
                 },
                 {
                     "name": "romainj",
@@ -1638,7 +1638,7 @@
         },
         {
             "name": "drupal/admin_toolbar_tools",
-            "version": "3.1.0",
+            "version": "3.1.1",
             "require": {
                 "drupal/admin_toolbar": "*",
                 "drupal/core": "^8.8.0 || ^9.0 || ^10"
@@ -1646,8 +1646,8 @@
             "type": "metapackage",
             "extra": {
                 "drupal": {
-                    "version": "3.1.0",
-                    "datestamp": "1643742891",
+                    "version": "3.1.1",
+                    "datestamp": "1658802262",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1659,10 +1659,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "Musa.thomas",
-                    "homepage": "https://www.drupal.org/user/1213824"
-                },
                 {
                     "name": "adriancid",
                     "homepage": "https://www.drupal.org/user/1962106"
@@ -1682,6 +1678,10 @@
                 {
                     "name": "matio89",
                     "homepage": "https://www.drupal.org/user/2320090"
+                },
+                {
+                    "name": "Musa.thomas",
+                    "homepage": "https://www.drupal.org/user/1213824"
                 },
                 {
                     "name": "romainj",
@@ -2857,17 +2857,17 @@
         },
         {
             "name": "drupal/environment_indicator",
-            "version": "4.0.6",
+            "version": "4.0.7",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/environment_indicator.git",
-                "reference": "4.0.6"
+                "reference": "4.0.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/environment_indicator-4.0.6.zip",
-                "reference": "4.0.6",
-                "shasum": "63dc715096dd71cfed7085f30eae78005d08433c"
+                "url": "https://ftp.drupal.org/files/projects/environment_indicator-4.0.7.zip",
+                "reference": "4.0.7",
+                "shasum": "9a7f9b78dd2890630301de2dff4e248de85ea32b"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9"
@@ -2875,8 +2875,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.6",
-                    "datestamp": "1652781055",
+                    "version": "4.0.7",
+                    "datestamp": "1658608643",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3086,17 +3086,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.41.0",
+            "version": "1.42.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.41"
+                "reference": "8.x-1.42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.41.zip",
-                "reference": "8.x-1.41",
-                "shasum": "dba35ddfa782cdd59ed07a1b105ee8d104fe59b2"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.42.zip",
+                "reference": "8.x-1.42",
+                "shasum": "c36dc8db13a138398f6f4288e9fc632b13a69916"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -3105,8 +3105,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.41",
-                    "datestamp": "1657834871",
+                    "version": "8.x-1.42",
+                    "datestamp": "1658785223",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3356,16 +3356,16 @@
             "authors": [
                 {
                     "name": "Jeff Geerling",
-                    "homepage": "https://www.drupal.org/user/213194",
+                    "homepage": "https://www.drupal.org/user/389011",
                     "email": "geerlingguy@mac.com"
+                },
+                {
+                    "name": "Manuel Garcia",
+                    "homepage": "https://www.drupal.org/user/213194"
                 },
                 {
                     "name": "TR",
                     "homepage": "https://www.drupal.org/user/202830"
-                },
-                {
-                    "name": "geerlingguy",
-                    "homepage": "https://www.drupal.org/user/389011"
                 },
                 {
                     "name": "vijaycs85",
@@ -3465,17 +3465,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "2.2.3"
+                "reference": "2.2.4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-2.2.3.zip",
-                "reference": "2.2.3",
-                "shasum": "98a882fc9b2751bd519e0e51a41db018a11fc565"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-2.2.4.zip",
+                "reference": "2.2.4",
+                "shasum": "e9ecf71ce856a40eccee28b6186813ee1a0601e5"
             },
             "require": {
                 "drupal/core": "^8.8 || ^9 || ^10",
@@ -3484,8 +3484,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.3",
-                    "datestamp": "1655936192",
+                    "version": "2.2.4",
+                    "datestamp": "1658581690",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3757,10 +3757,6 @@
             ],
             "authors": [
                 {
-                    "name": "Mario Steinitz",
-                    "homepage": "https://www.drupal.org/user/2536014"
-                },
-                {
                     "name": "balintk",
                     "homepage": "https://www.drupal.org/user/613760"
                 },
@@ -3771,6 +3767,10 @@
                 {
                     "name": "jcnventura",
                     "homepage": "https://www.drupal.org/user/122464"
+                },
+                {
+                    "name": "Mario Steinitz",
+                    "homepage": "https://www.drupal.org/user/2536014"
                 },
                 {
                     "name": "pfrilling",
