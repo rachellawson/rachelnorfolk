@@ -1,0 +1,9 @@
+# Custom module library for general purposes.
+feedback_form:
+  js:
+    js/feedback-form.js: {}
+  css:
+    component:
+      css/feedback-form.css: {}
+  dependencies:
+    - core/drupalSettings

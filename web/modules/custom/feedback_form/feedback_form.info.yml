@@ -1,0 +1,6 @@
+name: Feedback Form
+type: module
+description: Feedback form for submitting issues to GitHub anonymously
+package: Custom
+core: 8.x
+core_version_requirement: ^8 || ^9

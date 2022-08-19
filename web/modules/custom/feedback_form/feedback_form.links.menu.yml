@@ -1,0 +1,6 @@
+feedback_form.settings_form:
+  title: Feedback Form
+  description: Configure Feedback Form.
+  parent: system.admin_config_system
+  route_name: feedback_form.settings_form
+  weight: 10

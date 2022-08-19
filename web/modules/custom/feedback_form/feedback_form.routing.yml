@@ -1,0 +1,15 @@
+feedback_form.settings_form:
+  path: '/admin/config/system/feedback-form'
+  defaults:
+    _title: 'Feedback Form settings'
+    _form: 'Drupal\feedback_form\Form\SettingsForm'
+  requirements:
+    _permission: 'administer feedback_form configuration'
+
+feedback_form.gov_stack:
+  path: '/feedback-form/gov-stack'
+  defaults:
+    _title: 'GovStack Feedback'
+    _form: 'Drupal\feedback_form\Form\GovStackForm'
+  requirements:
+    _permission: 'access content'

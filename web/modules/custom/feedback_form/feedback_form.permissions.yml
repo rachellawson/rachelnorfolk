@@ -1,0 +1,4 @@
+administer feedback_form configuration:
+  title: 'Administer feedback_form configuration'
+  description: 'Optional description.'
+  restrict access: true
