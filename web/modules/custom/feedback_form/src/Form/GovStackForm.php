@@ -22,20 +22,37 @@ class GovStackForm extends FormBase {
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
+    
+    $form['welcome'] = [
+      '#type' => 'item',
+      '#markup' => $this->t('<p>Thank you for giving your feedback. We have a short form
+      that will allow you to submit your feedback and be linked to the processes 
+      we use to accept that feedback.</p>'),
+    ];
+    
+    $form['name'] = [
+      '#type' => 'textfield',
+      '#title' => $this->t('What should we call you?'),
+      '#required' => TRUE,
+    ];
 
     $form['email'] = [
       '#type' => 'email',
       '#title' => $this->t('What is your email address?'),
-      '#description' => $this->t('We have pre-filled this with the page
-        you were viewing when you clicked on the feedback link but you 
-        can change as necessary'),
+      '#description' => $this->t('We will store your email address in an 
+      encrypted format on our issue management systems. We may use it to ask for
+      further information/clarification about your feedback.'),
       '#required' => TRUE,
     ];
     
     $ref_url_string = \Drupal::request()->headers->get('referer');
     $form['referrer'] = [
       '#type' => 'textfield',
-      '#title' => $this->t('What page are you interesterd in?'),
+      '#title' => $this->t('What page are you interested in?'),
+      '#description' => $this->t('We have pre-filled this with the page
+        you were viewing when you clicked on the feedback link but you 
+        can change as necessary. We use this information to decide which
+        of our maintainers would be able to help the most.'),
       '#default_value' => $ref_url_string,
       '#required' => TRUE,
     ];
