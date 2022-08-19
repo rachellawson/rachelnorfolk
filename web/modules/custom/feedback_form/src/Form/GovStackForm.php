@@ -89,7 +89,7 @@ class GovStackForm extends FormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->messenger()->addStatus($this->t('The feedback has been sent. Thank you!'));
-    $form_state->setRedirect('feedback_form.example');
+    $form_state->setRedirect('feedback_form.gov_stack');
   }
 
 }
