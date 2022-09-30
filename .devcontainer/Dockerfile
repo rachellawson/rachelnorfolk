@@ -8,6 +8,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" \
     && echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/codespace/.profile \
     && eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)" \
-    && brew install drud/ddev/ddev
+    && brew install drud/ddev/ddev \
+    && ddev config global --web-environment-add="PLATFORMSH_CLI_TOKEN=$PLATFORM"
 
 USER codespace
