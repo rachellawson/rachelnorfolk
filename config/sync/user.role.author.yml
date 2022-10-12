@@ -39,7 +39,6 @@ permissions:
   - 'access user profiles'
   - 'administer comments'
   - 'administer menu'
-  - 'administer modules'
   - 'administer nodes'
   - 'administer redirects'
   - 'administer url aliases'
