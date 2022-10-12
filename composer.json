@@ -29,6 +29,7 @@
         "drupal/config_ignore": "^2.2",
         "drupal/core-composer-scaffold": "^9",
         "drupal/core-recommended": "^9.2",
+        "drupal/ctools": "^4.0",
         "drupal/diff": "^1.0",
         "drupal/environment_indicator": "^4.0",
         "drupal/geocoder": "^3.10",
