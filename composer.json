@@ -105,10 +105,10 @@
         },
         "patches": {
             "drupal/core": {
-                "Node RSS Views plugin causes wrong entity_view output to be cached https://www.drupal.org/project/drupal/issues/2885098": "https://www.drupal.org/files/issues/2020-11-17/2885098-42.patch"
+                "Node RSS Views plugin causes wrong entity_view output to be cached https://www.drupal.org/project/drupal/issues/2885098": "https://www.drupal.org/files/issues/2022-09-23/2885098-63.patch"
             },
             "drupal/openid_connect": {
-                "Picture with no extension results in Content-Type: application/octet-stream https://www.drupal.org/project/openid_connect/issues/3186294": "https://www.drupal.org/files/issues/2021-04-16/openid_connect-picture-content-type-3186294-4.patch",
+                "Picture with no extension results in Content-Type: application/octet-stream https://www.drupal.org/project/openid_connect/issues/3186294": "https://git.drupalcode.org/project/openid_connect/-/merge_requests/32.diff",
                 "Allow updating of a link property type in the user account https://www.drupal.org/project/openid_connect/issues/3193039": "https://www.drupal.org/files/issues/2021-01-15/add-link-to-supported-property-types.patch"
             }
         },
