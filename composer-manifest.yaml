@@ -30,7 +30,7 @@ packages:
     drupal/ckeditor: 1.0.1
     drupal/ckeditor_oembed: 1.3.0
     drupal/codesnippet: 1.8.0
-    drupal/colorbox: 1.10.0
+    drupal/colorbox: 2.0.0
     drupal/comment_notify: 1.3.0
     drupal/config_filter: 2.4.0
     drupal/config_ignore: 2.3.0

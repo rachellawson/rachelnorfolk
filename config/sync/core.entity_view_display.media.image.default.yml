@@ -23,7 +23,7 @@ content:
       colorbox_node_style: max_1300x1300
       colorbox_node_style_first: ''
       colorbox_image_style: max_2600x2600
-      colorbox_gallery: field_post
+      colorbox_gallery: page
       colorbox_gallery_custom: ''
       colorbox_caption: auto
       colorbox_caption_custom: ''
