@@ -1,9 +1,7 @@
 {
   "image": "mcr.microsoft.com/devcontainers/universal:2",
   "features": {
-    "ghcr.io/devcontainers/features/docker-in-docker:1": {},
-    "raw.githubusercontent.com/rachellawson/codespace_feature_ddev/:1": {
-            "version": "latest"
-        }
-  }
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
+  },
+  "postCreateCommand": "curl https://apt.fury.io/drud/gpg.key | sudo apt-key add - && echo 'deb https://apt.fury.io/drud/ * *' | sudo tee -a /etc/apt/sources.list.d/ddev.list && sudo apt update && sudo apt install -y ddev"
 }
