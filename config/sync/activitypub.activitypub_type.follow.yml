@@ -1,0 +1,17 @@
+uuid: 59b129d3-7883-48f5-92f0-eb38340dad1f
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JlqQKzvABrqM3d380YYW588KnL1adxJ5SBnQb96907s
+id: follow
+label: Follow
+description: 'Sends the "Follow" request when a local user wants to follow a (remote) user.'
+locked: true
+plugin:
+  id: activitypub_static_types
+  configuration:
+    target_entity_type_id: ''
+    target_bundle: ''
+    activity: Follow
+    object: ''

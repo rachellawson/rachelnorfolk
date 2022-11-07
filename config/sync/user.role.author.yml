@@ -13,6 +13,7 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
+    - activitypub
     - comment
     - filter
     - layout_builder
@@ -43,6 +44,9 @@ permissions:
   - 'administer redirects'
   - 'administer url aliases'
   - 'administer users'
+  - 'allow users to enable activitypub'
+  - 'allow users to view the context'
+  - 'allow users to view the payload'
   - 'create and edit custom blocks'
   - 'create article content'
   - 'create audio media'
@@ -77,6 +81,7 @@ permissions:
   - 'edit own remote_video media'
   - 'edit own video media'
   - 'edit terms in tags'
+  - 'resolve remote activitypub activities and actors'
   - 'revert all revisions'
   - 'revert article revisions'
   - 'revert page revisions'

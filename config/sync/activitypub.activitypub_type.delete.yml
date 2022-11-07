@@ -1,0 +1,17 @@
+uuid: 56599bd7-e081-48ce-bded-a549d8c42afb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: I6PcZxZm5Aa0AEzkEuZoBeCn-gxBgHIyT1vAvoFyvyw
+id: delete
+label: Delete
+description: 'Sends the "Delete" request for a local activity.'
+locked: true
+plugin:
+  id: activitypub_static_types
+  configuration:
+    target_entity_type_id: ''
+    target_bundle: ''
+    activity: Delete
+    object: ''

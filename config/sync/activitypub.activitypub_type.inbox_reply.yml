@@ -1,0 +1,17 @@
+uuid: 37f73ecc-ad06-436f-bedc-805f5996e3fa
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tKt2SOJ-VIYKP_3OFKgceBBVz2df8j8S20ihda3u_7o
+id: inbox_reply
+label: 'Inbox reply'
+description: "Handles an incoming \"Create\" request which has a reply value.\r\nIf you allow creating comments, it can create a comment on a node."
+locked: true
+plugin:
+  id: activitypub_static_types
+  configuration:
+    target_entity_type_id: ''
+    target_bundle: ''
+    activity: ''
+    object: ''

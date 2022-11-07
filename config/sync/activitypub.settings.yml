@@ -1,0 +1,12 @@
+_core:
+  default_config_hash: BDWPqnaiV65Y9c7wKMpctghCCrQeU63X5HK9bXCLqa0
+avatar_user_style: thumbnail
+avatar_user_field: user_picture
+attachment_content_style: thumbnail
+process_outbox_handler: cron
+process_inbox_handler: cron
+comment_create_enable: true
+comment_create_status: true
+cache_images: false
+cache_avatar_style: ''
+cache_attachment_style: ''

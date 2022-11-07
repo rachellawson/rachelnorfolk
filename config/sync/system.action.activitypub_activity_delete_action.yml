@@ -1,0 +1,13 @@
+uuid: 8624668c-14d6-4aa9-bca4-f67702d15c0d
+langcode: en
+status: true
+dependencies:
+  module:
+    - activitypub
+_core:
+  default_config_hash: eka7EDuDxD2LLHqeRGrzsBnMPIi4obk9sQt_1gAJ2qg
+id: activitypub_activity_delete_action
+label: 'Delete activities'
+type: activitypub_activity
+plugin: activitypub_activity_delete_action
+configuration: {  }

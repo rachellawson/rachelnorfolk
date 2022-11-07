@@ -1,0 +1,17 @@
+uuid: c42364df-48b4-4ab8-9d06-e95d8b3ea529
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: czESigUAyegZg6XAk53sSqnaXwb-rK3t1hKjP98PqvY
+id: undo
+label: Undo
+description: 'Sends the "Undo" request for a local activity.'
+locked: true
+plugin:
+  id: activitypub_static_types
+  configuration:
+    target_entity_type_id: ''
+    target_bundle: ''
+    activity: Undo
+    object: ''
