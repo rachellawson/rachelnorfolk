@@ -1,6 +1,6 @@
 {% for link,url in data %}
   <div style="float: left;margin-right: 2em;">
-  <a href="{{ url }}"{{ attributes.addClass('feed-icon') }}>
+  <a rel="me" href="{{ url }}"{{ attributes.addClass('feed-icon') }}>
     <span class="feed-icon__label">
       {{ link }}
     </span>
