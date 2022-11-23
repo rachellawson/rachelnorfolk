@@ -14,7 +14,7 @@ database:
 nfs_mount_enabled: false
 mutagen_enabled: false
 bind_all_interfaces: true
-host_webserver_port: "80"
+host_webserver_port: "8080"
 webimage_extra_packages: [zsh]
 use_dns_when_possible: true
 composer_version: "2"
