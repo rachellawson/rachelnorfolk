@@ -54,7 +54,6 @@ packages:
     drupal/pathauto: 1.11.0
     drupal/redirect: 1.8.0
     drupal/redis: 1.6.0
-    drupal/stage_file_proxy: 1.5.0
     drupal/token: 1.11.0
     drupal/xmlsitemap: 1.4.0
     drush/drush: 10.6.2
