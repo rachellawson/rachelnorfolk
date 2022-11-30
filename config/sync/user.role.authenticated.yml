@@ -4,7 +4,6 @@ status: true
 dependencies:
   module:
     - comment
-    - comment_notify
     - contact
     - media
     - search
@@ -23,5 +22,4 @@ permissions:
   - 'post comments'
   - 'search content'
   - 'skip comment approval'
-  - 'subscribe to comments'
   - 'view media'
