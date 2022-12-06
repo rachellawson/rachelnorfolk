@@ -28,8 +28,6 @@ packages:
     drupal/ckeditor: 1.0.1
     drupal/codesnippet: 1.8.0
     drupal/colorbox: 2.0.0
-    drupal/config_filter: 2.4.0
-    drupal/config_ignore: 2.3.0
     drupal/core: 9.4.8
     drupal/core-composer-scaffold: 9.4.8
     drupal/crop: 2.3.0
@@ -53,6 +51,7 @@ packages:
     drupal/redirect: 1.8.0
     drupal/redis: 1.6.0
     drupal/token: 1.11.0
+    drupal/upgrade_status: 3.18.0
     drupal/xmlsitemap: 1.4.0
     drush/drush: 10.6.2
     egulias/email-validator: 3.2.1
@@ -71,8 +70,11 @@ packages:
     laminas/laminas-feed: 2.19.0
     laminas/laminas-servicemanager: 3.19.0
     laminas/laminas-stdlib: 3.15.0
+    laminas/laminas-text: 2.9.0
     league/container: 3.4.1
     masterminds/html5: 2.7.6
+    mathieuviossat/arraytotexttable: v1.0.9
+    mglaman/phpstan-drupal: 1.1.25
     mkalkbrenner/php-htmldiff-advanced: 0.0.8
     nikic/php-parser: v4.15.2
     pear/archive_tar: 1.4.14
@@ -84,6 +86,8 @@ packages:
     php-http/message: 1.13.0
     php-http/message-factory: v1.0.2
     php-http/promise: 1.1.0
+    phpstan/phpstan: 1.9.2
+    phpstan/phpstan-deprecation-rules: 1.0.0
     platformsh/config-reader: 2.4.0
     psr/cache: 3.0.0
     psr/container: 1.1.2
