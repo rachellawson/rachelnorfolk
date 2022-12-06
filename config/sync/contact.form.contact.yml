@@ -8,5 +8,5 @@ recipients:
   - rachellawson@me.com
 reply: ''
 weight: 0
-message: 'Thank you for sending through your message - I''ll try to get back to you as soon as I can!'
+message: "Thank you for sending through your message - I'll try to get back to you as soon as I can!"
 redirect: /
