@@ -10,4 +10,4 @@ fetch:
 notification:
   emails:
     - rachellawson@me.com
-  threshold: all
+  threshold: security
