@@ -43,6 +43,7 @@
         "drupal/rdf": "^2.1",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
+        "drupal/schema_metatag": "^2.4",
         "drupal/seven": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^11",

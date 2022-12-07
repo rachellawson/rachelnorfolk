@@ -7,13 +7,32 @@ _core:
 id: node
 label: Content
 tags:
-  title: '[node:title] | [site:name]'
   canonical_url: '[node:url]'
   description: '[node:summary]'
-  twitter_cards_image: '[node:field_image:twitter_card:url]'
-  twitter_cards_image_width: '[node:field_image:twitter_card:width]'
+  og_description: '[node:summary]'
+  og_image: '[node:field_image:twitter_card:url]'
+  og_image_alt: '[node:field_image:alt]'
+  og_image_height: '[node:field_image:twitter_card:height]'
+  og_image_type: '[node:field_image:twitter_card:mimetype]'
+  og_image_width: '[node:field_image:width]'
+  og_site_name: 'Rachel Norfolk'
+  og_title: '[node:title]'
+  og_type: article
+  og_url: '[node:url]'
+  schema_article_about: '[node:field_tags]'
+  schema_article_author: 'a:6:{s:5:"@type";s:6:"Person";s:3:"@id";s:17:"[node:author:url]";s:4:"name";s:13:"Rachel Lawson";s:3:"url";s:17:"[node:author:url]";s:6:"sameAs";s:80:"https://mastodon.lol/@rachel_norfolk,https://www.linkedin.com/in/rachel-norfolk/";s:4:"logo";a:5:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:5:"False";s:3:"url";s:36:"[node:author:user_picture:large:url]";s:5:"width";s:38:"[node:author:user_picture:large:width]";s:6:"height";s:39:"[node:author:user_picture:large:height]";}}'
+  schema_article_date_modified: '[node:created:html_datetime]'
+  schema_article_date_published: '[node:created:html_datetime]'
+  schema_article_description: '[node:summary]'
+  schema_article_headline: '[node:title]'
+  schema_article_image: 'a:5:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:4:"True";s:3:"url";s:35:"[node:field_image:twitter_card:url]";s:5:"width";s:37:"[node:field_image:twitter_card:width]";s:6:"height";s:38:"[node:field_image:twitter_card:height]";}'
+  schema_article_name: '[node:title]'
+  schema_article_type: BlogPosting
+  title: '[node:title] | [site:name]'
   twitter_cards_description: '[node:summary]'
+  twitter_cards_image: '[node:field_image:twitter_card:url]'
   twitter_cards_image_alt: '[node:field_image:alt]'
-  twitter_cards_type: summary_large_image
   twitter_cards_image_height: '[node:field_image:twitter_card:height]'
+  twitter_cards_image_width: '[node:field_image:twitter_card:width]'
   twitter_cards_title: '[node:title]'
+  twitter_cards_type: summary_large_image
