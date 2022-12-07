@@ -3,5 +3,5 @@
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:1": {}
   },
-  "postCreateCommand": "curl https://apt.fury.io/drud/gpg.key | sudo apt-key add - && echo 'deb https://apt.fury.io/drud/ * *' | sudo tee -a /etc/apt/sources.list.d/ddev.list && sudo apt update && sudo apt install -y ddev && ddev config global --web-environment='PLATFORMSH_CLI_TOKEN='`echo $PLATFORM_CLI`"
+  "postCreateCommand": "curl https://apt.fury.io/drud/gpg.key | sudo apt-key add - && echo 'deb https://apt.fury.io/drud/ * *' | sudo tee -a /etc/apt/sources.list.d/ddev.list && sudo apt update && sudo apt install -y ddev && ddev config global --omit-containers='ddev-router,ddev-ssh-agent' && ddev config global --web-environment='PLATFORMSH_CLI_TOKEN='`echo $PLATFORM_CLI`"
 }
