@@ -27,8 +27,8 @@ packages:
     drupal/ckeditor: 1.0.1
     drupal/codesnippet: 1.8.0
     drupal/colorbox: 2.0.0
-    drupal/core: 10.0.0-rc3
-    drupal/core-composer-scaffold: 10.0.0-rc3
+    drupal/core: 10.0.0
+    drupal/core-composer-scaffold: 10.0.0
     drupal/crop: 2.3.0
     drupal/ctools: 4.0.3
     drupal/diff: 1.1.0
