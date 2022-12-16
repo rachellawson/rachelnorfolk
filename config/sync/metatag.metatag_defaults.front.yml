@@ -7,12 +7,14 @@ _core:
 id: front
 label: 'Front page'
 tags:
-  keywords: 'blog, travel, Drupal'
-  shortlink: '[site:url]'
+  abstract: 'Here are a few of my thoughts on life, travel, and Drupal...'
   canonical_url: '[site:url]'
   description: "Hi, I'm Rachel Lawson, living in Norfolk, in the United Kingdom. I am mainly entertained by riding my motorbike, Idris. I've been lucky to ride in a whole bunch of countries across Europe, Asia, North America and Africa so far. Here are a few of my thoughts on life, travel, and Drupal..."
   image_src: 'https://rachelnorfolk.me/modules/custom/dark_mode/rachel.jpeg'
-  abstract: 'Here are a few of my thoughts on life, travel, and Drupal...'
+  keywords: 'blog, travel, Drupal'
+  shortlink: '[site:url]'
   twitter_cards_image: 'https://rachelnorfolk.me/modules/custom/dark_mode/rachel.jpeg'
   twitter_cards_image_alt: 'Rachel on her motorbike'
+  twitter_cards_image_height: '400'
+  twitter_cards_image_width: '400'
   twitter_cards_type: summary_large_image
