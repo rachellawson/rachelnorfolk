@@ -106,6 +106,9 @@
             },
             "drupal/environment_indicator": {
                 "getTitle() in Toolbar Handler returns null value, crashes site - Drupal.org issue #3324429": "https://www.drupal.org/files/issues/2022-11-30/issue-3324429.patch"
+            },
+            "drupal/openid_connect": {
+                "Picture with no extension results in Content-Type: application/octet-stream": "https://git.drupalcode.org/project/openid_connect/-/merge_requests/64.diff"
             }
         },
         "drupal-core-project-message": {
