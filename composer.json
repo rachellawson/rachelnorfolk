@@ -65,6 +65,20 @@
         }
     },
     "extra": {
+        "violinist": {
+
+            "allow_update_indirect_with_direct": 0,
+            "allow_updates_beyond_constraint": 1,
+            "always_update_all": 1,
+            "assignees": ["rachellawson"],
+            "automerge": 0,
+            "automerge_security": 0,
+            "check_only_direct_dependencies": 1,
+            "number_of_concurrent_updates": 0,
+            "one_pull_request_per_package": 1,
+            "run_scripts": 1,
+            "update_with_dependencies": 1
+        },
         "drupal-scaffold": {
             "locations": {
                 "web-root": "web/"
