@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_banner
     - field.field.user.user.field_website
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -21,6 +22,35 @@ third_party_settings:
   layout_builder:
     enabled: true
     sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+          context_mapping: {  }
+        components:
+          ef7c8388-5a2b-445d-8235-960e04e41282:
+            uuid: ef7c8388-5a2b-445d-8235-960e04e41282
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_banner'
+              label: banner
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
       -
         layout_id: layout_twocol_section
         layout_settings:
@@ -113,6 +143,17 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_banner:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 7
+    region: first
   field_website:
     type: link
     label: above

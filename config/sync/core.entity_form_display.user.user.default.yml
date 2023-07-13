@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_banner
     - field.field.user.user.field_website
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -31,6 +32,14 @@ content:
   contact:
     weight: 5
     region: content
+  field_banner:
+    type: image_image
+    weight: 7
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
   language:
     weight: 0
     region: content

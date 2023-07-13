@@ -13,6 +13,7 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
+    - activitypub
     - comment
     - file
     - filter
@@ -44,6 +45,7 @@ permissions:
   - 'administer redirects'
   - 'administer url aliases'
   - 'administer users'
+  - 'allow users to enable activitypub'
   - 'create and edit custom blocks'
   - 'create article content'
   - 'create audio media'
