@@ -5,6 +5,7 @@ dependencies:
   config:
     - filter.format.restricted_html
   module:
+    - file
     - filter
     - node
     - path
@@ -18,5 +19,6 @@ permissions:
   - 'access toolbar'
   - 'access tour'
   - 'create url aliases'
+  - 'delete own files'
   - 'use text format restricted_html'
   - 'view own unpublished content'
