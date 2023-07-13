@@ -1,0 +1,38 @@
+uuid: 0c123114-090f-4949-9db0-fc1863355941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_banner
+  module:
+    - image
+    - user
+id: user.user.field_banner
+field_name: field_banner
+entity_type: user
+bundle: user
+label: 'Banner image'
+description: 'An image that will be used as a background banner wherever your account is represented'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: 1200x600
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

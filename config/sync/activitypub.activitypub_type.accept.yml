@@ -1,0 +1,14 @@
+uuid: a393efec-1601-46c1-bb4d-efca8e64b6de
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 5oaiLOLk_PPa2PlPh759FU9LIm_Esw5melqJeLpNj-U
+id: accept
+label: Accept
+description: 'Sends the "Accept" request when a (remote) user wants to follow a local user.'
+locked: true
+plugin:
+  id: activitypub_static_types
+  configuration:
+    activity: Accept

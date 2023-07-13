@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.user.compact
+    - field.field.user.user.field_banner
     - field.field.user.user.field_website
     - field.field.user.user.user_picture
     - image.style.thumbnail
@@ -26,23 +27,6 @@ third_party_settings:
         layout_settings:
           label: ''
         components:
-          85615fd0-7764-453a-8dde-ae946a20d09a:
-            uuid: 85615fd0-7764-453a-8dde-ae946a20d09a
-            region: content
-            configuration:
-              id: 'field_block:user:user:user_picture'
-              label_display: '0'
-              context_mapping:
-                entity: layout_builder.entity
-              formatter:
-                type: image
-                label: hidden
-                settings:
-                  image_link: content
-                  image_style: thumbnail
-                third_party_settings: {  }
-            weight: 0
-            additional: {  }
           ee6da03e-421c-4795-bc53-0535b007fb86:
             uuid: ee6da03e-421c-4795-bc53-0535b007fb86
             region: content
@@ -105,5 +89,6 @@ content:
     weight: 0
     region: content
 hidden:
+  field_banner: true
   field_website: true
   member_for: true
