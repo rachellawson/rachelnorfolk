@@ -39,7 +39,7 @@ packages:
     drupal/geocoder: 4.9.0
     drupal/geofield: 1.53.0
     drupal/geofield_map: 3.0.11
-    drupal/gin: 3.0.0-rc4
+    drupal/gin: 3.0.0-rc5
     drupal/gin_toolbar: 1.0.0-rc3
     drupal/honeypot: 2.1.2
     drupal/image_widget_crop: 2.4.0
@@ -73,7 +73,7 @@ packages:
     landrok/activitypub: 0.6.0
     league/container: 4.2.0
     masterminds/html5: 2.8.0
-    mck89/peast: v1.15.1
+    mck89/peast: v1.15.2
     mkalkbrenner/php-htmldiff-advanced: 0.0.8
     monolog/monolog: 3.4.0
     nikic/php-parser: v4.16.0
@@ -99,7 +99,7 @@ packages:
     psr/http-factory: 1.0.2
     psr/http-message: '2.0'
     psr/log: 3.0.0
-    psy/psysh: v0.11.18
+    psy/psysh: v0.11.19
     ralouphie/getallheaders: 3.0.3
     sebastian/diff: 4.0.5
     symfony/cache: v6.3.1
