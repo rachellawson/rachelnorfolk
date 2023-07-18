@@ -137,5 +137,5 @@ web:
 # The configuration of scheduled execution.
 crons:
     drupal:
-        spec: '*/20 * * * *'
+        spec: '*/9 * * * *'
         cmd: 'cd web ; drush core-cron'
