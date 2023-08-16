@@ -1,0 +1,22 @@
+uuid: 27e2d570-fe70-4b20-af2e-1e53365333a3
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - reader_theme
+_core:
+  default_config_hash: SrLdqx62uHWuX9_vPRNI4fBMSyBzNSS9Qm2TaSxz8ro
+id: reader_theme_content
+theme: reader_theme
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

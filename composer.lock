@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bc16f3d20a6dd8f489bd70475c8debd4",
+    "content-hash": "c092089bec2c788fb7cc44106424bfdd",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3485,6 +3485,54 @@
             "homepage": "https://www.drupal.org/project/rdf",
             "support": {
                 "source": "https://git.drupalcode.org/project/rdf"
+            }
+        },
+        {
+            "name": "drupal/reader",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/reader.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/reader-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "e1e471164e34c2eb37388202c3225707a32d1552"
+            },
+            "require": {
+                "drupal/core": "^9.4 || ^10"
+            },
+            "require-dev": {
+                "drupal/aggregator": "~1.0",
+                "drupal/stable": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1689516304",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "swentel",
+                    "homepage": "https://www.drupal.org/user/107403"
+                }
+            ],
+            "description": "PWA reader",
+            "homepage": "https://www.drupal.org/project/reader",
+            "support": {
+                "source": "https://git.drupalcode.org/project/reader"
             }
         },
         {

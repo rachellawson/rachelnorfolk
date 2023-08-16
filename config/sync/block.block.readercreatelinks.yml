@@ -1,0 +1,22 @@
+uuid: 8ef38fae-1eb6-4ccc-bd07-e930d76ec4c8
+langcode: en
+status: true
+dependencies:
+  module:
+    - reader
+  theme:
+    - reader_theme
+_core:
+  default_config_hash: 4O2fjSse4hZaX4wgPtYzasmOtlFMO-jMHgABB2n_RiI
+id: readercreatelinks
+theme: reader_theme
+region: column_3
+weight: 0
+provider: null
+plugin: reader_create_links
+settings:
+  id: reader_create_links
+  label: 'Reader create links'
+  label_display: visible
+  provider: reader
+visibility: {  }

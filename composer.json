@@ -42,6 +42,7 @@
         "drupal/openid_connect": "^3",
         "drupal/pathauto": "^1.8",
         "drupal/rdf": "^2.1",
+        "drupal/reader": "^1.0@beta",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
         "drupal/schema_metatag": "^2.4",

@@ -1,0 +1,12 @@
+uuid: 0b93acb5-7f3e-4713-bde3-c7a0ce2bdd38
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: '-bwTJHvqkol7RX4jHE4EiiZNfeGXU89b6IFBAEUHL4I'
+id: node.reader
+label: Reader
+targetEntityType: node
+cache: true

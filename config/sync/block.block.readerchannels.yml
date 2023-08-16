@@ -1,0 +1,22 @@
+uuid: 2acb0ad6-55f3-4adf-b96f-e78123a5c1b8
+langcode: en
+status: true
+dependencies:
+  module:
+    - reader
+  theme:
+    - reader_theme
+_core:
+  default_config_hash: IxTP8Nmlza2DK1ZIXdw0SaOVN4EOsC5O9x_uXb-Csp0
+id: readerchannels
+theme: reader_theme
+region: column_2
+weight: 0
+provider: null
+plugin: reader_channels
+settings:
+  id: reader_channels
+  label: 'Reader channels'
+  label_display: visible
+  provider: reader
+visibility: {  }

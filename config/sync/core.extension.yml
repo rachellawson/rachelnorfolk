@@ -66,6 +66,7 @@ module:
   path_alias: 0
   phpass: 0
   rachelnorfolk_blocks: 0
+  reader: 0
   redirect: 0
   responsive_image: 0
   schema_article: 0
@@ -93,4 +94,5 @@ theme:
   olivero: 0
   claro: 0
   gin: 0
+  reader_theme: 0
 profile: standard

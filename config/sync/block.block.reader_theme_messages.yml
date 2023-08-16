@@ -1,0 +1,22 @@
+uuid: 38565517-36cc-48b9-9ca0-025d53896007
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - reader_theme
+_core:
+  default_config_hash: hIEBacprM_hjnCaT7QJwzhKJ5CU_RlRXp5hyodEeC1A
+id: reader_theme_messages
+theme: reader_theme
+region: messages
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }
