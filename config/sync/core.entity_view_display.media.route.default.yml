@@ -32,23 +32,37 @@ content:
       height_unit: px
       hide_empty_map: true
       disable_wheel: true
-      fullscreen_control: true
-      gesture_handling: false
+      gesture_handling: true
+      fitbounds_options: '{"padding":[0,0]}'
       reset_map:
         control: false
-        position: topright
+        options: '{"position":"topleft","title":"Reset View"}'
+      map_scale:
+        control: true
+        options: '{"position":"bottomright","maxWidth":100,"metric":true,"imperial":false,"updateWhenIdle":false}'
+      locate:
+        control: false
+        options: '{"position":"topright","setView":"untilPanOrZoom","returnToPrevBounds":true,"keepCurrentZoomLevel":true,"strings":{"title":"Locate my position"}}'
+        automatic: false
+      leaflet_tooltip:
+        value: ''
+        options: '{"permanent":false,"direction":"center"}'
       popup: false
       popup_content: ''
+      leaflet_popup:
+        control: '1'
+        content: ''
+        options: '{"maxWidth":"300","minWidth":"50","autoPan":true}'
       map_position:
         force: false
         center:
           lat: 0.0
           lon: 0.0
+        zoomControlPosition: topleft
         zoom: 12
         minZoom: 1
         maxZoom: 18
         zoomFiner: 0
-      weight: ''
       icon:
         iconType: marker
         iconUrl: ''
@@ -75,11 +89,20 @@ content:
       leaflet_markercluster:
         control: false
         options: '{"spiderfyOnMaxZoom":true,"showCoverageOnHover":true,"removeOutsideVisibleBounds": false}'
+        excluded: ''
         include_path: false
+      fullscreen:
+        control: true
+        options: '{"position":"topleft","pseudoFullscreen":false}'
       path: '{"color":"#3388ff","opacity":"1.0","stroke":true,"weight":3,"fill":"depends","fillColor":"*","fillOpacity":"0","radius":"6"}'
+      feature_properties:
+        values: ''
       geocoder:
         control: false
         settings:
+          autocomplete:
+            placeholder: 'Search Address'
+            title: 'Search an Address on the Map'
           position: topright
           input_size: 25
           providers:
@@ -94,6 +117,9 @@ content:
           zoom: 16
           popup: false
           options: ''
+      map_lazy_load:
+        lazy_load: false
+      weight: null
     third_party_settings: {  }
     weight: 0
     region: content
