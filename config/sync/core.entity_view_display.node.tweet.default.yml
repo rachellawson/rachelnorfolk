@@ -1,0 +1,38 @@
+uuid: 388be47e-c77d-4e8e-b78f-2ccc0f471afe
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.tweet.body
+    - field.field.node.tweet.field_images
+    - image.style.large
+    - node.type.tweet
+  module:
+    - image
+    - text
+    - user
+id: node.tweet.default
+targetEntityType: node
+bundle: tweet
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_images:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  links: true

@@ -11,6 +11,7 @@ dependencies:
     - media.type.video
     - node.type.article
     - node.type.page
+    - node.type.tweet
     - taxonomy.vocabulary.tags
   module:
     - activitypub
@@ -57,6 +58,7 @@ permissions:
   - 'create page content'
   - 'create remote_video media'
   - 'create terms in tags'
+  - 'create tweet content'
   - 'create url aliases'
   - 'create video media'
   - 'delete all revisions'
@@ -70,6 +72,7 @@ permissions:
   - 'delete own image media'
   - 'delete own page content'
   - 'delete own remote_video media'
+  - 'delete own tweet content'
   - 'delete own video media'
   - 'delete page revisions'
   - 'delete terms in tags'

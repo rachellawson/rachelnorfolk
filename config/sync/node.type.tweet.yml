@@ -1,0 +1,17 @@
+uuid: ee7548ca-9b95-43fe-8625-d765ffa29044
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Tweet
+type: tweet
+description: "Contains a single tweet as migrated from Rachel's Twitter archive (before the Space Karen fucked it all up)"
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
