@@ -1,0 +1,44 @@
+# Migration configuration for twitter_migration_twitter content.
+id: twitter_migration_twitter
+label: twitter
+source:
+  plugin: url
+  data_fetcher_plugin: http
+  data_parser_plugin: json
+  urls: https://raw.githubusercontent.com/rachellawson/tweets/main/tweets.json
+  item_selector: /
+  fields:
+    -
+      name: tid_str
+      selector: tweet/id_str
+    -
+      name: created_at
+      selector: tweet/created_at
+    -
+      name: body
+      selector: tweet/full_text
+    -
+      name: published_date
+      selector: tweet/created_at
+  ids:
+    tid_str:
+      type: string
+      max_length: 256
+destination:
+  plugin: entity:node
+process:
+  type:
+    plugin: default_value
+    default_value: tweet
+  title: created_at
+  uid:
+    plugin: default_value
+    default_value: 2
+  sticky:
+    plugin: default_value
+    default_value: 0
+  'body/value': body
+  'body/format':
+    plugin: default_value
+    default_value: "full_html"
+  # created: published_date

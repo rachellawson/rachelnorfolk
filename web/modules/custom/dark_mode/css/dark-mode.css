@@ -13,3 +13,10 @@
 
 }
 
+.tweet {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 6px;
+  border: 1px lightgray solid;
+  padding: 1em;
+}

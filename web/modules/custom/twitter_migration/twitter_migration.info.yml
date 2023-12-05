@@ -1,0 +1,9 @@
+name: twitter-migration
+type: module
+description: Allows migration of Twitter archive to my Drupal blog
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - migrate_plus
+  - migrate_tools
+  

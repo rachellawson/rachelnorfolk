@@ -8,25 +8,47 @@ dependencies:
     - field.field.node.tweet.field_images
     - node.type.tweet
   module:
+    - layout_builder
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          d8bf6ebd-921d-4484-8dd6-07f2ff7a0840:
+            uuid: d8bf6ebd-921d-4484-8dd6-07f2ff7a0840
+            region: content
+            configuration:
+              id: 'field_block:node:tweet:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
 id: node.tweet.teaser
 targetEntityType: node
 bundle: tweet
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: text_default
     label: hidden
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    weight: 101
-    region: content
-  links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden:
   field_images: true
+  links: true
