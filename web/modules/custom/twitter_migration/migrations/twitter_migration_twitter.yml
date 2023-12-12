@@ -5,7 +5,7 @@ source:
   plugin: url
   data_fetcher_plugin: http
   data_parser_plugin: json
-  urls: https://raw.githubusercontent.com/rachellawson/tweets/main/tweets.json
+  urls: https://tweets.fra1.digitaloceanspaces.com/tweets-full.js
   item_selector: /
   fields:
     -
@@ -24,13 +24,20 @@ source:
     tid_str:
       type: string
       max_length: 256
+  constants:
+    TWEET_PREFIX: 'Tweet at '
 destination:
   plugin: entity:node
 process:
   type:
     plugin: default_value
     default_value: tweet
-  title: created_at
+  title:
+    plugin: concat
+    source:
+      - constants/TWEET_PREFIX
+      - published_date
+    delimiter: ' '
   uid:
     plugin: default_value
     default_value: 2
@@ -41,4 +48,11 @@ process:
   'body/format':
     plugin: default_value
     default_value: "full_html"
-  # created: published_date
+  # published_date like Wed Jun 22 15:54:22 +0000 2022
+  created:
+    plugin: format_date
+    source: published_date
+    from_format: 'D M d H:i:s O Y'
+    to_format: 'U'
+    from_timezone: 'UTC'
+    to_timezone: 'UTC'
