@@ -27,7 +27,7 @@ content:
     label: visually_hidden
     settings:
       multiple_map: false
-      leaflet_map: 'OSM Mapnik'
+      leaflet_map: '~Route Map'
       height: 400
       height_unit: px
       hide_empty_map: true

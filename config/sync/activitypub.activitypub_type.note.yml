@@ -13,29 +13,29 @@ locked: false
 plugin:
   id: activitypub_dynamic_types
   configuration:
+    activity: Create
     target_entity_type_id: node
     target_bundle: ''
-    activity: Create
     object: Note
     field_mapping:
       -
-        property: published
         field_name: created
+        property: published
       -
-        property: name
         field_name: title
+        property: name
       -
-        property: content
         field_name: body
+        property: content
       -
+        field_name: ''
         property: summary
-        field_name: ''
       -
+        field_name: ''
         property: object
-        field_name: ''
       -
+        field_name: ''
         property: inReplyTo
-        field_name: ''
       -
-        property: attachment
         field_name: ''
+        property: attachment

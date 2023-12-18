@@ -45,6 +45,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   leaflet: 0
+  leaflet_more_maps: 0
   link: 0
   media: 0
   media_entity_twitter: 0
