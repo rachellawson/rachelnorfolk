@@ -21,5 +21,5 @@
       "label": "web https"
     }
   },
-  "postCreateCommand": "bash -c 'ddev config global --omit-containers=ddev-router && ddev config --auto && ddev debug download-images && ddev config global --web-environment=PLATFORMSH_CLI_TOKEN=`echo $PLATFORM_CLI`'"
+  "postCreateCommand": "bash -c 'ddev config global --omit-containers=ddev-router && ddev config --auto && ddev debug download-images && ddev config global --web-environment=PLATFORMSH_CLI_TOKEN=`echo $PLATFORM`'"
 }
