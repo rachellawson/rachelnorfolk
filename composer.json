@@ -48,7 +48,6 @@
         "drupal/redis": "^1.4",
         "drupal/schema_metatag": "^2.4",
         "drupal/seven": "^1.0@alpha",
-        "drupal/webfinger": "^1.0",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^12",
         "joachim-n/composer-manifest": "^1.1",
