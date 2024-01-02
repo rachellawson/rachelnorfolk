@@ -1416,22 +1416,22 @@
         },
         {
             "name": "drupal/activitypub",
-            "version": "1.0.0-alpha17",
+            "version": "1.0.0-alpha18",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/activitypub.git",
-                "reference": "1.0.0-alpha17"
+                "reference": "1.0.0-alpha18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/activitypub-1.0.0-alpha17.zip",
-                "reference": "1.0.0-alpha17",
-                "shasum": "eddd04425c3f42a387776c5739a5d74e0b2cd712"
+                "url": "https://ftp.drupal.org/files/projects/activitypub-1.0.0-alpha18.zip",
+                "reference": "1.0.0-alpha18",
+                "shasum": "41c0e1a2e1933d15ba3ea5ff5b15b5c6e9ceaf08"
             },
             "require": {
                 "drupal/core": "^9.4 || ^10",
                 "drupal/nodeinfo": "~1.0",
-                "drupal/webfinger": "~1.0",
+                "drupal/webfinger": "~2.0",
                 "ext-json": "*",
                 "landrok/activitypub": "~0.5"
             },
@@ -1444,8 +1444,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha17",
-                    "datestamp": "1679066869",
+                    "version": "1.0.0-alpha18",
+                    "datestamp": "1704184716",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1465,12 +1465,8 @@
                 },
                 {
                     "name": "Aleix Quintana",
-                    "homepage": "https://www.drupal.org/user/4481",
+                    "homepage": "https://www.drupal.org/user/107403",
                     "role": "Maintainer"
-                },
-                {
-                    "name": "swentel",
-                    "homepage": "https://www.drupal.org/user/107403"
                 }
             ],
             "description": "Connect your site with the Fediverse.",
@@ -4019,17 +4015,17 @@
         },
         {
             "name": "drupal/webfinger",
-            "version": "1.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webfinger.git",
-                "reference": "8.x-1.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webfinger-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "8c6a6ad1452cb6ebbdc31cc679cf48c3893fc031"
+                "url": "https://ftp.drupal.org/files/projects/webfinger-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "d07a09c17efd410e80ba38723626fbd6f395a77e"
             },
             "require": {
                 "drupal/core": "^8 || ^9 || ^10"
@@ -4037,8 +4033,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1669130625",
+                    "version": "2.0.1",
+                    "datestamp": "1704140376",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
