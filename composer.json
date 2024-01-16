@@ -50,8 +50,11 @@
         "drupal/seven": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^12",
-        "joachim-n/composer-manifest": "^1.1",
         "platformsh/config-reader": "^2.3"
+    },
+    "require-dev": {
+        "drupal/core-dev": "^10.2",
+        "drupal/stage_file_proxy": "^2.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -64,7 +67,9 @@
             "composer/installers": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
-            "joachim-n/composer-manifest": true
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true
         }
     },
     "extra": {
