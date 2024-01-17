@@ -1943,16 +1943,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "10.2.1",
+            "version": "10.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "0050280087b8ed1fb145fcf22e01ad53c85931db"
+                "reference": "fc9abad1ab687635a5eddec00aa1a5f2a29a23bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/0050280087b8ed1fb145fcf22e01ad53c85931db",
-                "reference": "0050280087b8ed1fb145fcf22e01ad53c85931db",
+                "url": "https://api.github.com/repos/drupal/core/zipball/fc9abad1ab687635a5eddec00aa1a5f2a29a23bd",
+                "reference": "fc9abad1ab687635a5eddec00aa1a5f2a29a23bd",
                 "shasum": ""
             },
             "require": {
@@ -2100,13 +2100,13 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/10.2.1"
+                "source": "https://github.com/drupal/core/tree/10.2.2"
             },
-            "time": "2024-01-05T09:27:16+00:00"
+            "time": "2024-01-16T21:10:58+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "10.2.1",
+            "version": "10.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -2150,22 +2150,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.2.1"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/10.2.2"
             },
             "time": "2023-11-15T23:23:28+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "10.2.1",
+            "version": "10.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "e4809a6155daf96eb927f59d44e9f26fb5607dbe"
+                "reference": "d8cb769d86449af5ad763f3517c7f3c0e226ed60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/e4809a6155daf96eb927f59d44e9f26fb5607dbe",
-                "reference": "e4809a6155daf96eb927f59d44e9f26fb5607dbe",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/d8cb769d86449af5ad763f3517c7f3c0e226ed60",
+                "reference": "d8cb769d86449af5ad763f3517c7f3c0e226ed60",
                 "shasum": ""
             },
             "require": {
@@ -2174,7 +2174,7 @@
                 "doctrine/annotations": "~1.14.3",
                 "doctrine/deprecations": "~1.1.2",
                 "doctrine/lexer": "~2.1.0",
-                "drupal/core": "10.2.1",
+                "drupal/core": "10.2.2",
                 "egulias/email-validator": "~4.0.2",
                 "guzzlehttp/guzzle": "~7.8.1",
                 "guzzlehttp/promises": "~2.0.2",
@@ -2235,9 +2235,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/10.2.1"
+                "source": "https://github.com/drupal/core-recommended/tree/10.2.2"
             },
-            "time": "2024-01-05T09:27:16+00:00"
+            "time": "2024-01-16T21:10:58+00:00"
         },
         {
             "name": "drupal/crop",
@@ -3062,17 +3062,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.9",
+            "version": "10.2.10",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.9"
+                "reference": "10.2.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.9.zip",
-                "reference": "10.2.9",
-                "shasum": "777245ffc42bd50070dcf753cb2c6e2c4d6b3892"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.10.zip",
+                "reference": "10.2.10",
+                "shasum": "c5b899a55785ce8907d3a052f10cbc0c2b04bf8a"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -3081,8 +3081,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.9",
-                    "datestamp": "1705246519",
+                    "version": "10.2.10",
+                    "datestamp": "1705405628",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11003,7 +11003,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "10.2.1",
+            "version": "10.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -11053,7 +11053,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/10.2.1"
+                "source": "https://github.com/drupal/core-dev/tree/10.2.2"
             },
             "time": "2023-12-12T22:01:45+00:00"
         },
@@ -11666,16 +11666,16 @@
         },
         {
             "name": "open-telemetry/context",
-            "version": "1.0.1",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/context.git",
-                "reference": "40a1f8941b7e8578bf3780d61e445bca5e9fbe5a"
+                "reference": "e9d254a7c89885e63fd2fde54e31e81aaaf52b7c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/context/zipball/40a1f8941b7e8578bf3780d61e445bca5e9fbe5a",
-                "reference": "40a1f8941b7e8578bf3780d61e445bca5e9fbe5a",
+                "url": "https://api.github.com/repos/opentelemetry-php/context/zipball/e9d254a7c89885e63fd2fde54e31e81aaaf52b7c",
+                "reference": "e9d254a7c89885e63fd2fde54e31e81aaaf52b7c",
                 "shasum": ""
             },
             "require": {
@@ -11723,25 +11723,25 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2024-01-09T00:33:41+00:00"
+            "time": "2024-01-13T05:50:44+00:00"
         },
         {
             "name": "open-telemetry/exporter-otlp",
-            "version": "1.0.1",
+            "version": "1.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/exporter-otlp.git",
-                "reference": "89aaf718248e558679e04129cd0ec7d708c91fc3"
+                "reference": "db7b96bd04284d2fea92dccaebb68f8af40f79d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/exporter-otlp/zipball/89aaf718248e558679e04129cd0ec7d708c91fc3",
-                "reference": "89aaf718248e558679e04129cd0ec7d708c91fc3",
+                "url": "https://api.github.com/repos/opentelemetry-php/exporter-otlp/zipball/db7b96bd04284d2fea92dccaebb68f8af40f79d8",
+                "reference": "db7b96bd04284d2fea92dccaebb68f8af40f79d8",
                 "shasum": ""
             },
             "require": {
                 "open-telemetry/api": "^1.0",
-                "open-telemetry/gen-otlp-protobuf": "^1.0",
+                "open-telemetry/gen-otlp-protobuf": "^1.1",
                 "open-telemetry/sdk": "^1.0",
                 "php": "^7.4 || ^8.0",
                 "php-http/discovery": "^1.14"
@@ -11787,20 +11787,20 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2023-12-17T23:25:22+00:00"
+            "time": "2024-01-17T12:46:01+00:00"
         },
         {
             "name": "open-telemetry/gen-otlp-protobuf",
-            "version": "1.0.0",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/gen-otlp-protobuf.git",
-                "reference": "30fe95f10c2ec1a577f78257c86fbbebe739ca5e"
+                "reference": "76e2a44357f8c3fdcabcb070ec8a59e52ae3e3c3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/gen-otlp-protobuf/zipball/30fe95f10c2ec1a577f78257c86fbbebe739ca5e",
-                "reference": "30fe95f10c2ec1a577f78257c86fbbebe739ca5e",
+                "url": "https://api.github.com/repos/opentelemetry-php/gen-otlp-protobuf/zipball/76e2a44357f8c3fdcabcb070ec8a59e52ae3e3c3",
+                "reference": "76e2a44357f8c3fdcabcb070ec8a59e52ae3e3c3",
                 "shasum": ""
             },
             "require": {
@@ -11850,20 +11850,20 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2023-09-05T03:38:44+00:00"
+            "time": "2024-01-16T21:54:57+00:00"
         },
         {
             "name": "open-telemetry/sdk",
-            "version": "1.0.5",
+            "version": "1.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/opentelemetry-php/sdk.git",
-                "reference": "57d2a1a2b4a5beb70ffed4642068686146b9d2e5"
+                "reference": "a827f2544cfcd65eb39bf26bc0c4a0978de426e6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/57d2a1a2b4a5beb70ffed4642068686146b9d2e5",
-                "reference": "57d2a1a2b4a5beb70ffed4642068686146b9d2e5",
+                "url": "https://api.github.com/repos/opentelemetry-php/sdk/zipball/a827f2544cfcd65eb39bf26bc0c4a0978de426e6",
+                "reference": "a827f2544cfcd65eb39bf26bc0c4a0978de426e6",
                 "shasum": ""
             },
             "require": {
@@ -11933,7 +11933,7 @@
                 "issues": "https://github.com/open-telemetry/opentelemetry-php/issues",
                 "source": "https://github.com/open-telemetry/opentelemetry-php"
             },
-            "time": "2024-01-10T13:04:59+00:00"
+            "time": "2024-01-16T21:54:57+00:00"
         },
         {
             "name": "open-telemetry/sem-conv",
