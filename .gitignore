@@ -27,3 +27,6 @@ console/
 
 # Ignore any sql files downloaded
 /*.sql
+
+# Ignore PHPUnitl things
+.phpunit.result.cache

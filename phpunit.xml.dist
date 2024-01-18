@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="web/core/tests/bootstrap.php" colors="true">
+  <php>
+    <env name="SIMPLETEST_BASE_URL" value="http://localhost"/>
+    <env name="SIMPLETEST_DB" value="sqlite://localhost/sites/default/files/.ht.sqlite"/>
+    <ini name="error_reporting" value="32767"/>
+    <ini name="memory_limit" value="-1"/>
+  </php>
+  <testsuites>
+    <testsuite name="Custom Module Tests">
+      <directory suffix="Test.php">./web/modules/custom/**</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
