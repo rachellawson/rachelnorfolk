@@ -181,8 +181,8 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: "We are collecting some substantiated facts about mary Siever that we can use in a Wikipedia entry in her name. We would love to collect as many facts as possible but they each need to be substantiated with links to supporting evidence to be accepted by the Wikipedia editors. \r\n\r\nIn the meantime, we hope you enjoy reading the facts as people enter them!"
-            format: basic_html
+            value: "We are collecting some substantiated facts about <a href=\"https://www.advrider.com/mary-sievier/\">Mary Sievier</a> that we can use in a Wikipedia entry in her name. We would love to collect as many facts as possible but they each need to be substantiated with links to supporting evidence to be accepted by the Wikipedia editors. \r\n\r\nIn the meantime, we hope you enjoy reading the facts as people enter them!"
+            format: full_html
           tokenize: false
         area_1:
           id: area_1
