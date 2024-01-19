@@ -13,5 +13,5 @@ type: mary_fact
 description: 'Stores individual facts about Mary Silver, that we will then compile into a wikipedia entry'
 help: "Please enter a <strong>single fact</strong> about Mary that we can use in a Wikipedia entry in her name. We will also ask for one or more links to supporting evidence about the fact that you give us. These are really important to Wikipedia and need to be something that is considered \"permanent\".\r\n\r\nThe temptation is to write loads and loads in a single entry but please refrain - you can add as many of these facts as you like but do each one on a separate form."
 new_revision: false
-preview_mode: 1
+preview_mode: 0
 display_submitted: false

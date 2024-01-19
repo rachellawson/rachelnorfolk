@@ -12,9 +12,9 @@ id: node.mary_fact.body
 field_name: body
 entity_type: node
 bundle: mary_fact
-label: Body
-description: ''
-required: false
+label: 'Long description'
+description: "Tell us <strong>one fact</strong> about Mary's life. We will use the fact that you enter and the link to the supporting evidence to create a longer article about her. \r\n\r\nAvoid adding multiple facts per form."
+required: true
 translatable: true
 default_value: {  }
 default_value_callback: ''
