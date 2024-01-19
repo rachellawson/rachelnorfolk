@@ -1,0 +1,26 @@
+uuid: e3a0b85a-2261-4251-9e6a-d4f37b6dad20
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - filter.format.plain_text
+    - node.type.mary_fact
+  module:
+    - text
+id: node.mary_fact.body
+field_name: body
+entity_type: node
+bundle: mary_fact
+label: 'Long description'
+description: "Tell us <strong>one fact</strong> about Mary's life. We will use the fact that you enter and the link to the supporting evidence to create a longer article about her. \r\n\r\nAvoid adding multiple facts per form."
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats:
+    - plain_text
+field_type: text_with_summary

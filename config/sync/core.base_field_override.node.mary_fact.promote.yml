@@ -1,0 +1,22 @@
+uuid: d7cafc51-9458-49a4-b550-44130b8d1f76
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.mary_fact
+id: node.mary_fact.promote
+field_name: promote
+entity_type: node
+bundle: mary_fact
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

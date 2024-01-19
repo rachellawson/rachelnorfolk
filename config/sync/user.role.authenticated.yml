@@ -2,11 +2,14 @@ uuid: 9e999658-f1d7-4c5d-8caf-0cac6e8aa67d
 langcode: en
 status: true
 dependencies:
+  config:
+    - node.type.mary_fact
   module:
     - comment
     - contact
     - file
     - media
+    - node
     - search
     - system
 _core:
@@ -20,6 +23,7 @@ permissions:
   - 'access content'
   - 'access site-wide contact form'
   - 'access user profiles'
+  - 'create mary_fact content'
   - 'delete own files'
   - 'post comments'
   - 'search content'
