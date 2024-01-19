@@ -1,0 +1,23 @@
+uuid: 81eb2abe-37b0-4d46-b572-031f82f38b1f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_supporting_reference
+    - node.type.mary_fact
+  module:
+    - link
+id: node.mary_fact.field_supporting_reference
+field_name: field_supporting_reference
+entity_type: node
+bundle: mary_fact
+label: 'Supporting Reference'
+description: "Please enter a link to an online reference that supports the fact you are entering. Try to link to things that are likely to be permanent - newspaper articles, etc. Avoid \"front pages\" but link to the actual page that has the detail of the article. \r\n\r\nInclude the https:// at the start of the link"
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 0
+  link_type: 16
+field_type: link

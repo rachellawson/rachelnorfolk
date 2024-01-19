@@ -10,6 +10,7 @@ dependencies:
     - media.type.remote_video
     - media.type.video
     - node.type.article
+    - node.type.mary_fact
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
@@ -61,6 +62,7 @@ permissions:
   - 'create video media'
   - 'delete all revisions'
   - 'delete any article content'
+  - 'delete any mary_fact content'
   - 'delete any page content'
   - 'delete article revisions'
   - 'delete media'
@@ -74,6 +76,7 @@ permissions:
   - 'delete page revisions'
   - 'delete terms in tags'
   - 'edit any article content'
+  - 'edit any mary_fact content'
   - 'edit any page content'
   - 'edit own article content'
   - 'edit own comments'
@@ -90,6 +93,7 @@ permissions:
   - 'use text format full_html'
   - 'view all revisions'
   - 'view article revisions'
+  - 'view mary_fact revisions'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view page revisions'

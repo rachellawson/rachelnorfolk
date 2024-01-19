@@ -1,0 +1,17 @@
+uuid: 77806fa3-dfb8-42db-af58-f58134bcc12a
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Mary Fact'
+type: mary_fact
+description: 'Stores individual facts about Mary Silver, that we will then compile into a wikipedia entry'
+help: "Please enter a <strong>single fact</strong> about Mary that we can use in a Wikipedia entry in her name. We will also ask for one or more links to supporting evidence about the fact that you give us. These are really important to Wikipedia and need to be something that is considered \"permanent\".\r\n\r\nThe temptation is to write loads and loads in a single entry but please refrain - you can add as many of these facts as you like but do each one on a separate form."
+new_revision: false
+preview_mode: 1
+display_submitted: false
