@@ -194,7 +194,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: '<div><a href="/node/add/mary_fact"><button class="button">Add a fact about Mary</button></a></div>'
+            value: '<div><a href="/node/add/mary_fact?destination=mary-facts"><button class="button">Add a fact about Mary</button></a></div>'
             format: full_html
           tokenize: false
       footer:
@@ -208,7 +208,7 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: '<a href="/node/add/mary_fact"><button class="button">Add another fact about Mary</button></a>'
+            value: '<a href="/node/add/mary_fact?destination=mary-facts"><button class="button">Add another fact about Mary</button></a>'
             format: full_html
           tokenize: false
       display_extenders: {  }
