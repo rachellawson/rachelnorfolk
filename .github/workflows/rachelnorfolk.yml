@@ -31,5 +31,5 @@ jobs:
 
     - name: Check Drupal Coding Standards
       run: |
-        ./vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
+        ./vendor/bin/phpcs --config-set installed_paths ./vendor/drupal/coder/coder_sniffer
         ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,install,js web/modules/custom
