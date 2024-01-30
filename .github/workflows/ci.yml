@@ -16,8 +16,6 @@ jobs:
 
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
-      env:
-        TEST_NAME: Custom Module Tests
       with:
         version: 9.6
         configuration: phpunit.xml
