@@ -1,0 +1,40 @@
+name: RachelNorfolk Custom Modules
+
+on: [push]
+
+jobs:
+  build-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Setup PHP, with composer and extensions
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        extensions: gdate, dom, filter, gd, hash, json, pcre, PDO, session, SimpleXML, SPL, tokenizer, xml
+
+    - name: Composer Install
+      run: |
+        composer --no-interaction --no-progress --optimize-autoloader install
+
+    - name: Webserver
+      run: |
+        nohup php -S 0.0.0.0:8000 -t web > phpd.log 2>&1 &
+        sed -i "s/\/localhost/\/localhost:8000/g" phpunit.xml
+
+    - name: PHPUnit Tests
+      run: |
+        ./vendor/bin/phpunit web/modules/custom
+
+    - name: Check Drupal Coding Standards
+      run: |
+        ./vendor/bin/phpcs  web/modules/custom
+
+    - name: Drupal Rector
+      run: |
+        composer require --dev palantirnet/drupal-rector
+        cp vendor/palantirnet/drupal-rector/rector.php .
+        ./vendor/bin/rector process web/modules/custom --dry-run
