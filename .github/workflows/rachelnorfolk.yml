@@ -20,10 +20,13 @@ jobs:
       run: |
         composer --no-interaction --no-progress --optimize-autoloader install
 
+    - name: Webserver
+      run: |
+        nohup php -S 0.0.0.0:8000 -t web > phpd.log 2>&1 &
+        sed -i "s/\/localhost/\/localhost:8000/g" phpunit.xml
+
     - name: PHPUnit Tests
       run: |
-        php -S 0.0.0.0:8000 -t web
-        sed -i "s/\/localhost/\/localhost:8000/g" phpunit.xml
         ./vendor/bin/phpunit web/modules/custom
 
     - name: Check Drupal Coding Standards
