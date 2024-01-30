@@ -19,4 +19,6 @@ jobs:
       env:
         TEST_NAME: Custom Module Tests
       with:
+        version: 9.6
         configuration: phpunit.xml
+
