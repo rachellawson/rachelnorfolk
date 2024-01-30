@@ -31,5 +31,10 @@ jobs:
 
     - name: Check Drupal Coding Standards
       run: |
-        ./vendor/bin/phpcs --config-set installed_paths ./vendor/drupal/coder/coder_sniffer
-        ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,install,js web/modules/custom
+        ./vendor/bin/phpcs  web/modules/custom
+
+    - name: Drupal Rector
+      run: |
+        composer require --dev palantirnet/drupal-rector
+        cp vendor/palantirnet/drupal-rector/rector.php .
+        ./vendor/bin/rector process web/modules/custom --dry-run
