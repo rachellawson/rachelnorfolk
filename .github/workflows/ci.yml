@@ -8,11 +8,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-      with:
-          php_version: 8.2
-          php_extensions: date dom filter gd hash json pcre PDO session SimpleXML SPL tokenizer xml
 
     - uses: php-actions/composer@v6
+      with:
+        php_version: "8.2"
+        php_extensions: date dom filter gd hash json pcre PDO session SimpleXML SPL tokenizer xml
 
     - name: PHPUnit Tests
       uses: php-actions/phpunit@master
