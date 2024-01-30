@@ -22,14 +22,6 @@ final class DarkModeEnabledTest extends BrowserTestBase {
   protected static $modules = ['dark_mode'];
 
   /**
-   * {@inheritdoc}
-   */
-  protected function setUp(): void {
-    parent::setUp();
-    // Set up the test here.
-  }
-
-  /**
    * Test callback.
    */
   public function testLibraryLoaded(): void {
