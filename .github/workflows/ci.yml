@@ -17,4 +17,6 @@ jobs:
         TEST_NAME: Custom Module Tests
       with:
         version: 9.6
+        php_version: 8.2
+        php_extensions: date dom filter gd hash json pcre PDO session SimpleXML SPL tokenizer xml
         configuration: phpunit.xml
