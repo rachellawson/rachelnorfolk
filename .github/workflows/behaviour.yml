@@ -36,7 +36,7 @@ jobs:
 
       # Non-database Psh commands.
       - name: Spin up environment
-        run: ~/.platformsh/bin/platform environment:activate -p XXX -e ${GITHUB_REF#refs/heads/} --yes
+        run: ~/.platformsh/bin/platform environment:activate --project=nlw7xhb3fyt7y -e ${GITHUB_REF#refs/heads/} --yes
 
       - name: connect to psh PR db
         run: |
