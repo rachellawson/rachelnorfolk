@@ -42,14 +42,15 @@ jobs:
         run: |
           nohup platform tunnel:single --project=nlw7xhb3fyt7y --environment=${GITHUB_REF#refs/heads/} --port=30123 --relationship=database --yes & > phpd.log 2>&1 &
 
-      - name: Drupal config to access db
+      - name: Start Drupal using remote db
         run: |
           cp ./.github/snippets/settings.local.php ./web/sites/default/settings.local.php
+          curl http://localhost/user/login
 
       # Finally, run the tests.
       - name: Run Behat tests
         run: |
-          ./vendor/bin/behat
+          ./vendor/bin/behat --colors
 
       - name: Tear it all down
         run: |
