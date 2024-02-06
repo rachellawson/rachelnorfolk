@@ -1,0 +1,35 @@
+name: Behaviour Tests
+on: [pull_request]
+
+env:
+  PLATFORMSH_CLI_TOKEN: ${{ secrets.PLATFORMSH_CLI_TOKEN }}
+
+jobs:
+  tests:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup DDEV
+        uses: ddev/github-action-setup-ddev@v1
+
+      # example: composer install
+      - run: ddev composer install
+
+      # Install Psh CLI.
+      - name: Install Psh CLI
+        run: curl -sS https://platform.sh/cli/installer | php
+
+      # Get the database to reflect main and run update.
+      - name: Fill database and bring Drupal up to date
+        run: |
+          ~/.platformsh/bin/platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
+          ddev exec drush -y cache-rebuild
+          ddev exec drush -y updatedb
+          ddev exec drush -y config-import
+
+      # Finally, run the tests.
+      - name: Run Behat tests
+        run: |
+          ddev exec behat --colors
