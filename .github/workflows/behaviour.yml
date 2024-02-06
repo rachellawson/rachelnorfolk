@@ -11,15 +11,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Setup PHP, with composer and extensions
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.2'
-          extensions: gdate, dom, filter, gd, hash, json, pcre, PDO, session, SimpleXML, SPL, tokenizer, xml
+      - name: Setup DDEV
+        uses: ddev/github-action-setup-ddev@v1
 
-      - name: Composer Install
-        run: |
-          composer --no-interaction --no-progress --optimize-autoloader install
+      # example: composer install
+      - run: ddev composer install
 
       # Install Psh CLI.
       - name: Install Psh CLI
@@ -34,24 +30,15 @@ jobs:
           ssh-keyscan ssh.uk-1.platform.sh >> ~/.ssh/known_hosts
           ssh-keyscan git.uk-1.platform.sh >> ~/.ssh/known_hosts
 
-      # Non-database Psh commands.
-      - name: Spin up environment
-        run: ~/.platformsh/bin/platform environment:activate --project=nlw7xhb3fyt7y -e ${GITHUB_REF#refs/heads/} --yes
-
-      - name: connect to psh PR db
+      # Get the database to reflect main and run update.
+      - name: Fill database and bring Drupal up to date
         run: |
-          nohup platform tunnel:single --project=nlw7xhb3fyt7y --environment=${GITHUB_REF#refs/heads/} --port=30123 --relationship=database --yes & > phpd.log 2>&1 &
-
-      - name: Start Drupal using remote db
-        run: |
-          cp ./.github/snippets/settings.local.php ./web/sites/default/settings.local.php
-          curl http://localhost/user/login
+          platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
+          ddev exec drush -y cache-rebuild
+          ddev exec drush -y updatedb
+          ddev exec drush -y config-import
 
       # Finally, run the tests.
       - name: Run Behat tests
         run: |
-          ./vendor/bin/behat --colors
-
-      - name: Tear it all down
-        run: |
-          platform tunnel:close   --project=nlw7xhb3fyt7y --environment=${GITHUB_REF#refs/heads/} --yes
+          ddev exec behat --colors
