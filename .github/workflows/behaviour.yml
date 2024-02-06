@@ -20,13 +20,12 @@ jobs:
       # Install Psh CLI.
       - name: Install Psh CLI
         run: |
-          curl -sS https://platform.sh/cli/installer | php
-          ~/.platformsh/bin/platform auth:api-token-login
+          curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | bash
 
       # Get the database to reflect main and run update.
       - name: Fill database and bring Drupal up to date
         run: |
-          ~/.platformsh/bin/platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
+          platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
           ddev exec drush -y cache-rebuild
           ddev exec drush -y updatedb
           ddev exec drush -y config-import
