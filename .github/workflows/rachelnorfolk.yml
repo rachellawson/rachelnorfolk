@@ -1,12 +1,7 @@
 name: RachelNorfolk Custom Modules
 
-on:
-  push:
-    branches-ignore:
-      - 'main'
-  pull_request:
-    branches:
-      - 'main'
+on: [pull_request]
+
 jobs:
   build-test:
     runs-on: ubuntu-latest
