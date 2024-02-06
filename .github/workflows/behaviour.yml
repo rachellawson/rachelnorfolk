@@ -22,13 +22,13 @@ jobs:
         run: curl -sS https://platform.sh/cli/installer | php
 
       # If you need to connect to database.
-      - name: Load certificate
-        run: ~/.platformsh/bin/platform ssh-cert:load -y -vvv
+      # - name: Load certificate
+      #   run: ~/.platformsh/bin/platform ssh-cert:load -y -vvv
 
-      - name: Add Psh to trusted keys
-        run: |
-          ssh-keyscan ssh.uk-1.platform.sh >> ~/.ssh/known_hosts
-          ssh-keyscan git.uk-1.platform.sh >> ~/.ssh/known_hosts
+      # - name: Add Psh to trusted keys
+      #  run: |
+      #    ssh-keyscan ssh.uk-1.platform.sh >> ~/.ssh/known_hosts
+      #    ssh-keyscan git.uk-1.platform.sh >> ~/.ssh/known_hosts
 
       # Get the database to reflect main and run update.
       - name: Fill database and bring Drupal up to date
