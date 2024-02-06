@@ -19,7 +19,9 @@ jobs:
 
       # Install Psh CLI.
       - name: Install Psh CLI
-        run: curl -sS https://platform.sh/cli/installer | php
+        run: |
+          curl -sS https://platform.sh/cli/installer | php
+          ~/.platformsh/bin/platform auth:api-token-login
 
       # Get the database to reflect main and run update.
       - name: Fill database and bring Drupal up to date
