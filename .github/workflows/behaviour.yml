@@ -33,7 +33,7 @@ jobs:
       # Get the database to reflect main and run update.
       - name: Fill database and bring Drupal up to date
         run: |
-          platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
+          ~/.platformsh/bin/platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
           ddev exec drush -y cache-rebuild
           ddev exec drush -y updatedb
           ddev exec drush -y config-import
