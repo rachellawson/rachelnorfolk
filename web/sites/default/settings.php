@@ -54,7 +54,7 @@ $settings['config_exclude_modules'] = ['openid_connect', 'stage_file_proxy', 'up
 
 // String overrides.
 $settings['locale_custom_strings_en'][''] = array(
-  '<a href=":login">Log in</a> to post comments' => '<a href=":login">Log in with GitHub, LinkedIn, or Google</a> to post comments',
+  '<a href=":login">Log in</a> to post comments' => '<a href=":login">Log in with GitHub or Google</a> to post comments. Or, if you came across this post via Mastodon, just reply there!',
 );
 
 // Include settings required for Redis cache.
