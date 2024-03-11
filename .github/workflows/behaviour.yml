@@ -8,13 +8,15 @@ jobs:
   tests:
     runs-on: ubuntu-22.04
     steps:
+
+      # Actions from outside the project must be allowed in the project settings.
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Setup DDEV
         uses: ddev/github-action-setup-ddev@v1
 
-      # example: composer install
+      # Composer install
       - run: ddev composer install
 
       # Get ready to test with an empty-ish site.
