@@ -17,18 +17,14 @@ jobs:
       # example: composer install
       - run: ddev composer install
 
-      # Install Psh CLI.
-      - name: Install Psh CLI
+      # Get ready to test with an empty-ish site.
+      - name: Prime a new empty site to test
         run: |
-          curl -fsSL https://raw.githubusercontent.com/platformsh/cli/main/installer.sh | bash
-
-      # Get the database to reflect main and run update.
-      - name: Fill database and bring Drupal up to date
-        run: |
-          platform db:dump --environment=main --project=nlw7xhb3fyt7y --stdout | ddev mysql
-          ddev exec drush -y cache-rebuild
-          ddev exec drush -y updatedb
-          ddev exec drush -y config-import
+          ddev exec drush -y site:install
+          ddev exec drush -y entity:delete shortcut
+          ddev exec drush -y config:set system.site uuid "457a53ee-ba47-433e-9fc2-314fff8a5c99"
+          ddev exec drush -y config:import
+          ddev exec drush -y cache:clear
 
       # Finally, run the tests.
       - name: Run Behat tests
