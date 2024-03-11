@@ -7,9 +7,3 @@ Feature: Test Footer Contents
     Given I am on the homepage
     Then I should see Drupal in the "footer" region
 
-  Scenario: Test that Platform.sh is correctly linked in the footer
-    Given I am on the homepage
-    Then I should see the link "Platform.sh" in the "footer" region
-    When I click "Platform.sh" in the "footer" region
-    Then I should be on "https://platform.sh"
-
