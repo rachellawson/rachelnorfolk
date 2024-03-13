@@ -7,19 +7,11 @@ _core:
 id: global
 label: Global
 tags:
-  title: '[current-page:title] | [site:name]'
-  canonical_url: '[current-page:url]'
-  dcterms_publisher: 'Rachel Lawson'
-  dcterms_creator: 'Rachel Lawson'
-  shortcut_icon: /modules/custom/dark_mode/favicons/favicon.ico
-  mask-icon: /modules/custom/dark_mode/rachel-logo.svg
   apple_touch_icon_180x180: /modules/custom/dark_mode/favicons/apple-touch-icon.png
-  icon_32x32: /modules/custom/dark_mode/favicons/favicon-32x32.png
+  canonical_url: '[current-page:url]'
+  dcterms_creator: 'Rachel Lawson'
+  dcterms_publisher: 'Rachel Lawson'
   icon_16x16: /modules/custom/dark_mode/favicons/favicon-16x16.png
-  twitter_cards_creator: '@rachel_norfolk'
-  twitter_cards_site: '@rachel_norfolk'
-  twitter_cards_page_url: '[current-page:url]'
-  twitter_cards_creator_id: '212187685'
-  twitter_cards_type: summary
-  twitter_cards_site_id: '212187685'
-  twitter_cards_title: '[current-page:title]'
+  icon_32x32: /modules/custom/dark_mode/favicons/favicon-32x32.png
+  shortcut_icon: /modules/custom/dark_mode/favicons/favicon.ico
+  title: '[current-page:title] | [site:name]'

@@ -31,10 +31,3 @@ tags:
   schema_article_publisher: 'a:6:{s:5:"@type";s:6:"Person";s:3:"@id";s:17:"[node:author:url]";s:4:"name";s:13:"Rachel Lawson";s:3:"url";s:17:"[node:author:url]";s:6:"sameAs";s:80:"https://mastodon.lol/@rachel_norfolk,https://www.linkedin.com/in/rachel-norfolk/";s:4:"logo";a:5:{s:5:"@type";s:11:"ImageObject";s:20:"representativeOfPage";s:5:"False";s:3:"url";s:61:"https://rachelnorfolk.me/modules/custom/dark_mode/rachel.jpeg";s:5:"width";s:3:"400";s:6:"height";s:3:"400";}}'
   schema_article_type: BlogPosting
   title: '[node:title] | [site:name]'
-  twitter_cards_description: '[node:summary]'
-  twitter_cards_image: '[node:field_image:twitter_card:url]'
-  twitter_cards_image_alt: '[node:field_image:alt]'
-  twitter_cards_image_height: '[node:field_image:twitter_card:height]'
-  twitter_cards_image_width: '[node:field_image:twitter_card:width]'
-  twitter_cards_title: '[node:title]'
-  twitter_cards_type: summary_large_image
