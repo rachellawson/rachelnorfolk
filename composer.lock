@@ -4156,16 +4156,16 @@
         },
         {
             "name": "drush/drush",
-            "version": "12.5.0",
+            "version": "12.5.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drush-ops/drush.git",
-                "reference": "48dc17e0678e9ac162d4598c9e0a7e9009344ed8"
+                "reference": "71fcea30a22e7336e17be18bb5945400b2c63fad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drush-ops/drush/zipball/48dc17e0678e9ac162d4598c9e0a7e9009344ed8",
-                "reference": "48dc17e0678e9ac162d4598c9e0a7e9009344ed8",
+                "url": "https://api.github.com/repos/drush-ops/drush/zipball/71fcea30a22e7336e17be18bb5945400b2c63fad",
+                "reference": "71fcea30a22e7336e17be18bb5945400b2c63fad",
                 "shasum": ""
             },
             "require": {
@@ -4288,7 +4288,7 @@
                 "issues": "https://github.com/drush-ops/drush/issues",
                 "security": "https://github.com/drush-ops/drush/security/advisories",
                 "slack": "https://drupal.slack.com/messages/C62H9CWQM",
-                "source": "https://github.com/drush-ops/drush/tree/12.5.0"
+                "source": "https://github.com/drush-ops/drush/tree/12.5.1"
             },
             "funding": [
                 {
@@ -4296,7 +4296,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-03-18T17:30:17+00:00"
+            "time": "2024-03-20T15:03:27+00:00"
         },
         {
             "name": "easyrdf/easyrdf",
@@ -12996,16 +12996,16 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "1.10.63",
+            "version": "1.10.64",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "ad12836d9ca227301f5fb9960979574ed8628339"
+                "reference": "fb9f270daffedcb5ff46275dcafe92538b1bc4bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ad12836d9ca227301f5fb9960979574ed8628339",
-                "reference": "ad12836d9ca227301f5fb9960979574ed8628339",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/fb9f270daffedcb5ff46275dcafe92538b1bc4bb",
+                "reference": "fb9f270daffedcb5ff46275dcafe92538b1bc4bb",
                 "shasum": ""
             },
             "require": {
@@ -13054,7 +13054,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-03-18T16:53:53+00:00"
+            "time": "2024-03-21T09:57:47+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
