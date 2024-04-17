@@ -76,7 +76,7 @@
     },
     "extra": {
         "violinist": {
-
+            "commit_message_convention": "conventional",
             "allow_update_indirect_with_direct": 0,
             "allow_updates_beyond_constraint": 1,
             "always_update_all": 1,
