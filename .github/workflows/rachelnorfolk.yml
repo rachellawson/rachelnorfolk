@@ -31,7 +31,7 @@ jobs:
 
     - name: Check Drupal Coding Standards
       run: |
-        ./vendor/bin/phpcs  web/modules/custom
+        ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,js,css,module,install web/modules/custom
 
     - name: Drupal Rector
       run: |
