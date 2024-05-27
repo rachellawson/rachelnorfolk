@@ -1552,17 +1552,17 @@
         },
         {
             "name": "drupal/admin_toolbar_content",
-            "version": "2.0.7",
+            "version": "2.0.8",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/admin_toolbar_content.git",
-                "reference": "2.0.7"
+                "reference": "2.0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar_content-2.0.7.zip",
-                "reference": "2.0.7",
-                "shasum": "4d00bbbd5410b4dccce8efa00abc437ccd10cfba"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar_content-2.0.8.zip",
+                "reference": "2.0.8",
+                "shasum": "ecc2d3eb36d805c5deca21ef9c2e302b86cd9c26"
             },
             "require": {
                 "drupal/admin_toolbar": "*",
@@ -1572,8 +1572,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.7",
-                    "datestamp": "1716551468",
+                    "version": "2.0.8",
+                    "datestamp": "1716795491",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
