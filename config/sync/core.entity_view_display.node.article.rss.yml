@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_metatag_overrides
     - field.field.node.article.field_tags
     - image.style.max_650x650
     - node.type.article
@@ -52,5 +53,6 @@ content:
     region: content
 hidden:
   comment: true
+  field_metatag_overrides: true
   field_tags: true
   links: true

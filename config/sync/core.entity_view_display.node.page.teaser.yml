@@ -5,6 +5,7 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.page.body
+    - field.field.node.page.field_metatag_overrides
     - field.field.node.page.layout_builder__layout
     - node.type.page
   module:
@@ -74,4 +75,5 @@ content:
     weight: 101
     region: content
 hidden:
+  field_metatag_overrides: true
   layout_builder__layout: true

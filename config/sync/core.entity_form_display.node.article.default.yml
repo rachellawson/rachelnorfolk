@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.article.body
     - field.field.node.article.comment
     - field.field.node.article.field_image
+    - field.field.node.article.field_metatag_overrides
     - field.field.node.article.field_tags
     - image.style.thumbnail
     - node.type.article
@@ -14,6 +15,7 @@ dependencies:
     - field_layout
     - image_widget_crop
     - layout_discovery
+    - metatag
     - path
     - text
 third_party_settings:
@@ -67,6 +69,14 @@ content:
       warn_multiple_usages: false
       show_crop_area: true
       show_default_crop: true
+    third_party_settings: {  }
+  field_metatag_overrides:
+    type: metatag_firehose
+    weight: 121
+    region: content
+    settings:
+      sidebar: true
+      use_details: true
     third_party_settings: {  }
   field_tags:
     type: entity_reference_autocomplete_tags
