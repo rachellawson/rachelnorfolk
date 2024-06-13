@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
-
+#ddev-generated
 set -e
 
 if [[ $DDEV_PROJECT_TYPE != drupal* ]] || [[ $DDEV_PROJECT_TYPE =~ ^drupal(6|7)$ ]] ;
 then
+  exit 0
+fi
+
+if ( ddev debug configyaml 2>/dev/null | grep 'disable_settings_management:\s*true' >/dev/null 2>&1 ) ; then
   exit 0
 fi
 
