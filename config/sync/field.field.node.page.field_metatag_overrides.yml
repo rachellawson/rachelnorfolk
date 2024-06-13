@@ -1,0 +1,21 @@
+uuid: dc01f6b3-804c-4566-aafb-a2a3a10d857a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metatag_overrides
+    - node.type.page
+  module:
+    - metatag
+id: node.page.field_metatag_overrides
+field_name: field_metatag_overrides
+entity_type: node
+bundle: page
+label: 'Metatag Overrides'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: metatag
