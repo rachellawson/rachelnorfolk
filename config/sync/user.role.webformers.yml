@@ -10,14 +10,12 @@ dependencies:
     - node
     - path
     - toolbar
-    - tour
 id: webformers
 label: Webformers
 weight: 4
 is_admin: null
 permissions:
   - 'access toolbar'
-  - 'access tour'
   - 'create url aliases'
   - 'delete own files'
   - 'use text format restricted_html'

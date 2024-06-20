@@ -27,7 +27,6 @@ dependencies:
     - system
     - taxonomy
     - toolbar
-    - tour
 id: author
 label: Author
 weight: 3
@@ -40,7 +39,6 @@ permissions:
   - 'access site reports'
   - 'access taxonomy overview'
   - 'access toolbar'
-  - 'access tour'
   - 'access user profiles'
   - 'administer comments'
   - 'administer menu'

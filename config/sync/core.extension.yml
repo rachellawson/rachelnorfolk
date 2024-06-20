@@ -43,7 +43,6 @@ module:
   image_widget_crop: 0
   inline_form_errors: 0
   layout_builder: 0
-  layout_builder_expose_all_field_blocks: 0
   layout_discovery: 0
   leaflet: 0
   link: 0
@@ -80,7 +79,6 @@ module:
   text: 0
   token: 0
   toolbar: 0
-  tour: 0
   update: 0
   user: 0
   views_ui: 0
