@@ -2696,17 +2696,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.58.0",
+            "version": "1.59.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.58"
+                "reference": "8.x-1.59"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.58.zip",
-                "reference": "8.x-1.58",
-                "shasum": "b33ae457a794191d0c84473809c79200461c15a2"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.59.zip",
+                "reference": "8.x-1.59",
+                "shasum": "1469ff78a551fe559f14ea80fb2d9756a99903f2"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -2719,8 +2719,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.58",
-                    "datestamp": "1718707695",
+                    "version": "8.x-1.59",
+                    "datestamp": "1718892670",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3071,27 +3071,27 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.17",
+            "version": "10.2.18",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.17"
+                "reference": "10.2.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.17.zip",
-                "reference": "10.2.17",
-                "shasum": "998c2ad601f0ccc4c9c054e988fec6fa65d26c01"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.18.zip",
+                "reference": "10.2.18",
+                "shasum": "9ed0b3f60877726bbe2072ec3aca553f3d3fe0ad"
             },
             "require": {
-                "drupal/core": "^9.3 || ^10",
+                "drupal/core": "^9.3 || ^10 || ^11",
                 "drupal/geofield": "^1.31"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.17",
-                    "datestamp": "1717489149",
+                    "version": "10.2.18",
+                    "datestamp": "1718871493",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
