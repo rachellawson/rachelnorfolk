@@ -125,12 +125,6 @@
             "drupal/core": "-p2"
         },
         "patches": {
-            "drupal/openid_connect": {
-                "Picture with no extension results in Content-Type: application/octet-stream": "https://git.drupalcode.org/project/openid_connect/-/merge_requests/64.diff"
-            },
-            "drupal/autosave_form": {
-                "PHP 8.2 deprecation issue with AutosaveFormBuilder": "https://git.drupalcode.org/project/autosave_form/-/merge_requests/9.diff"
-            }
         },
         "drupal-core-project-message": {
             "include-keys": [
