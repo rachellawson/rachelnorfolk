@@ -397,16 +397,16 @@
         },
         {
             "name": "composer/semver",
-            "version": "3.4.0",
+            "version": "3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/semver.git",
-                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32"
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/semver/zipball/35e8d0af4486141bc745f23a29cc2091eb624a32",
-                "reference": "35e8d0af4486141bc745f23a29cc2091eb624a32",
+                "url": "https://api.github.com/repos/composer/semver/zipball/c51258e759afdb17f1fd1fe83bc12baaef6309d6",
+                "reference": "c51258e759afdb17f1fd1fe83bc12baaef6309d6",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +458,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/semver/issues",
-                "source": "https://github.com/composer/semver/tree/3.4.0"
+                "source": "https://github.com/composer/semver/tree/3.4.2"
             },
             "funding": [
                 {
@@ -474,7 +474,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-08-31T09:50:34+00:00"
+            "time": "2024-07-12T11:35:52+00:00"
         },
         {
             "name": "consolidation/annotated-command",
@@ -2760,17 +2760,17 @@
         },
         {
             "name": "drupal/geofield_map",
-            "version": "3.0.18",
+            "version": "3.0.19",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield_map.git",
-                "reference": "3.0.18"
+                "reference": "3.0.19"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield_map-3.0.18.zip",
-                "reference": "3.0.18",
-                "shasum": "d335de0abb632fb569b78bee82a99339082b7ade"
+                "url": "https://ftp.drupal.org/files/projects/geofield_map-3.0.19.zip",
+                "reference": "3.0.19",
+                "shasum": "ab1f5ae089555a05ffe48aceeafc1b6a27560dbf"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -2779,8 +2779,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.18",
-                    "datestamp": "1719930305",
+                    "version": "3.0.19",
+                    "datestamp": "1720791444",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3073,17 +3073,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.19",
+            "version": "10.2.20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.19"
+                "reference": "10.2.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.19.zip",
-                "reference": "10.2.19",
-                "shasum": "6ad48c4c3730adf0e9e6cda811b706181f8275a7"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.20.zip",
+                "reference": "10.2.20",
+                "shasum": "0998b9bb5e6ca22a6125a46321542a19ca1ca8e6"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -3092,8 +3092,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.19",
-                    "datestamp": "1719911106",
+                    "version": "10.2.20",
+                    "datestamp": "1720793068",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
