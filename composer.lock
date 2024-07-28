@@ -2602,17 +2602,17 @@
         },
         {
             "name": "drupal/geocoder",
-            "version": "4.24.0",
+            "version": "4.25.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geocoder.git",
-                "reference": "8.x-4.24"
+                "reference": "8.x-4.25"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-4.24.zip",
-                "reference": "8.x-4.24",
-                "shasum": "b3aafd2d6f0dcda14e383286b23a5bc6fd62fc10"
+                "url": "https://ftp.drupal.org/files/projects/geocoder-8.x-4.25.zip",
+                "reference": "8.x-4.25",
+                "shasum": "f62dcbdb3c27a266aed92f78c6b861ffaa391ff0"
             },
             "require": {
                 "davedevelopment/stiphle": "^0.9.2",
@@ -2656,8 +2656,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-4.24",
-                    "datestamp": "1719606014",
+                    "version": "8.x-4.25",
+                    "datestamp": "1722204762",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2698,17 +2698,17 @@
         },
         {
             "name": "drupal/geofield",
-            "version": "1.59.0",
+            "version": "1.60.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield.git",
-                "reference": "8.x-1.59"
+                "reference": "8.x-1.60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.59.zip",
-                "reference": "8.x-1.59",
-                "shasum": "1469ff78a551fe559f14ea80fb2d9756a99903f2"
+                "url": "https://ftp.drupal.org/files/projects/geofield-8.x-1.60.zip",
+                "reference": "8.x-1.60",
+                "shasum": "ffb1891148b343208e7a190c8cc606a339c74ee1"
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11",
@@ -2721,8 +2721,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.59",
-                    "datestamp": "1718892670",
+                    "version": "8.x-1.60",
+                    "datestamp": "1722078200",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2760,17 +2760,17 @@
         },
         {
             "name": "drupal/geofield_map",
-            "version": "3.0.19",
+            "version": "3.0.20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/geofield_map.git",
-                "reference": "3.0.19"
+                "reference": "3.0.20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/geofield_map-3.0.19.zip",
-                "reference": "3.0.19",
-                "shasum": "ab1f5ae089555a05ffe48aceeafc1b6a27560dbf"
+                "url": "https://ftp.drupal.org/files/projects/geofield_map-3.0.20.zip",
+                "reference": "3.0.20",
+                "shasum": "2980298be3d771bb243e7c64940d38355de65ae6"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10",
@@ -2779,8 +2779,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.19",
-                    "datestamp": "1720791444",
+                    "version": "3.0.20",
+                    "datestamp": "1722111958",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3073,17 +3073,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.21",
+            "version": "10.2.22",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.21"
+                "reference": "10.2.22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.21.zip",
-                "reference": "10.2.21",
-                "shasum": "077d921814050a09a64ee41b77036d268b976572"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.22.zip",
+                "reference": "10.2.22",
+                "shasum": "81cbbf2bdbb64151d1a35754464788c63b4e739d"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -3092,8 +3092,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.21",
-                    "datestamp": "1721206496",
+                    "version": "10.2.22",
+                    "datestamp": "1722088855",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3964,26 +3964,29 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.14.0",
+            "version": "1.15.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "8.x-1.14"
+                "reference": "8.x-1.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.14.zip",
-                "reference": "8.x-1.14",
-                "shasum": "df3cae709fcc1a99ac1111ce67a0d6af56d287d7"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "5916fbccc86458a5f51e71f832ac70ff4c84ebdf"
             },
             "require": {
-                "drupal/core": "^9.2 || ^10"
+                "drupal/core": "^9.2 || ^10 || ^11"
+            },
+            "require-dev": {
+                "drupal/book": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.14",
-                    "datestamp": "1713009399",
+                    "version": "8.x-1.15",
+                    "datestamp": "1722206211",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
