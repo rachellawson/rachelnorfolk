@@ -22,7 +22,6 @@ dependencies:
     - media
     - node
     - path
-    - reader
     - redirect
     - system
     - taxonomy
@@ -34,7 +33,6 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access media overview'
-  - 'access reader'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'

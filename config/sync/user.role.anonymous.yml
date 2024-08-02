@@ -6,7 +6,6 @@ dependencies:
     - node.type.mary_fact
   module:
     - comment
-    - contact
     - media
     - node
     - search
@@ -20,7 +19,6 @@ is_admin: false
 permissions:
   - 'access comments'
   - 'access content'
-  - 'access site-wide contact form'
   - 'access user profiles'
   - 'create mary_fact content'
   - 'search content'
