@@ -2,4 +2,4 @@ name: rachelnorfolk blocks
 type: module
 description: Provides blocks for use on the site
 package: Custom
-core_version_requirement: ^9 || ^10
+core_version_requirement: ^10 || ^11
