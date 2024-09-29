@@ -1,12 +1,9 @@
 _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
-  activitypub: 0
   admin_toolbar: 0
-  admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   automated_cron: 0
-  autosave_form: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -47,7 +44,6 @@ module:
   leaflet: 0
   link: 0
   media: 0
-  media_entity_twitter: 0
   media_library: 0
   menu_link_content: 0
   menu_ui: 0
@@ -58,7 +54,6 @@ module:
   metatag_twitter_cards: 0
   mysql: 0
   node: 0
-  nodeinfo: 0
   noreqnewpass: 0
   options: 0
   page_cache: 0
@@ -66,7 +61,6 @@ module:
   path_alias: 0
   phpass: 0
   rachelnorfolk_blocks: 0
-  reader: 0
   redirect: 0
   responsive_image: 0
   schema_article: 0
@@ -82,10 +76,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
-  webfinger: 0
-  xmlsitemap_engines: 0
   pathauto: 1
-  xmlsitemap: 1
   externalauth: 10
   views: 10
   standard: 1000
@@ -93,5 +84,4 @@ theme:
   olivero: 0
   claro: 0
   gin: 0
-  reader_theme: 0
 profile: standard
