@@ -33,7 +33,7 @@
         "drupal/geofield_map": "^3.0",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
-        "drupal/honeypot": "^2.0",
+        "drupal/honeypot": "^2.1",
         "drupal/image_widget_crop": "^2.3",
         "drupal/leaflet": "^10.0",
         "drupal/leaflet_more_maps": "^2.1",
@@ -49,7 +49,7 @@
         "drupal/schema_metatag": "^3",
         "drupal/seven": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0",
-        "drush/drush": "^12",
+        "drush/drush": "^13",
         "platformsh/config-reader": "^2.3"
     },
     "require-dev": {
@@ -71,7 +71,8 @@
             "drupal/core-composer-scaffold": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "tbachert/spi": true
         }
     },
     "extra": {
