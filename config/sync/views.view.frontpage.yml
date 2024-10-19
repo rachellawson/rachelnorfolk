@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.rss
     - core.entity_view_mode.node.teaser
     - field.storage.node.body
   module:
@@ -641,19 +642,13 @@ display:
       style:
         type: rss
         options:
-          grouping: {  }
+          uses_fields: false
           description: 'Fitting life around riding my motorbike. Ridden 🇨🇭🇪🇸🇷🇴🇲🇦🇮🇹🇬🇷🇩🇪🇧🇬🇨🇿🇸🇮🇸🇰🇱🇮🇫🇷🇳🇱🇭🇺🇧🇪🇬🇮🇱🇺🇦🇩🇦🇹🇮🇳🇨🇦 so far...'
       row:
-        type: rss_fields
+        type: node_rss
         options:
-          title_field: title
-          link_field: view_node
-          description_field: body
-          creator_field: uid
-          date_field: created
-          guid_field_options:
-            guid_field: uuid
-            guid_field_is_permalink: false
+          relationship: none
+          view_mode: rss
       defaults:
         fields: false
       display_extenders: {  }
