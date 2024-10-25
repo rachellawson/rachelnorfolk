@@ -14,7 +14,6 @@ dependencies:
     - node.type.page
     - taxonomy.vocabulary.tags
   module:
-    - activitypub
     - comment
     - file
     - filter
@@ -22,7 +21,6 @@ dependencies:
     - media
     - node
     - path
-    - reader
     - redirect
     - system
     - taxonomy
@@ -34,7 +32,6 @@ is_admin: null
 permissions:
   - 'access content overview'
   - 'access media overview'
-  - 'access reader'
   - 'access site in maintenance mode'
   - 'access site reports'
   - 'access taxonomy overview'
@@ -46,7 +43,6 @@ permissions:
   - 'administer redirects'
   - 'administer url aliases'
   - 'administer users'
-  - 'allow users to enable activitypub'
   - 'create and edit custom blocks'
   - 'create article content'
   - 'create audio media'
