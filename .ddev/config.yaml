@@ -19,6 +19,13 @@ composer_version: "2"
 web_environment: []
 nodejs_version: "16"
 corepack_enable: false
+hooks:
+    post-import-db:
+        - exec: drush sql:sanitize
+        - exec: drush updatedb
+        - exec: drush pm-enable --yes stage_file_proxy
+        - exec: drush variable-set stage_file_proxy_origin "https://rachelnorfolk.me"
+        - exec: drush cache:rebuild
 
 # Key features of DDEV's config.yaml:
 

@@ -2,10 +2,8 @@ _core:
   default_config_hash: R4IF-ClDHXxblLcG0L7MgsLvfBIMAvi_skumNFQwkDc
 module:
   admin_toolbar: 0
-  admin_toolbar_links_access_filter: 0
   admin_toolbar_tools: 0
   automated_cron: 0
-  autosave_form: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -88,5 +86,4 @@ theme:
   olivero: 0
   claro: 0
   gin: 0
-  reader_theme: 0
 profile: standard

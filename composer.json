@@ -17,11 +17,8 @@
     "require": {
         "composer/installers": "^2",
         "cweagans/composer-patches": "^1.7",
-        "drupal/activitypub": "^1.0@alpha",
         "drupal/admin_toolbar": "^3.0",
-        "drupal/admin_toolbar_content": "^2",
         "drupal/autosave_form": "^1.2",
-        "drupal/codesnippet": "^1.7",
         "drupal/colorbox": "^2",
         "drupal/core-composer-scaffold": "^10",
         "drupal/core-recommended": "^10",
@@ -30,7 +27,7 @@
         "drupal/environment_indicator": "^4.0",
         "drupal/geocoder": "^4.4",
         "drupal/geofield": "^1.15",
-        "drupal/geofield_map": "^3.0",
+        "drupal/geofield_map": "^11",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/honeypot": "^2.1",
@@ -42,21 +39,17 @@
         "drupal/noreqnewpass": "^1.2",
         "drupal/openid_connect": "^3",
         "drupal/pathauto": "^1.8",
-        "drupal/rdf": "^2.1",
-        "drupal/reader": "^1.0@beta",
         "drupal/redirect": "^1.6",
         "drupal/redis": "^1.4",
         "drupal/schema_metatag": "^3",
-        "drupal/seven": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^13",
         "platformsh/config-reader": "^2.3"
     },
     "require-dev": {
-        "behat/mink-browserkit-driver": "^2.2",
         "drupal/core-dev": "^10",
-        "drupal/drupal-extension": "^5.0",
-        "drupal/stage_file_proxy": "^2.1"
+        "drupal/stage_file_proxy": "^3.1",
+        "drupal/upgrade_status": "^4.3"
     },
     "conflict": {
         "drupal/drupal": "*"
