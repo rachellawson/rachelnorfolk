@@ -10,7 +10,7 @@ additional_hostnames: []
 additional_fqdns: []
 database:
     type: mariadb
-    version: "10.3"
+    version: "10.6"
 bind_all_interfaces: true
 host_webserver_port: "8080"
 webimage_extra_packages: [zsh]
