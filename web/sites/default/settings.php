@@ -55,12 +55,12 @@ if (file_exists($app_root . '/' . $site_path . '/settings.ddev.php') && getenv('
 }
 
 // Exclude any config that needs excluding.
-$settings['config_exclude_modules'] = ['openid_connect', 'stage_file_proxy', 'upgrade_status', 'leaflet_more_maps'];
+$settings['config_exclude_modules'] = ['openid_connect', 'stage_file_proxy', 'upgrade_status', 'leaflet_more_maps', 'upgrade_status'];
 
 // String overrides.
-$settings['locale_custom_strings_en'][''] = array(
-  '<a href=":login">Log in</a> to post comments' => '<a href=":login">Log in with GitHub or Google</a> to post comments. Or, if you came across this post via Mastodon, just reply there!',
-);
+$settings['locale_custom_strings_en'][''] = [
+  '<a href=":login">Log in</a> to post comments' => '<a href=":login">Log in with GitHub or Google</a> to post comments.',
+];
 
 // Include settings required for Redis cache.
 if ((file_exists(__DIR__ . '/settings.ddev.redis.php') && getenv('IS_DDEV_PROJECT') == 'true')) {
