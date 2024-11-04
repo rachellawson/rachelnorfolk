@@ -68,9 +68,10 @@ hooks:
         set -e
         php ./drush/platformsh_generate_drush_yml.php
         cd web
-        drush -y cache-rebuild
-        drush -y updatedb
         drush -y config-import
+        drush -y updatedb
+        drush -y cache-rebuild
+
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -88,7 +89,7 @@ web:
             # suffixed with "s" (seconds), "m" (minutes), "h" (hours), "d"
             # (days), "w" (weeks), "M" (months, as 30 days) or "y" (years, as
             # 365 days).
-            expires: 5m
+            expires: 5h
 
             # Whether to forward disallowed and missing resources from this
             # location to the application.
