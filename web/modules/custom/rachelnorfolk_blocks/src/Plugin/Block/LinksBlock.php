@@ -31,6 +31,7 @@ class LinksBlock extends BlockBase {
       '#data' => [
         'LinkedIn' => 'https://www.linkedin.com/in/rachel-norfolk',
         'Mastodon' => 'https://norfolk.social/@rachel',
+        'Bluesky' => 'https://bsky.app/profile/rachel.norfolk.social.ap.brid.gy',
       ],
     ];
   }
