@@ -29,9 +29,10 @@ class LinksBlock extends BlockBase {
     return [
       '#theme' => 'links_block',
       '#data' => [
+        'GitHub' => 'https://github.com/rachellawson',
         'LinkedIn' => 'https://www.linkedin.com/in/rachel-norfolk',
-        'Mastodon' => 'https://norfolk.social/@rachel',
         'Bluesky' => 'https://bsky.app/profile/rachel.norfolk.social.ap.brid.gy',
+        'Mastodon' => 'https://norfolk.social/@rachel',
       ],
     ];
   }
