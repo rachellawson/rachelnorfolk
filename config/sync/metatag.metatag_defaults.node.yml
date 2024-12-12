@@ -9,6 +9,7 @@ label: Content
 tags:
   canonical_url: '[node:url]'
   description: '[node:summary]'
+  fediverse_creator: '@rachel@norfolk.social'
   og_description: '[node:summary]'
   og_image: '[node:field_image:twitter_card:url]'
   og_image_alt: '[node:field_image:alt]'

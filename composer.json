@@ -126,6 +126,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
+          "drupal/metatag": {
+            "Fediverse metatag https://www.drupal.org/project/metatag/issues/3458724": "https://git.drupalcode.org/project/metatag/-/merge_requests/117.diff"
+          }
         },
         "drupal-core-project-message": {
             "include-keys": [
