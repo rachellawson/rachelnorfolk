@@ -1409,20 +1409,20 @@
         },
         {
             "name": "drupal/activitypub",
-            "version": "1.0.0-alpha19",
+            "version": "1.0.0-alpha20",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/activitypub.git",
-                "reference": "1.0.0-alpha19"
+                "reference": "1.0.0-alpha20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/activitypub-1.0.0-alpha19.zip",
-                "reference": "1.0.0-alpha19",
-                "shasum": "83db5fa393e541c6af9d0cb8ed1a6a0f9d0aa425"
+                "url": "https://ftp.drupal.org/files/projects/activitypub-1.0.0-alpha20.zip",
+                "reference": "1.0.0-alpha20",
+                "shasum": "6f040b705c00ec24523e19f720e4618059a36dbc"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10",
+                "drupal/core": "^10 || ^11",
                 "drupal/nodeinfo": "~1.0",
                 "drupal/webfinger": "~2.0",
                 "ext-json": "*",
@@ -1430,15 +1430,15 @@
             },
             "require-dev": {
                 "drupal/nodeinfo": "*",
-                "drupal/reader": "1.0.x-dev",
+                "drupal/reader": "^1.0",
                 "drupal/scheduler": "2.x-dev",
                 "drupal/webfinger": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha19",
-                    "datestamp": "1713009067",
+                    "version": "1.0.0-alpha20",
+                    "datestamp": "1735403205",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2834,7 +2834,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-3.0",
-                    "datestamp": "1734696845",
+                    "datestamp": "1734771812",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3092,17 +3092,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.30",
+            "version": "10.2.31",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.30"
+                "reference": "10.2.31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.30.zip",
-                "reference": "10.2.30",
-                "shasum": "ec6d3c605128a96d80d8951f8f7f396121146c6d"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.31.zip",
+                "reference": "10.2.31",
+                "shasum": "497f10a62878c8c22d3059acaac2ec79740da648"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -3111,8 +3111,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.30",
-                    "datestamp": "1734559672",
+                    "version": "10.2.31",
+                    "datestamp": "1735319231",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3364,26 +3364,26 @@
         },
         {
             "name": "drupal/nodeinfo",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/nodeinfo.git",
-                "reference": "1.0.0"
+                "reference": "1.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/nodeinfo-1.0.0.zip",
-                "reference": "1.0.0",
-                "shasum": "df8f3a92cac813a82af34f70aa82ae55122d92eb"
+                "url": "https://ftp.drupal.org/files/projects/nodeinfo-1.0.1.zip",
+                "reference": "1.0.1",
+                "shasum": "c9f16eecd9261fd66df5ba4e0306ec02f61fd30e"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9 || ^10"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0",
-                    "datestamp": "1669130237",
+                    "version": "1.0.1",
+                    "datestamp": "1735399059",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3398,10 +3398,6 @@
                 {
                     "name": "ekes",
                     "homepage": "https://www.drupal.org/user/10083"
-                },
-                {
-                    "name": "nedjo",
-                    "homepage": "https://www.drupal.org/user/4481"
                 },
                 {
                     "name": "swentel",
@@ -3693,33 +3689,33 @@
         },
         {
             "name": "drupal/reader",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/reader.git",
-                "reference": "1.0.0-beta2"
+                "reference": "1.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/reader-1.0.0-beta2.zip",
-                "reference": "1.0.0-beta2",
-                "shasum": "e1e471164e34c2eb37388202c3225707a32d1552"
+                "url": "https://ftp.drupal.org/files/projects/reader-1.0.0.zip",
+                "reference": "1.0.0",
+                "shasum": "605d50ee255d8f51f79f32410704107ed1990b84"
             },
             "require": {
-                "drupal/core": "^9.4 || ^10"
+                "drupal/core": "^10 || ^11"
             },
             "require-dev": {
-                "drupal/aggregator": "~1.0",
+                "drupal/aggregator": "2.x-dev",
                 "drupal/stable": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-beta2",
-                    "datestamp": "1689516304",
+                    "version": "1.0.0",
+                    "datestamp": "1735398195",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Beta releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -3729,14 +3725,22 @@
             ],
             "authors": [
                 {
-                    "name": "swentel",
-                    "homepage": "https://www.drupal.org/user/107403"
+                    "name": "Kristof De Jaeger",
+                    "homepage": "http://realize.be/",
+                    "role": "Maintainer"
                 }
             ],
-            "description": "PWA reader",
+            "description": "A personal reader on your website which is installable as a PWA on your phone or tablet.",
             "homepage": "https://www.drupal.org/project/reader",
+            "keywords": [
+                "drupal",
+                "feeds",
+                "php",
+                "reader"
+            ],
             "support": {
-                "source": "https://git.drupalcode.org/project/reader"
+                "source": "http://git.drupal.org/project/reader.git",
+                "issues": "https://www.drupal.org/project/issues/reader"
             }
         },
         {
@@ -3773,7 +3777,7 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
@@ -3781,7 +3785,7 @@
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
-                    "name": "Kristen Pol",
+                    "name": "kristen pol",
                     "homepage": "https://www.drupal.org/user/8389"
                 },
                 {
@@ -4066,26 +4070,26 @@
         },
         {
             "name": "drupal/webfinger",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/webfinger.git",
-                "reference": "2.0.1"
+                "reference": "2.0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/webfinger-2.0.1.zip",
-                "reference": "2.0.1",
-                "shasum": "d07a09c17efd410e80ba38723626fbd6f395a77e"
+                "url": "https://ftp.drupal.org/files/projects/webfinger-2.0.2.zip",
+                "reference": "2.0.2",
+                "shasum": "403506efd044c560ed177bfabadfa0f60f2392c1"
             },
             "require": {
-                "drupal/core": "^8 || ^9 || ^10"
+                "drupal/core": "^10 || ^11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.1",
-                    "datestamp": "1704140376",
+                    "version": "2.0.2",
+                    "datestamp": "1735399247",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4440,16 +4444,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e"
+                "reference": "b115554301161fa21467629f1e1391c1936de517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ebaaf5be6c0286928352e054f2d5125608e5405e",
-                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b115554301161fa21467629f1e1391c1936de517",
+                "reference": "b115554301161fa21467629f1e1391c1936de517",
                 "shasum": ""
             },
             "require": {
@@ -4495,7 +4499,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.3"
             },
             "funding": [
                 {
@@ -4503,7 +4507,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-06T06:47:41+00:00"
+            "time": "2024-12-27T00:36:43+00:00"
         },
         {
             "name": "ezyang/htmlpurifier",
@@ -5756,16 +5760,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v5.3.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b"
+                "reference": "447a020a1f875a434d62f2a401f53b82a396e494"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/8eea230464783aa9671db8eea6f8c6ac5285794b",
-                "reference": "8eea230464783aa9671db8eea6f8c6ac5285794b",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/447a020a1f875a434d62f2a401f53b82a396e494",
+                "reference": "447a020a1f875a434d62f2a401f53b82a396e494",
                 "shasum": ""
             },
             "require": {
@@ -5808,9 +5812,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nikic/PHP-Parser/issues",
-                "source": "https://github.com/nikic/PHP-Parser/tree/v5.3.1"
+                "source": "https://github.com/nikic/PHP-Parser/tree/v5.4.0"
             },
-            "time": "2024-10-08T18:51:32+00:00"
+            "time": "2024-12-30T11:07:19+00:00"
         },
         {
             "name": "paragonie/constant_time_encoding",
@@ -7424,12 +7428,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -7674,12 +7678,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -7897,12 +7901,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -9421,12 +9425,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -9585,12 +9589,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -11448,6 +11452,11 @@
             },
             "type": "library",
             "extra": {
+                "drupal-scaffold": {
+                    "locations": {
+                        "web-root": "drupal/"
+                    }
+                },
                 "installer-paths": {
                     "drupal/core": [
                         "type:drupal-core"
@@ -11455,11 +11464,6 @@
                     "drupal/modules/{$name}": [
                         "type:drupal-module"
                     ]
-                },
-                "drupal-scaffold": {
-                    "locations": {
-                        "web-root": "drupal/"
-                    }
                 }
             },
             "autoload": {
@@ -11531,15 +11535,15 @@
             },
             "type": "behat-extension",
             "extra": {
-                "installer-paths": {
-                    "drupal/core": [
-                        "type:drupal-core"
-                    ]
-                },
                 "drupal-scaffold": {
                     "locations": {
                         "web-root": "drupal/"
                     }
+                },
+                "installer-paths": {
+                    "drupal/core": [
+                        "type:drupal-core"
+                    ]
                 }
             },
             "autoload": {
