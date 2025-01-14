@@ -30,7 +30,7 @@
         "drupal/environment_indicator": "^4.0",
         "drupal/geocoder": "^4.4",
         "drupal/geofield": "^1.15",
-        "drupal/geofield_map": "^3.0",
+        "drupal/geofield_map": "^11.0",
         "drupal/gin": "^3.0@alpha",
         "drupal/gin_toolbar": "^1.0@beta",
         "drupal/honeypot": "^2.1",
