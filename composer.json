@@ -50,7 +50,7 @@
         "drupal/seven": "^1.0@alpha",
         "drupal/xmlsitemap": "^1.0",
         "drush/drush": "^13",
-        "platformsh/config-reader": "^2.3"
+        "platformsh/config-reader": "^3.0"
     },
     "require-dev": {
         "behat/mink-browserkit-driver": "^2.2",
