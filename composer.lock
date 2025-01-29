@@ -5099,7 +5099,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v11.40.0",
+            "version": "v11.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -16557,6 +16557,7 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/activitypub": 15,
+        "drupal/gin": 15,
         "drupal/gin_toolbar": 10,
         "drupal/reader": 10,
         "drupal/seven": 15
