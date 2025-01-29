@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6c93fd9fc7e1af042fb070c8410d5d7f",
+    "content-hash": "bd4b574f24fbcc60252c155d059838d0",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1751,8 +1751,8 @@
                     "version": "1.0.2",
                     "datestamp": "1695740655",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
                     }
                 }
             },
@@ -1761,10 +1761,6 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
-                {
-                    "name": "dczepierga",
-                    "homepage": "https://www.drupal.org/user/911466"
-                },
                 {
                     "name": "hass",
                     "homepage": "https://www.drupal.org/user/85918"
@@ -1782,12 +1778,8 @@
                     "homepage": "https://www.drupal.org/user/1078742"
                 },
                 {
-                    "name": "Magnus",
+                    "name": "magnus",
                     "homepage": "https://www.drupal.org/user/73919"
-                },
-                {
-                    "name": "mkesicki",
-                    "homepage": "https://www.drupal.org/user/922884"
                 },
                 {
                     "name": "nod_",
@@ -1802,7 +1794,7 @@
                     "homepage": "https://www.drupal.org/user/2793801"
                 },
                 {
-                    "name": "Wim Leers",
+                    "name": "wim leers",
                     "homepage": "https://www.drupal.org/user/99777"
                 },
                 {
@@ -2814,27 +2806,27 @@
         },
         {
             "name": "drupal/gin",
-            "version": "3.0.0",
+            "version": "4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "8.x-3.0"
+                "reference": "4.0.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0.zip",
-                "reference": "8.x-3.0",
-                "shasum": "bb1c660e85577d49db1deedfefe1ed3a91370aeb"
+                "url": "https://ftp.drupal.org/files/projects/gin-4.0.0.zip",
+                "reference": "4.0.0",
+                "shasum": "8607d9f225b550c9c2f0a84d0371adabc0ac42c1"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11",
+                "drupal/core": "^10 || ^11",
                 "drupal/gin_toolbar": "^1.0@beta"
             },
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "8.x-3.0",
-                    "datestamp": "1734771812",
+                    "version": "4.0.0",
+                    "datestamp": "1734696940",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -16565,7 +16557,6 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "drupal/activitypub": 15,
-        "drupal/gin": 15,
         "drupal/gin_toolbar": 10,
         "drupal/reader": 10,
         "drupal/seven": 15
