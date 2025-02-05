@@ -1683,17 +1683,17 @@
         },
         {
             "name": "drupal/autosave_form",
-            "version": "1.9.0",
+            "version": "1.10.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/autosave_form.git",
-                "reference": "8.x-1.9"
+                "reference": "8.x-1.10"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/autosave_form-8.x-1.9.zip",
-                "reference": "8.x-1.9",
-                "shasum": "1baf887f652d8b4dbf9d8ef49368c2d3f731b846"
+                "url": "https://ftp.drupal.org/files/projects/autosave_form-8.x-1.10.zip",
+                "reference": "8.x-1.10",
+                "shasum": "99e270c30bf09a2688a5b23814beced13f8f7ba4"
             },
             "require": {
                 "drupal/core": "^9.5 || ^10 || ^11"
@@ -1701,8 +1701,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.9",
-                    "datestamp": "1737118892",
+                    "version": "8.x-1.10",
+                    "datestamp": "1738605622",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3084,17 +3084,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.35",
+            "version": "10.2.36",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.35"
+                "reference": "10.2.36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.35.zip",
-                "reference": "10.2.35",
-                "shasum": "1dbce51b627bbe92148567c3299ddb1ba24f55a8"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.36.zip",
+                "reference": "10.2.36",
+                "shasum": "f4f787a1f8e816f8be1ba01de15b9c1ea5b7817a"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -3103,8 +3103,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.35",
-                    "datestamp": "1736842328",
+                    "version": "10.2.36",
+                    "datestamp": "1738602928",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -10671,16 +10671,16 @@
         },
         {
             "name": "composer/class-map-generator",
-            "version": "1.5.0",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/class-map-generator.git",
-                "reference": "4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915"
+                "reference": "ffe442c5974c44a9343e37a0abcb1cc37319f5b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915",
-                "reference": "4b0a223cf5be7c9ee7e0ef1bc7db42b4a97c9915",
+                "url": "https://api.github.com/repos/composer/class-map-generator/zipball/ffe442c5974c44a9343e37a0abcb1cc37319f5b9",
+                "reference": "ffe442c5974c44a9343e37a0abcb1cc37319f5b9",
                 "shasum": ""
             },
             "require": {
@@ -10724,7 +10724,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/class-map-generator/issues",
-                "source": "https://github.com/composer/class-map-generator/tree/1.5.0"
+                "source": "https://github.com/composer/class-map-generator/tree/1.6.0"
             },
             "funding": [
                 {
@@ -10740,7 +10740,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-11-25T16:11:06+00:00"
+            "time": "2025-02-05T10:05:34+00:00"
         },
         {
             "name": "composer/composer",
