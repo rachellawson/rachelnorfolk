@@ -1370,17 +1370,17 @@
         },
         {
             "name": "drupal/activitypub",
-            "version": "1.0.0-alpha20",
+            "version": "1.0.0-alpha21",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/activitypub.git",
-                "reference": "1.0.0-alpha20"
+                "reference": "1.0.0-alpha21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/activitypub-1.0.0-alpha20.zip",
-                "reference": "1.0.0-alpha20",
-                "shasum": "6f040b705c00ec24523e19f720e4618059a36dbc"
+                "url": "https://ftp.drupal.org/files/projects/activitypub-1.0.0-alpha21.zip",
+                "reference": "1.0.0-alpha21",
+                "shasum": "1d415db89b19a2635b978d78a7e685698f36aae7"
             },
             "require": {
                 "drupal/core": "^10 || ^11",
@@ -1398,8 +1398,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "1.0.0-alpha20",
-                    "datestamp": "1735403205",
+                    "version": "1.0.0-alpha21",
+                    "datestamp": "1739648797",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -1485,6 +1485,10 @@
                     "name": "Mohamed Anis Taktak (matio89)",
                     "homepage": "https://www.drupal.org/u/matio89",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "fethi.krout",
+                    "homepage": "https://www.drupal.org/user/3206765"
                 },
                 {
                     "name": "japerry",
@@ -2672,17 +2676,17 @@
         },
         {
             "name": "drupal/honeypot",
-            "version": "2.2.1",
+            "version": "2.2.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/honeypot.git",
-                "reference": "2.2.1"
+                "reference": "2.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.1.zip",
-                "reference": "2.2.1",
-                "shasum": "445fd3d22d5776dc9e517ef35a2bb3cc1c85c5a2"
+                "url": "https://ftp.drupal.org/files/projects/honeypot-2.2.2.zip",
+                "reference": "2.2.2",
+                "shasum": "828872d31d1a2c37a818cacae7fcd77a60996c66"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -2694,8 +2698,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.1",
-                    "datestamp": "1739062705",
+                    "version": "2.2.2",
+                    "datestamp": "1739854442",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2821,17 +2825,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.2.38",
+            "version": "10.2.40",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.2.38"
+                "reference": "10.2.40"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.38.zip",
-                "reference": "10.2.38",
-                "shasum": "ded7ba77f02fd20ec1ada971851a807ce4986505"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.2.40.zip",
+                "reference": "10.2.40",
+                "shasum": "bcc24d29bc03aabf04ef3636493a7684bb3d1645"
             },
             "require": {
                 "drupal/core": "^9.3 || ^10 || ^11",
@@ -2840,8 +2844,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.2.38",
-                    "datestamp": "1739118675",
+                    "version": "10.2.40",
+                    "datestamp": "1739712453",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3297,7 +3301,7 @@
             "extra": {
                 "drupal": {
                     "version": "8.x-1.13",
-                    "datestamp": "1722507672",
+                    "datestamp": "1739552840",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4580,16 +4584,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v11.42.1",
+            "version": "v11.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "6fd628d32a0989211c4f2829bf0a6a6175b2f3fd"
+                "reference": "a9d5e7ef4cffd14ac8e870d4899cde106990329c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/6fd628d32a0989211c4f2829bf0a6a6175b2f3fd",
-                "reference": "6fd628d32a0989211c4f2829bf0a6a6175b2f3fd",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/a9d5e7ef4cffd14ac8e870d4899cde106990329c",
+                "reference": "a9d5e7ef4cffd14ac8e870d4899cde106990329c",
                 "shasum": ""
             },
             "require": {
@@ -4632,11 +4636,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2025-02-05T10:23:21+00:00"
+            "time": "2025-02-17T16:11:43+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v11.42.1",
+            "version": "v11.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -4682,7 +4686,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v11.42.1",
+            "version": "v11.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -4730,7 +4734,7 @@
         },
         {
             "name": "illuminate/macroable",
-            "version": "v11.42.1",
+            "version": "v11.43.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -7104,16 +7108,16 @@
         },
         {
             "name": "revolt/event-loop",
-            "version": "v1.0.6",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/revoltphp/event-loop.git",
-                "reference": "25de49af7223ba039f64da4ae9a28ec2d10d0254"
+                "reference": "09bf1bf7f7f574453efe43044b06fafe12216eb3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/revoltphp/event-loop/zipball/25de49af7223ba039f64da4ae9a28ec2d10d0254",
-                "reference": "25de49af7223ba039f64da4ae9a28ec2d10d0254",
+                "url": "https://api.github.com/repos/revoltphp/event-loop/zipball/09bf1bf7f7f574453efe43044b06fafe12216eb3",
+                "reference": "09bf1bf7f7f574453efe43044b06fafe12216eb3",
                 "shasum": ""
             },
             "require": {
@@ -7170,9 +7174,9 @@
             ],
             "support": {
                 "issues": "https://github.com/revoltphp/event-loop/issues",
-                "source": "https://github.com/revoltphp/event-loop/tree/v1.0.6"
+                "source": "https://github.com/revoltphp/event-loop/tree/v1.0.7"
             },
-            "time": "2023-11-30T05:34:44+00:00"
+            "time": "2025-01-25T19:27:39+00:00"
         },
         {
             "name": "sebastian/diff",
