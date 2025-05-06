@@ -50,9 +50,7 @@ mounts:
     '/drush-backups':
         source: local
         source_path: 'drush-backups'
-    '/.console':
-        source: local
-        source_path: 'console'
+
 
 # Configuration of the build of this application.
 build:
