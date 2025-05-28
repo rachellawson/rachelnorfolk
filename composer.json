@@ -33,6 +33,7 @@
         "drupal/gin": "^4",
         "drupal/honeypot": "^2.1",
         "drupal/image_widget_crop": "^3",
+        "drupal/imagemagick": "^4.0",
         "drupal/leaflet": "^10.0",
         "drupal/leaflet_more_maps": "^2.1",
         "drupal/media_entity_twitter": "^2.7",
