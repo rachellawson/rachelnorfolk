@@ -30,7 +30,7 @@
         "drupal/geocoder": "^4.4",
         "drupal/geofield": "^1.15",
         "drupal/geofield_map": "^11.0",
-        "drupal/gin": "^4",
+        "drupal/gin": "^5",
         "drupal/honeypot": "^2.1",
         "drupal/image_widget_crop": "^3",
         "drupal/imagemagick": "^4.0",
