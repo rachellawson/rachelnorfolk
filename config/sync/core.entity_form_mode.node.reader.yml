@@ -8,6 +8,6 @@ _core:
   default_config_hash: '-bwTJHvqkol7RX4jHE4EiiZNfeGXU89b6IFBAEUHL4I'
 id: node.reader
 label: Reader
-description: ''
+description: null
 targetEntityType: node
 cache: true
