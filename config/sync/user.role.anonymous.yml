@@ -2,12 +2,9 @@ uuid: e876d929-1862-4154-8603-051079b4de66
 langcode: en
 status: true
 dependencies:
-  config:
-    - node.type.mary_fact
   module:
     - comment
     - media
-    - node
     - search
     - system
 _core:
@@ -20,6 +17,5 @@ permissions:
   - 'access comments'
   - 'access content'
   - 'access user profiles'
-  - 'create mary_fact content'
   - 'search content'
   - 'view media'

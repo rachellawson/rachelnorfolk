@@ -1,0 +1,9 @@
+_core:
+  default_config_hash: mSX4QKNWQ-7ObdxHYlWmBPOhy0skRP8_24eThzmxEAo
+enabled: true
+warning_message: 'Alterations to this form may alter the running configuration of the site and be lost during future deployments.'
+conditions:
+  request_path:
+    id: request_path
+    negate: false
+    pages: ''

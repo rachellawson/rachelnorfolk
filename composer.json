@@ -21,6 +21,7 @@
         "drupal/admin_toolbar": "^3.0",
         "drupal/autosave_form": "^1.2",
         "drupal/colorbox": "^2",
+        "drupal/config_warning": "^1.0@RC",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-project-message": "^11",
         "drupal/core-recommended": "^11",
