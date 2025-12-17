@@ -9,4 +9,3 @@ db:
 
 cache:
     type: redis:7.2
-    disk: 256
