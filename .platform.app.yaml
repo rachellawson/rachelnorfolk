@@ -11,7 +11,7 @@ type: 'php:8.5'
 
 dependencies:
     php:
-        composer/composer: "^2.7"
+        composer/composer: "^2.7.0"
 
 runtime:
     # Enable the redis extension so Drupal can communicate with the Redis cache.
@@ -65,10 +65,12 @@ hooks:
     deploy: |
         set -e
         php ./drush/platformsh_generate_drush_yml.php
+        # if drupal is installed, will call the following drush commands:
+        #   - `cache-rebuild`
+        #   - `updatedb`
+        #   - and if config files are present, `config-import`
         cd web
-        drush -y cache-rebuild
-        drush -y updatedb
-        drush -y config-import
+        bash $PLATFORM_APP_DIR/drush/platformsh_deploy_drupal.sh
 
 # The configuration of app when it is exposed to the web.
 web:
@@ -86,7 +88,7 @@ web:
             # suffixed with "s" (seconds), "m" (minutes), "h" (hours), "d"
             # (days), "w" (weeks), "M" (months, as 30 days) or "y" (years, as
             # 365 days).
-            expires: 30d
+            expires: 5m
 
             # Whether to forward disallowed and missing resources from this
             # location to the application.
@@ -100,14 +102,10 @@ web:
             # Rules for specific URI patterns.
             rules:
                 # Allow access to common static files.
-                # Seems reasonable to only update cache weekly.
-                '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
+                '\.(avif|webp|jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$':
                     allow: true
-                    expires: 1w
                 '^/robots\.txt$':
                     allow: true
-                    expires: 1w
-                # But sitemap will update every time we add content.
                 '^/sitemap\.xml$':
                     allow: true
 
@@ -117,14 +115,15 @@ web:
                 '^/sites/[^/]+/settings.*?\.php$':
                     scripts: false
 
+        # The files directory has its own special configuration rules.
         '/sites/default/files':
             # Allow access to all files in the public files directory.
             allow: true
-            expires: 1w
+            expires: 5m
             passthru: '/index.php'
             root: 'web/sites/default/files'
 
-            # Do not execute PHP scripts.
+            # Do not execute PHP scripts from the writeable mount.
             scripts: false
 
             rules:
@@ -136,4 +135,5 @@ web:
 crons:
     drupal:
         spec: '*/9 * * * *'
-        cmd: 'cd web ; drush core-cron'
+        commands:
+            start: 'cd web ; drush core-cron'
