@@ -1,0 +1,23 @@
+orienteer_event.add_form:
+  title: 'Add event'
+  route_name: entity.orienteer_event.add_form
+  appears_on:
+    - entity.orienteer_event.collection
+
+orienteer_location.type_add:
+  title: 'Add location type'
+  route_name: entity.orienteer_location_type.add_form
+  appears_on:
+    - entity.orienteer_location_type.collection
+
+orienteer_location.add_page:
+  title: 'Add location'
+  route_name: entity.orienteer_location.add_page
+  appears_on:
+    - entity.orienteer_location.collection
+
+orienteer_visit.add_form:
+  title: 'Add visit'
+  route_name: entity.orienteer_visit.add_form
+  appears_on:
+    - entity.orienteer_visit.collection

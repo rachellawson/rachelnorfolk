@@ -1,0 +1,29 @@
+entity.orienteer_event.settings:
+  title: 'Event'
+  description: 'Configure an Event entity type.'
+  route_name:  entity.orienteer_event.settings
+  parent: system.admin_structure
+
+entity.orienteer_event.collection:
+  title: 'Events'
+  description: 'List of events.'
+  route_name: entity.orienteer_event.collection
+  parent: system.admin_content
+
+entity.orienteer_location_type.collection:
+  title: 'Location types'
+  description: 'Manage and CRUD actions on Location type.'
+  parent: system.admin_structure
+  route_name: entity.orienteer_location_type.collection
+
+entity.orienteer_location.collection:
+  title: 'Locations'
+  description: 'List of locations.'
+  route_name: entity.orienteer_location.collection
+  parent: system.admin_content
+
+entity.orienteer_visit.collection:
+  title: 'Visits'
+  description: 'List of visits.'
+  route_name: entity.orienteer_visit.collection
+  parent: system.admin_content

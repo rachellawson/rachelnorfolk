@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - orienteer
+id: orienteer_event_delete_action
+label: 'Delete events'
+type: orienteer_event
+plugin: entity:delete_action:orienteer_event
+configuration: {  }

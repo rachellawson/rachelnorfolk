@@ -1,0 +1,48 @@
+administer orienteer_event:
+  title: 'Administer events'
+  restrict access: true
+view orienteer_event:
+  title: 'View event'
+edit orienteer_event:
+  title: 'Edit event'
+delete orienteer_event:
+  title: 'Delete event'
+create orienteer_event:
+  title: 'Create event'
+view orienteer_event revision:
+  title: 'View event revision'
+revert orienteer_event revision:
+  title: 'Revert event revision'
+delete orienteer_event revision:
+  title: 'Delete event revision'
+
+administer orienteer_location types:
+  title: 'Administer location types'
+  description: 'Maintain the types of location entity.'
+  restrict access: true
+view orienteer_location:
+  title: 'View location'
+edit orienteer_location:
+  title: 'Edit location'
+delete orienteer_location:
+  title: 'Delete location'
+create orienteer_location:
+  title: 'Create location'
+view orienteer_location revision:
+  title: 'View location revision'
+revert orienteer_location revision:
+  title: 'Revert location revision'
+delete orienteer_location revision:
+  title: 'Delete location revision'
+
+administer orienteer_visit:
+  title: 'Administer visits'
+  restrict access: true
+view orienteer_visit:
+  title: 'View visit'
+edit orienteer_visit:
+  title: 'Edit visit'
+delete orienteer_visit:
+  title: 'Delete visit'
+create orienteer_visit:
+  title: 'Create visit'

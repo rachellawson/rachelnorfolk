@@ -1,0 +1,7 @@
+entity.orienteer_event.settings:
+  path: 'admin/structure/orienteer-event'
+  defaults:
+    _form: '\Drupal\orienteer\Form\EventSettingsForm'
+    _title: 'Event'
+  requirements:
+    _permission: 'administer orienteer_event'

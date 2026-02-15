@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - orienteer
+id: orienteer_visit_delete_action
+label: 'Delete visits'
+type: orienteer_visit
+plugin: entity:delete_action:orienteer_visit
+configuration: {  }

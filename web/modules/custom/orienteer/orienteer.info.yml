@@ -1,0 +1,8 @@
+name: 'Orienteer'
+type: module
+description: 'Provides entity types, forms, and reporting to support Orienteering type events, live via Drupal.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - geofield:geofield
+  - geofield_map:geofield_map

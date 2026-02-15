@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - orienteer
+id: orienteer_visit_save_action
+label: 'Save visits'
+type: orienteer_visit
+plugin: entity:save_action:orienteer_visit
+configuration: {  }

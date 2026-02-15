@@ -1,0 +1,55 @@
+entity.orienteer_event.settings:
+  title: 'Settings'
+  route_name: entity.orienteer_event.settings
+  base_route: entity.orienteer_event.settings
+entity.orienteer_event.view:
+  title: 'View'
+  route_name: entity.orienteer_event.canonical
+  base_route: entity.orienteer_event.canonical
+entity.orienteer_event.edit_form:
+  title: 'Edit'
+  route_name: entity.orienteer_event.edit_form
+  base_route: entity.orienteer_event.canonical
+entity.orienteer_event.delete_form:
+  title: 'Delete'
+  route_name: entity.orienteer_event.delete_form
+  base_route: entity.orienteer_event.canonical
+  weight: 10
+entity.orienteer_event.collection:
+  title: 'Events'
+  route_name: entity.orienteer_event.collection
+  base_route: system.admin_content
+  weight: 10
+
+entity.orienteer_location.view:
+  title: 'View'
+  route_name: entity.orienteer_location.canonical
+  base_route: entity.orienteer_location.canonical
+entity.orienteer_location.edit_form:
+  title: 'Edit'
+  route_name: entity.orienteer_location.edit_form
+  base_route: entity.orienteer_location.canonical
+entity.orienteer_location.delete_form:
+  title: 'Delete'
+  route_name: entity.orienteer_location.delete_form
+  base_route: entity.orienteer_location.canonical
+  weight: 10
+entity.orienteer_location.collection:
+  title: 'Locations'
+  route_name: entity.orienteer_location.collection
+  base_route: system.admin_content
+  weight: 10
+entity.orienteer_location_type.edit_form:
+  title: 'Edit'
+  route_name: entity.orienteer_location_type.edit_form
+  base_route: entity.orienteer_location_type.edit_form
+entity.orienteer_location_type.collection:
+  title: 'List'
+  route_name: entity.orienteer_location_type.collection
+  base_route: entity.orienteer_location_type.collection
+
+entity.orienteer_visit.collection:
+  title: 'Visits'
+  route_name: entity.orienteer_visit.collection
+  base_route: system.admin_content
+  weight: 10

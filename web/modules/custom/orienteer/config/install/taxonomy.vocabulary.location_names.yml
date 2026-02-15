@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+name: 'Location Names'
+vid: location_names
+description: 'The list of possible names from which a location can be identified. Also allows for more information about the person.'
+weight: 0
+new_revision: false

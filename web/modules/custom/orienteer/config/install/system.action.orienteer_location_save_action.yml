@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - orienteer
+id: orienteer_location_save_action
+label: 'Save locations'
+type: orienteer_location
+plugin: entity:save_action:orienteer_location
+configuration: {  }

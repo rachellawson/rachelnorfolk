@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - orienteer
+id: orienteer_event_save_action
+label: 'Save events'
+type: orienteer_event
+plugin: entity:save_action:orienteer_event
+configuration: {  }

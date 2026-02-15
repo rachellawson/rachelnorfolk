@@ -1,0 +1,21 @@
+entity.orienteer_event.edit_form:
+  route_name: entity.orienteer_event.edit_form
+  group: orienteer_event
+  title: 'Edit'
+
+entity.orienteer_event.delete_form:
+  route_name: entity.orienteer_event.delete_form
+  group: orienteer_event
+  title: 'Delete'
+  weight: 10
+
+entity.orienteer_location.edit_form:
+  route_name: entity.orienteer_location.edit_form
+  group: orienteer_location
+  title: 'Edit'
+
+entity.orienteer_location.delete_form:
+  route_name: entity.orienteer_location.delete_form
+  group: orienteer_location
+  title: 'Delete'
+  weight: 10
