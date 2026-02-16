@@ -5,3 +5,19 @@ entity.orienteer_event.settings:
     _title: 'Event'
   requirements:
     _permission: 'administer orienteer_event'
+
+orienteer.visit_location:
+  path: 'visit/{first_name}/{second_name}/{secret}'
+  defaults:
+    _title: 'Visit Location'
+    _form: 'Drupal\orienteer\Form\VisitLocationForm'
+  requirements:
+    _permission: 'create orienteer_visit'
+    secret: '[0-9][0-9]'
+orienteer.visit_location_empty:
+  path: 'visit/manual-entry'
+  defaults:
+    _title: 'Visit Location - manual entry'
+    _form: 'Drupal\orienteer\Form\VisitLocationForm'
+  requirements:
+    _permission: 'create orienteer_visit'

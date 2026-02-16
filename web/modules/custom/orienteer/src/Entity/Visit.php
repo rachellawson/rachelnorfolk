@@ -128,9 +128,6 @@ class Visit extends ContentEntityBase implements VisitInterface {
       ])
       ->setDisplayConfigurable('view', TRUE);
 
-
-
-
     $fields['uid'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Author'))
       ->setSetting('target_type', 'user')
