@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8ac0b0a5e6b3cffbd4ebb9b157fa02fb",
+    "content-hash": "5cdf1dd6ca2b80577af7e84589e58522",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2863,28 +2863,31 @@
         },
         {
             "name": "drupal/imagemagick",
-            "version": "4.0.2",
+            "version": "5.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/imagemagick.git",
-                "reference": "4.0.2"
+                "reference": "5.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/imagemagick-4.0.2.zip",
-                "reference": "4.0.2",
-                "shasum": "758bdf632dd8f2eeb97d198b692d20a59cdbdc13"
+                "url": "https://ftp.drupal.org/files/projects/imagemagick-5.0.1.zip",
+                "reference": "5.0.1",
+                "shasum": "3a9e70d80064b3be3f2d0b4b4a4d1beb92d6ead2"
             },
             "require": {
-                "drupal/core": "^10.3 | ^11",
-                "drupal/file_mdm": "^3.1",
-                "drupal/sophron": "^2.1"
+                "drupal/core": "^11.3",
+                "drupal/file_mdm": "^3.2",
+                "drupal/sophron": "^3"
+            },
+            "require-dev": {
+                "drupal/image_effects": "^5"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "4.0.2",
-                    "datestamp": "1724827811",
+                    "version": "5.0.1",
+                    "datestamp": "1769759255",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3732,27 +3735,27 @@
         },
         {
             "name": "drupal/sophron",
-            "version": "2.2.1",
+            "version": "3.1.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/sophron.git",
-                "reference": "2.2.1"
+                "reference": "3.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/sophron-2.2.1.zip",
-                "reference": "2.2.1",
-                "shasum": "ac116da7e6eee93594443204a17f0bcb902d7dd2"
+                "url": "https://ftp.drupal.org/files/projects/sophron-3.1.1.zip",
+                "reference": "3.1.1",
+                "shasum": "6fd86916ab6a620372c474a8a1ba15edeb989f4b"
             },
             "require": {
-                "drupal/core": "^10.2 || ^11",
-                "fileeye/mimemap": "^2.2.1"
+                "drupal/core": "^11.2 | ^12",
+                "fileeye/mimemap": "^2.2.5"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.2.1",
-                    "datestamp": "1744800237",
+                    "version": "3.1.1",
+                    "datestamp": "1774250660",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
