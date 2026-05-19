@@ -2,18 +2,18 @@ uuid: a470ed78-3ed0-4aa3-9c8c-2cd4d660e110
 langcode: en
 status: true
 dependencies:
+  config:
+    - taxonomy.vocabulary.tags
   module:
-    - ctools
     - taxonomy
 id: topics
 label: Topics
 type: 'canonical_entities:taxonomy_term'
-pattern: 'topics/[term:name]'
+pattern: '/topics/[term:name]'
 selection_criteria:
   95c53809-a9a5-4b82-b812-fe848c404160:
     id: 'entity_bundle:taxonomy_term'
     negate: false
-    uuid: 95c53809-a9a5-4b82-b812-fe848c404160
     context_mapping:
       taxonomy_term: taxonomy_term
     bundles:
