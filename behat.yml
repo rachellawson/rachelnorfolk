@@ -10,13 +10,16 @@ default:
   extensions:
     Drupal\DrupalExtension:
       blackbox: ~
+      api_driver: 'drupal'
+      drupal:
+        drupal_root: '/var/www/html/web'
       region_map:
         header: "#header"
         content: ".main-content"
         social-bar: ".social-bar"
         footer: "footer.site-footer"
     Behat\MinkExtension:
-      base_url: http://web
+      base_url: http://rachelnorfolk.ddev.site
       selenium2:
         wd_host: http://selenium-chrome:4444/wd/hub
         capabilities:
