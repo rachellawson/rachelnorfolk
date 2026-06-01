@@ -1,0 +1,7 @@
+name: 'OsmAnd Tracking'
+type: module
+description: 'Provides an endpoint capable of listening for track recording points from the OsmAnd app (https://osmand.net) and an entity type to store them in.'
+package: Custom
+core_version_requirement: ^10 || ^11
+dependencies:
+  - geofield:geofield

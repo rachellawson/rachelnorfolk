@@ -1,0 +1,72 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * @file
+ * Provides an osmand track point entity type.
+ */
+
+use Drupal\Core\Render\Element;
+use Drupal\user\UserInterface;
+
+/**
+ * Implements hook_theme().
+ */
+function osmand_tracking_theme(): array {
+  return [
+    'osmand_track_point' => ['render element' => 'elements'],
+  ];
+}
+
+/**
+ * Prepares variables for osmand track point templates.
+ *
+ * Default template: osmand-track-point.html.twig.
+ *
+ * @param array $variables
+ *   An associative array containing:
+ *   - elements: An associative array containing the osmand track point information and any
+ *     fields attached to the entity.
+ *   - attributes: HTML attributes for the containing element.
+ */
+function template_preprocess_osmand_track_point(array &$variables): void {
+  $variables['view_mode'] = $variables['elements']['#view_mode'];
+  foreach (Element::children($variables['elements']) as $key) {
+    $variables['content'][$key] = $variables['elements'][$key];
+  }
+}
+
+/**
+ * Implements hook_user_cancel().
+ */
+function osmand_tracking_user_cancel($edit, UserInterface $account, $method): void {
+  switch ($method) {
+    case 'user_cancel_reassign':
+      // Anonymize osmand track points.
+      $storage = \Drupal::entityTypeManager()->getStorage('osmand_track_point');
+      $osmand_track_point_ids = $storage->getQuery()
+        ->condition('uid', $account->id())
+        ->accessCheck(FALSE)
+        ->execute();
+      foreach ($storage->loadMultiple($osmand_track_point_ids) as $osmand_track_point) {
+        $osmand_track_point->setOwnerId(0)->save();
+      }
+      break;
+  }
+}
+
+/**
+ * Implements hook_ENTITY_TYPE_predelete() for user entities.
+ */
+function osmand_tracking_user_predelete(UserInterface $account): void {
+  // Delete osmand track points that belong to this account.
+  $storage = \Drupal::entityTypeManager()->getStorage('osmand_track_point');
+  $osmand_track_point_ids = $storage->getQuery()
+    ->condition('uid', $account->id())
+    ->accessCheck(FALSE)
+    ->execute();
+  $storage->delete(
+    $storage->loadMultiple($osmand_track_point_ids)
+  );
+}

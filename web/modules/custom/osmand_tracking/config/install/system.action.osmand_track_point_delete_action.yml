@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - osmand_tracking
+id: osmand_track_point_delete_action
+label: 'Delete osmand track points'
+type: osmand_track_point
+plugin: entity:delete_action:osmand_track_point
+configuration: {  }

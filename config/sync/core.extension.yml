@@ -13,7 +13,6 @@ module:
   colorbox: 0
   comment: 0
   config: 0
-  config_warning: 0
   contextual: 0
   crop: 0
   ctools: 0
@@ -59,6 +58,7 @@ module:
   node: 0
   noreqnewpass: 0
   options: 0
+  osmand_tracking: 0
   page_cache: 0
   path: 0
   path_alias: 0

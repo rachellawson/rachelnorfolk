@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - osmand_tracking
+id: osmand_track_point_save_action
+label: 'Save osmand track points'
+type: osmand_track_point
+plugin: entity:save_action:osmand_track_point
+configuration: {  }

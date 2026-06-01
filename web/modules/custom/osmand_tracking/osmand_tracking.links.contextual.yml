@@ -1,0 +1,10 @@
+entity.osmand_track_point.edit_form:
+  route_name: entity.osmand_track_point.edit_form
+  group: osmand_track_point
+  title: 'Edit'
+
+entity.osmand_track_point.delete_form:
+  route_name: entity.osmand_track_point.delete_form
+  group: osmand_track_point
+  title: 'Delete'
+  weight: 10

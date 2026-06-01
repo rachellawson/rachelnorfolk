@@ -1,0 +1,18 @@
+entity.osmand_track_point.view:
+  title: 'View'
+  route_name: entity.osmand_track_point.canonical
+  base_route: entity.osmand_track_point.canonical
+entity.osmand_track_point.edit_form:
+  title: 'Edit'
+  route_name: entity.osmand_track_point.edit_form
+  base_route: entity.osmand_track_point.canonical
+entity.osmand_track_point.delete_form:
+  title: 'Delete'
+  route_name: entity.osmand_track_point.delete_form
+  base_route: entity.osmand_track_point.canonical
+  weight: 10
+entity.osmand_track_point.collection:
+  title: 'OsmAnd Track Points'
+  route_name: entity.osmand_track_point.collection
+  base_route: system.admin_content
+  weight: 10

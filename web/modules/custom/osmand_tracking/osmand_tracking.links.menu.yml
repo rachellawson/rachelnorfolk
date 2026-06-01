@@ -1,0 +1,12 @@
+entity.osmand_track_point.collection:
+  title: 'OsmAnd Track Points'
+  description: 'List of osmand track points.'
+  route_name: entity.osmand_track_point.collection
+  parent: system.admin_content
+
+osmand_tracking.settings:
+  title: OsmAnd Tracking Settings
+  description: Alter the settings for OsmAnd Tracking
+  parent: system.admin_config_system
+  route_name: osmand_tracking.settings
+  weight: 10

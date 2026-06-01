@@ -1,0 +1,5 @@
+osmand_track_point.add_form:
+  title: 'Add osmand track point'
+  route_name: entity.osmand_track_point.add_form
+  appears_on:
+    - entity.osmand_track_point.collection

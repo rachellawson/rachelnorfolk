@@ -1,0 +1,13 @@
+uuid: 340c1a00-6c78-4293-accc-54b2d80480b9
+langcode: en
+status: true
+dependencies:
+  module:
+    - osmand_tracking
+_core:
+  default_config_hash: s7mN6nXxjvwjbbvWxxMYR-GcDPHTKmZhyajPgA_O7ok
+id: osmand_track_point_delete_action
+label: 'Delete osmand track points'
+type: osmand_track_point
+plugin: 'entity:delete_action:osmand_track_point'
+configuration: {  }

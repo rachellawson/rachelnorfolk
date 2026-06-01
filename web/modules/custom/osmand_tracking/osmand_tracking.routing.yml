@@ -1,0 +1,18 @@
+osmand_tracking.settings:
+  path: '/admin/config/system/settings'
+  defaults:
+    _title: 'OsmAnd Tracking Settings'
+    _form: 'Drupal\osmand_tracking\Form\SettingsForm'
+  requirements:
+    _permission: 'administer site configuration'
+
+osmand_tracking.receiver:
+  path: '/osmand-tracking/receiver/{secret}/{user}'
+  defaults:
+    _title: 'Receiver'
+    _controller: '\Drupal\osmand_tracking\Controller\OsmAndReceiver::content'
+  requirements:
+    _permission: 'access content'
+    secret: '[a-zA-Z0-9\-]+'
+  options:
+    no_cache: TRUE

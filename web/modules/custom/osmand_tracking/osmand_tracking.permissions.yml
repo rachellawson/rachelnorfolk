@@ -1,0 +1,11 @@
+administer osmand_track_point:
+  title: 'Administer osmand track points'
+  restrict access: true
+view osmand_track_point:
+  title: 'View osmand track point'
+edit osmand_track_point:
+  title: 'Edit osmand track point'
+delete osmand_track_point:
+  title: 'Delete osmand track point'
+create osmand_track_point:
+  title: 'Create osmand track point'
