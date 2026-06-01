@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "39311bf2cb0f25be1fc09b60a1daa79a",
+    "content-hash": "b94121b10e5953b77fa82174fdc61e0a",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -11578,6 +11578,80 @@
                 }
             ],
             "time": "2026-01-05T06:47:08+00:00"
+        },
+        {
+            "name": "drevops/behat-screenshot",
+            "version": "2.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drevops/behat-screenshot.git",
+                "reference": "bf893490bbcb19ffca23df78ce2f320c379a1475"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drevops/behat-screenshot/zipball/bf893490bbcb19ffca23df78ce2f320c379a1475",
+                "reference": "bf893490bbcb19ffca23df78ce2f320c379a1475",
+                "shasum": ""
+            },
+            "require": {
+                "behat/behat": "^3.13.0",
+                "friends-of-behat/mink-extension": "^2.7",
+                "php": ">=8.2",
+                "symfony/finder": "^6.4 || ^7.0",
+                "symfony/http-client": "^6.0 || ^7.0"
+            },
+            "require-dev": {
+                "behat/mink-browserkit-driver": "^2.2",
+                "dantleech/gherkin-lint": "^0.2.3",
+                "dealerdirect/phpcodesniffer-composer-installer": "^1",
+                "dmore/behat-chrome-extension": "^1.4",
+                "drevops/behat-phpserver": "^2.0",
+                "drevops/phpcs-standard": "^0.7.0",
+                "drupal/coder": "^9.0",
+                "dvdoug/behat-code-coverage": "^5.3",
+                "ergebnis/composer-normalize": "^2.44",
+                "lullabot/mink-selenium2-driver": "^1.7",
+                "lullabot/php-webdriver": "^2.0.4",
+                "php-mock/php-mock-phpunit": "^2.13",
+                "phpstan/phpstan": "^2",
+                "phpunit/phpunit": "^11",
+                "rector/rector": "^2",
+                "symfony/process": "^6.4 || ^7.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DrevOps\\BehatScreenshotExtension\\": "src/DrevOps/BehatScreenshotExtension"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Alex Skrypnyk",
+                    "email": "alex@drevops.com",
+                    "homepage": "https://drevops.com",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Behat extension and step definitions to create HTML and image screenshots on demand or when tests fail",
+            "support": {
+                "issues": "https://github.com/drevops/behat-screenshot/issues",
+                "source": "https://github.com/drevops/behat-screenshot/tree/2.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/drevops",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/drevops",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2026-04-07T23:38:49+00:00"
         },
         {
             "name": "drupal/coder",

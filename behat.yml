@@ -7,7 +7,17 @@ default:
         - Drupal\DrupalExtension\Context\MinkContext
         - Drupal\DrupalExtension\Context\MessageContext
         - Drupal\DrupalExtension\Context\DrushContext
+        - DrevOps\BehatScreenshotExtension\Context\ScreenshotContext
+
   extensions:
+    DrevOps\BehatScreenshotExtension:
+      dir: '%paths.base%/screenshots'
+      on_failed: true
+      purge: true
+      always_fullscreen: true
+      failed_prefix: 'failed_'
+      filename_pattern: '{datetime:u}.{feature_file}.feature_{step_line}.{ext}'
+      filename_pattern_failed: '{datetime:u}.{failed_prefix}{feature_file}.feature_{step_line}.{ext}'
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
@@ -26,6 +36,5 @@ default:
           chrome:
             switches:
               - "--disable-gpu"
-              - "--headless"
               - "--no-sandbox"
               - "--disable-dev-shm-usage"
