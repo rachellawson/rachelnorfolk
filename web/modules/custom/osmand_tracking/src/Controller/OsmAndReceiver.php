@@ -55,7 +55,7 @@ final class OsmAndReceiver extends ControllerBase {
     $query = $request->query->all();
 
     // Make a suitable geofield from lat/lon.
-    $location_wkt = \Drupal::service('geofield.wkt_generator')->wktBuildPoint([$query['lat'], $query['lon']]);
+    $location_wkt = \Drupal::service('geofield.wkt_generator')->wktBuildPoint([$query['lon'], $query['lat']]);
     $location_point = [
       'value' => $location_wkt,
     ];
