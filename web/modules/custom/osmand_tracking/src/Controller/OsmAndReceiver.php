@@ -62,7 +62,7 @@ final class OsmAndReceiver extends ControllerBase {
 
     // Make sure timestamp is reasonable.
     // @todo we really need to do this properly with the Date functions!
-    $time = intdiv($query['timestamp'], 100);
+    $time = intdiv((int) $query['timestamp'], 100);
 
     // Add a new osmand point entity for this data.
     $point = $this->entityTypeManager()->getStorage('osmand_track_point')->create([
