@@ -68,7 +68,7 @@ final class OsmAndReceiver extends ControllerBase {
     $point = $this->entityTypeManager()->getStorage('osmand_track_point')->create([
       'location' => $location_point,
       'author' => $user,
-      'created' => $query['timestamp'],
+      'created' => $time,
     ]);
 
     $point->save();
