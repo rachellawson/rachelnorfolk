@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Drupal\osmand_tracking\Controller;
 
+use Drupal\Core\Datetime\DrupalDateTime;
 use Drupal\Core\Session\AccountInterface;
 use Drupal\Core\Controller\ControllerBase;
 use Drupal\Core\Entity\EntityTypeManagerInterface;
@@ -59,6 +60,10 @@ final class OsmAndReceiver extends ControllerBase {
       'value' => $location_wkt,
     ];
 
+    // Make sure timestamp is reasonable.
+    // @todo we really need to do this properly with the Date functions!
+    $time = intdiv($query['timestamp'], 100);
+
     // Add a new osmand point entity for this data.
     $point = $this->entityTypeManager()->getStorage('osmand_track_point')->create([
       'location' => $location_point,
@@ -75,7 +80,7 @@ final class OsmAndReceiver extends ControllerBase {
           '@lat' => $query['lat'],
           '@lon' => $query['lon'],
           '@alt' => $query['alt'],
-          '@timestamp' => $query['timestamp'],
+          '@timestamp' => $time,
           '@secret' => $secret,
         ]),
     ];
