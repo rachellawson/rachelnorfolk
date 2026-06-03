@@ -41,6 +41,7 @@
         "drupal/metatag": "^2",
         "drupal/noreqnewpass": "^1.2",
         "drupal/openid_connect": "^3",
+        "drupal/osmand_tracking": "1.0.x-dev@dev",
         "drupal/pathauto": "^1.8",
         "drupal/reader": "^1.0@beta",
         "drupal/redirect": "^1.6",

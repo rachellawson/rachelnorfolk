@@ -13,7 +13,6 @@ module:
   colorbox: 0
   comment: 0
   config: 0
-  config_warning: 0
   contextual: 0
   crop: 0
   ctools: 0
@@ -23,6 +22,7 @@ module:
   dynamic_page_cache: 0
   editor: 0
   environment_indicator: 0
+  environment_indicator_toolbar: 0
   field: 0
   field_layout: 0
   field_ui: 0
@@ -44,6 +44,7 @@ module:
   layout_builder: 0
   layout_discovery: 0
   leaflet: 0
+  leaflet_views: 0
   link: 0
   media: 0
   media_entity_twitter: 0
@@ -59,6 +60,7 @@ module:
   node: 0
   noreqnewpass: 0
   options: 0
+  osmand_tracking: 0
   page_cache: 0
   path: 0
   path_alias: 0

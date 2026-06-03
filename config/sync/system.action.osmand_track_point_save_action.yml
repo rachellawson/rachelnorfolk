@@ -1,0 +1,13 @@
+uuid: 6882b36f-0b40-4712-a3e4-505499bcf8c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - osmand_tracking
+_core:
+  default_config_hash: u1ZNGNSM-rg3dJWk6K95WqmsjU5apwSmRQbjhyNQkjE
+id: osmand_track_point_save_action
+label: 'Save osmand track points'
+type: osmand_track_point
+plugin: 'entity:save_action:osmand_track_point'
+configuration: {  }

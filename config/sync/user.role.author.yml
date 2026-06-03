@@ -20,6 +20,7 @@ dependencies:
     - layout_builder
     - media
     - node
+    - osmand_tracking
     - path
     - redirect
     - system
@@ -42,6 +43,7 @@ permissions:
   - 'administer comments'
   - 'administer menu'
   - 'administer nodes'
+  - 'administer osmand_track_point'
   - 'administer redirects'
   - 'administer url aliases'
   - 'administer users'
@@ -51,6 +53,7 @@ permissions:
   - 'create document media'
   - 'create image media'
   - 'create media'
+  - 'create osmand_track_point'
   - 'create page content'
   - 'create remote_video media'
   - 'create terms in tags'
@@ -61,6 +64,7 @@ permissions:
   - 'delete any page content'
   - 'delete article revisions'
   - 'delete media'
+  - 'delete osmand_track_point'
   - 'delete own article content'
   - 'delete own document media'
   - 'delete own files'
@@ -72,6 +76,7 @@ permissions:
   - 'delete terms in tags'
   - 'edit any article content'
   - 'edit any page content'
+  - 'edit osmand_track_point'
   - 'edit own article content'
   - 'edit own comments'
   - 'edit own document media'
@@ -89,6 +94,7 @@ permissions:
   - 'use text format full_html'
   - 'view all revisions'
   - 'view article revisions'
+  - 'view osmand_track_point'
   - 'view own unpublished content'
   - 'view own unpublished media'
   - 'view page revisions'
