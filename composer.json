@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2.0",
         "drupal/activitypub": "^1.0@alpha",
         "drupal/admin_toolbar": "^3.0",
         "drupal/autosave_form": "^1.2",
