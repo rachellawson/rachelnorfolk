@@ -336,19 +336,19 @@ display:
           value:
             min: ''
             max: ''
-            value: '1 week'
+            value: '-1 week'
             type: offset
           group: 1
-          exposed: true
+          exposed: false
           expose:
-            operator_id: created_op
-            label: 'Show points recorded since...'
+            operator_id: ''
+            label: ''
             description: ''
             use_operator: false
-            operator: created_op
+            operator: ''
             operator_limit_selection: false
             operator_list: {  }
-            identifier: created
+            identifier: ''
             required: false
             remember: false
             multiple: false
@@ -434,7 +434,7 @@ display:
               'y': ''
             html: '<div></div>'
             html_class: leaflet-map-divicon
-            circle_marker_options: '{"radius":8,"color":"#FF6600","fillColor":"#a3785c","fillOpacity":0.5}'
+            circle_marker_options: '{"radius":8,"color":"#FF6600","fillColor":"#a3785c","fillOpacity":0.7}'
           fullscreen:
             control: true
             options: '{"position":"topleft","pseudoFullscreen":false}'
@@ -474,7 +474,20 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header: {  }
+      header:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: text
+          empty: false
+          content:
+            value: "You should be able to see any points I have recorded in the last week.\r\nThese points are recorded from my navigation tablet, running the <a href=\"https://osmand.net\">OsmAnd</a> mapping app."
+            format: basic_html
+          tokenize: false
       footer: {  }
       display_extenders: {  }
     cache_metadata:
@@ -482,7 +495,6 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
       tags: {  }
   page_1:
     id: page_1
@@ -497,5 +509,4 @@ display:
       contexts:
         - 'languages:language_content'
         - 'languages:language_interface'
-        - url
       tags: {  }
