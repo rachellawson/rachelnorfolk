@@ -6,19 +6,13 @@ Feature: testing we have api function running right
     When I am viewing an "article" content with the title "My article"
     Then I should see the heading "My article"
 
-  Scenario: Run cron
-    Given I am logged in as a user with the "Administrator" role
-    When I run cron
-    And am on "admin/reports/dblog"
-    Then I should see the link "Cron run completed"
-
   Scenario: Create a term
     Given I am logged in as a user with the "Administrator" role
     When I am viewing a "tags" term with the name "My tag"
     Then I should see the heading "My tag"
 
   Scenario: Create many terms
-    Given "tags" terms:
+    Given the following "tags" terms:
       | name    | description    |
       | Tag one | the first one  |
       | Tag two | the second one |

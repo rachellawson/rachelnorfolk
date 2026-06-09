@@ -23,7 +23,7 @@ default:
       api_driver: 'drupal'
       drupal:
         drupal_root: '/var/www/html/web'
-      region_map:
+      regions:
         header: "#header"
         content: ".main-content"
         social-bar: ".social-bar"

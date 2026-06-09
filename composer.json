@@ -55,7 +55,7 @@
     "require-dev": {
         "drevops/behat-screenshot": "^2.3",
         "drupal/core-dev": "^11",
-        "drupal/drupal-extension": "^5.4",
+        "drupal/drupal-extension": "^6.0",
         "drupal/stage_file_proxy": "^3.1"
     },
     "conflict": {
