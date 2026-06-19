@@ -474,7 +474,9 @@ display:
           replica: false
           query_tags: {  }
       relationships: {  }
-      header:
+      css_class: wide-content
+      header: {  }
+      footer:
         area:
           id: area
           table: views
@@ -485,10 +487,9 @@ display:
           plugin_id: text
           empty: false
           content:
-            value: "You should be able to see any points I have recorded in the last week.\r\nThese points are recorded from my navigation tablet, running the <a href=\"https://osmand.net\">OsmAnd</a> mapping app."
+            value: "You should be able to see any track points I have recorded in the last week.\r\nThese points are recorded from my navigation tablet, running the <a href=\"https://osmand.net\">OsmAnd</a> mapping app."
             format: basic_html
           tokenize: false
-      footer: {  }
       display_extenders: {  }
     cache_metadata:
       max-age: -1

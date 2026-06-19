@@ -29,7 +29,7 @@
         "drupal/diff": "^2",
         "drupal/environment_indicator": "^4.0",
         "drupal/geocoder": "^4.4",
-        "drupal/geofield": "^1.15",
+        "drupal/geofield": "^10",
         "drupal/geofield_map": "^11.0",
         "drupal/gin": "^5",
         "drupal/honeypot": "^2.1",
