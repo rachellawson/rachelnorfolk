@@ -16,7 +16,7 @@
     ],
     "require": {
         "composer/installers": "^2",
-        "cweagans/composer-patches": "^1.7",
+        "cweagans/composer-patches": "^2",
         "drupal/activitypub": "^1.0@alpha",
         "drupal/admin_toolbar": "^3.0",
         "drupal/autosave_form": "^1.2",
@@ -34,7 +34,7 @@
         "drupal/gin": "^5",
         "drupal/honeypot": "^2.1",
         "drupal/image_widget_crop": "^3",
-        "drupal/imagemagick": "^4.0",
+        "drupal/imagemagick": "^5",
         "drupal/leaflet": "^10.0",
         "drupal/leaflet_more_maps": "^2.1",
         "drupal/media_entity_twitter": "^2.7",

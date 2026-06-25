@@ -1,0 +1,17 @@
+{
+    "_hash": "a0428fe2c1268d59d3a5759820a41db5f3a89bf963eda6b905eb7377439def92",
+    "patches": {
+        "drupal/xmlsitemap": [
+            {
+                "package": "drupal/xmlsitemap",
+                "description": "3571583 Using null as an array offset is deprecated in PHP 8.5",
+                "url": "https://git.drupalcode.org/project/xmlsitemap/-/merge_requests/76.diff",
+                "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea",
+                "depth": 1,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}
