@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ef5909d594ab972f46d57cd9e552d68",
+    "content-hash": "b44a2282d9b3d44cd5cd9670a17f3035",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -12771,6 +12771,96 @@
             "time": "2026-01-21T04:14:03+00:00"
         },
         {
+            "name": "palantirnet/drupal-rector",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/palantirnet/drupal-rector.git",
+                "reference": "33b69da5341688cfe7a11627b79d46234be28321"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/palantirnet/drupal-rector/zipball/33b69da5341688cfe7a11627b79d46234be28321",
+                "reference": "33b69da5341688cfe7a11627b79d46234be28321",
+                "shasum": ""
+            },
+            "require": {
+                "rector/rector": "^2",
+                "webflo/drupal-finder": "^1.2"
+            },
+            "replace": {
+                "drupal8-rector/drupal8-rector": "*",
+                "palantirnet/drupal8-rector": "*"
+            },
+            "require-dev": {
+                "cweagans/composer-patches": "^2.0",
+                "friendsofphp/php-cs-fixer": "^3.95.1",
+                "php": "^8.2",
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^2.1.54",
+                "phpstan/phpstan-deprecation-rules": "^2.0.4",
+                "phpunit/phpunit": "^12.5.24",
+                "symfony/yaml": "^5 || ^6 || ^7.4.8",
+                "symplify/vendor-patches": "^12.0.6"
+            },
+            "type": "rector-extension",
+            "extra": {
+                "rector": {
+                    "includes": [
+                        "config/extension.php"
+                    ]
+                },
+                "enable-patching": true
+            },
+            "autoload": {
+                "psr-4": {
+                    "DrupalRector\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Dezső Biczó",
+                    "email": "mxr576@gmail.com"
+                },
+                {
+                    "name": "Ofer Shaal",
+                    "email": "shaal@palantir.net"
+                },
+                {
+                    "name": "Daniel Montgomery",
+                    "email": "montgomery@palantir.net"
+                },
+                {
+                    "name": "Matt Glaman",
+                    "email": "nmd.matt@gmail.com"
+                },
+                {
+                    "name": "Björn Brala",
+                    "email": "drupal@bjorn.dev"
+                },
+                {
+                    "name": "Ken Rickard",
+                    "email": "agentrickard@gmail.com"
+                }
+            ],
+            "description": "Instant fixes for your Drupal code by using Rector.",
+            "keywords": [
+                "Code style",
+                "ast",
+                "drupal",
+                "rector"
+            ],
+            "support": {
+                "issues": "https://github.com/palantirnet/drupal-rector/issues",
+                "source": "https://github.com/palantirnet/drupal-rector/tree/1.0.0"
+            },
+            "time": "2026-07-02T10:27:04+00:00"
+        },
+        {
             "name": "phar-io/manifest",
             "version": "2.0.4",
             "source": {
@@ -14105,6 +14195,66 @@
                 }
             ],
             "time": "2025-08-19T18:57:03+00:00"
+        },
+        {
+            "name": "rector/rector",
+            "version": "2.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rectorphp/rector.git",
+                "reference": "49ff6339174bdbdf50b0b35ecbcff14a05ac9e24"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rectorphp/rector/zipball/49ff6339174bdbdf50b0b35ecbcff14a05ac9e24",
+                "reference": "49ff6339174bdbdf50b0b35ecbcff14a05ac9e24",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4|^8.0",
+                "phpstan/phpstan": "^2.2.2"
+            },
+            "conflict": {
+                "rector/rector-doctrine": "*",
+                "rector/rector-downgrade-php": "*",
+                "rector/rector-phpunit": "*",
+                "rector/rector-symfony": "*"
+            },
+            "suggest": {
+                "ext-dom": "To manipulate phpunit.xml via the custom-rule command"
+            },
+            "bin": [
+                "bin/rector"
+            ],
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Instant Upgrade and Automated Refactoring of any PHP code",
+            "homepage": "https://getrector.com/",
+            "keywords": [
+                "automation",
+                "dev",
+                "migration",
+                "refactoring"
+            ],
+            "support": {
+                "issues": "https://github.com/rectorphp/rector/issues",
+                "source": "https://github.com/rectorphp/rector/tree/2.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/tomasvotruba",
+                    "type": "github"
+                }
+            ],
+            "time": "2026-06-22T11:39:33+00:00"
         },
         {
             "name": "sebastian/cli-parser",

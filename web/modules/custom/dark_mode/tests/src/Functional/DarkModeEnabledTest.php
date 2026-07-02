@@ -6,9 +6,9 @@ use Drupal\Tests\BrowserTestBase;
 
 /**
  * Check that we are actually putting the css on the page.
- *
- * @group dark_mode
  */
+#[\PHPUnit\Framework\Attributes\Group('dark_mode')]
+#[\PHPUnit\Framework\Attributes\RunTestsInSeparateProcesses]
 final class DarkModeEnabledTest extends BrowserTestBase {
 
   /**
