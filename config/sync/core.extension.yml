@@ -71,6 +71,8 @@ module:
   schema_article: 0
   schema_metatag: 0
   search: 0
+  search_help: 0
+  search_node: 0
   serialization: 0
   sophron: 0
   syslog: 0
