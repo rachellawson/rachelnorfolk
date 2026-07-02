@@ -30,3 +30,6 @@ console/
 
 # Ignore PHPUnitl things
 .phpunit.result.cache
+
+#Ignore screenshots from Behat
+/screenshots/
