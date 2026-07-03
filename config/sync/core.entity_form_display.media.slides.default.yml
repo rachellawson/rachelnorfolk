@@ -7,15 +7,8 @@ dependencies:
     - image.style.thumbnail
     - media.type.slides
   module:
-    - field_layout
     - image
-    - layout_discovery
     - path
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: media.slides.default
 targetEntityType: media
 bundle: slides

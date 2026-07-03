@@ -8,14 +8,6 @@ dependencies:
     - field.field.media.tweet.field_tweet_author
     - field.field.media.tweet.field_tweet_id
     - media.type.tweet
-  module:
-    - field_layout
-    - layout_discovery
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: media.tweet.media_library
 targetEntityType: media
 bundle: tweet

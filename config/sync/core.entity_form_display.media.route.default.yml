@@ -7,16 +7,9 @@ dependencies:
     - field.field.media.route.field_route
     - media.type.route
   module:
-    - field_layout
     - file
     - geofield
-    - layout_discovery
     - path
-third_party_settings:
-  field_layout:
-    id: layout_onecol
-    settings:
-      label: ''
 id: media.route.default
 targetEntityType: media
 bundle: route
