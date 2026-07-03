@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b44a2282d9b3d44cd5cd9670a17f3035",
+    "content-hash": "002ffd3952b5db20082082f1a48e6fd8",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -935,99 +935,30 @@
             "time": "2026-06-07T03:26:06+00:00"
         },
         {
-            "name": "cweagans/composer-configurable-plugin",
-            "version": "2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/cweagans/composer-configurable-plugin.git",
-                "reference": "15433906511a108a1806710e988629fd24b89974"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-configurable-plugin/zipball/15433906511a108a1806710e988629fd24b89974",
-                "reference": "15433906511a108a1806710e988629fd24b89974",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.0.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "~4.0",
-                "codeception/module-asserts": "^2.0",
-                "composer/composer": "~2.0",
-                "php-coveralls/php-coveralls": "~2.0",
-                "php-parallel-lint/php-parallel-lint": "^1.0.0",
-                "phpro/grumphp": "^1.8.0",
-                "sebastian/phpcpd": "^6.0",
-                "squizlabs/php_codesniffer": "^3.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "cweagans\\Composer\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Cameron Eagans",
-                    "email": "me@cweagans.net"
-                }
-            ],
-            "description": "Provides a lightweight configuration system for Composer plugins.",
-            "support": {
-                "issues": "https://github.com/cweagans/composer-configurable-plugin/issues",
-                "source": "https://github.com/cweagans/composer-configurable-plugin/tree/2.0.0"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/cweagans",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-02-12T04:58:58+00:00"
-        },
-        {
             "name": "cweagans/composer-patches",
-            "version": "2.0.0",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "bfa6018a5f864653d9ed899b902ea72f858a2cf7"
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/bfa6018a5f864653d9ed899b902ea72f858a2cf7",
-                "reference": "bfa6018a5f864653d9ed899b902ea72f858a2cf7",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^2.0",
-                "cweagans/composer-configurable-plugin": "^2.0",
-                "ext-json": "*",
-                "php": ">=8.0.0"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": ">=5.3.0"
             },
             "require-dev": {
-                "codeception/codeception": "~4.0",
-                "codeception/module-asserts": "^2.0",
-                "codeception/module-cli": "^2.0",
-                "codeception/module-filesystem": "^2.0",
-                "composer/composer": "~2.0",
-                "php-coveralls/php-coveralls": "~2.0",
-                "php-parallel-lint/php-parallel-lint": "^1.0.0",
-                "phpro/grumphp": "^1.8.0",
-                "sebastian/phpcpd": "^6.0",
-                "squizlabs/php_codesniffer": "^4.0"
+                "composer/composer": "~1.0 || ~2.0",
+                "phpunit/phpunit": "~4.6"
             },
             "type": "composer-plugin",
             "extra": {
-                "_": "The following two lines ensure that composer-patches is loaded as early as possible.",
-                "class": "cweagans\\Composer\\Plugin\\Patches",
-                "plugin-modifies-downloads": true,
-                "plugin-modifies-install-path": true
+                "class": "cweagans\\Composer\\Patches"
             },
             "autoload": {
                 "psr-4": {
@@ -1047,15 +978,9 @@
             "description": "Provides a way to patch Composer packages.",
             "support": {
                 "issues": "https://github.com/cweagans/composer-patches/issues",
-                "source": "https://github.com/cweagans/composer-patches/tree/2.0.0"
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
             },
-            "funding": [
-                {
-                    "url": "https://github.com/cweagans",
-                    "type": "github"
-                }
-            ],
-            "time": "2025-10-30T23:44:22+00:00"
+            "time": "2022-12-20T22:53:13+00:00"
         },
         {
             "name": "davedevelopment/stiphle",
@@ -1798,50 +1723,6 @@
                 "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.0"
             },
             "time": "2026-05-11T09:50:32+00:00"
-        },
-        {
-            "name": "drupal/core-project-message",
-            "version": "11.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/drupal/core-project-message.git",
-                "reference": "f921f1c88502d559f77a9c86c87ce9bfd8082d07"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-project-message/zipball/f921f1c88502d559f77a9c86c87ce9bfd8082d07",
-                "reference": "f921f1c88502d559f77a9c86c87ce9bfd8082d07",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^2",
-                "php": ">=7.3.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "Drupal\\Composer\\Plugin\\ProjectMessage\\MessagePlugin",
-                "branch-alias": {
-                    "dev-main": "11.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Drupal\\Composer\\Plugin\\ProjectMessage\\": "."
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Adds a message after Composer installation.",
-            "homepage": "https://www.drupal.org/project/drupal",
-            "keywords": [
-                "drupal"
-            ],
-            "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/11.4.0"
-            },
-            "time": "2026-01-07T19:00:53+00:00"
         },
         {
             "name": "drupal/core-recommended",
@@ -6101,11 +5982,11 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "2.2.3",
+            "version": "2.2.4",
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/4048833dd47b377287818841877fb3087289509c",
-                "reference": "4048833dd47b377287818841877fb3087289509c",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/f0fe3fb03bb53ce68cc2416785b260e62226ec27",
+                "reference": "f0fe3fb03bb53ce68cc2416785b260e62226ec27",
                 "shasum": ""
             },
             "require": {
@@ -6161,7 +6042,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-06-30T21:15:26+00:00"
+            "time": "2026-07-03T07:00:23+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",
@@ -12772,16 +12653,16 @@
         },
         {
             "name": "palantirnet/drupal-rector",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/palantirnet/drupal-rector.git",
-                "reference": "33b69da5341688cfe7a11627b79d46234be28321"
+                "reference": "5fa1a0f5068ed5770d17797f5abfccefabd103c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/palantirnet/drupal-rector/zipball/33b69da5341688cfe7a11627b79d46234be28321",
-                "reference": "33b69da5341688cfe7a11627b79d46234be28321",
+                "url": "https://api.github.com/repos/palantirnet/drupal-rector/zipball/5fa1a0f5068ed5770d17797f5abfccefabd103c1",
+                "reference": "5fa1a0f5068ed5770d17797f5abfccefabd103c1",
                 "shasum": ""
             },
             "require": {
@@ -12805,11 +12686,6 @@
             },
             "type": "rector-extension",
             "extra": {
-                "rector": {
-                    "includes": [
-                        "config/extension.php"
-                    ]
-                },
                 "enable-patching": true
             },
             "autoload": {
@@ -12856,9 +12732,9 @@
             ],
             "support": {
                 "issues": "https://github.com/palantirnet/drupal-rector/issues",
-                "source": "https://github.com/palantirnet/drupal-rector/tree/1.0.0"
+                "source": "https://github.com/palantirnet/drupal-rector/tree/1.0.1"
             },
-            "time": "2026-07-02T10:27:04+00:00"
+            "time": "2026-07-02T15:36:10+00:00"
         },
         {
             "name": "phar-io/manifest",

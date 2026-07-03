@@ -1,0 +1,17 @@
+diff --git a/xmlsitemap.views.inc b/xmlsitemap.views.inc
+index 6a90675985b04915d0d4f8227a25bc3ab28b470c..cf30430a0e8bf31bf5c4fa4bee2702a8039dff93 100644
+--- a/xmlsitemap.views.inc
++++ b/xmlsitemap.views.inc
+@@ -71,10 +71,10 @@ function xmlsitemap_views_data() {
+  */
+ function xmlsitemap_views_data_alter(array &$data) {
+   foreach (\Drupal::entityTypeManager()->getDefinitions() as $id => $definition) {
+-    if (!xmlsitemap_link_entity_check_enabled($id) && !empty($data[$definition->getBaseTable()])) {
++    if (!xmlsitemap_link_entity_check_enabled($id) && !empty($data[$definition->getBaseTable() ?? ''])) {
+       continue;
+     }
+-    $data[$definition->getBaseTable()]['xmlsitemap_settings'] = [
++    $data[$definition->getBaseTable() ?? '']['xmlsitemap_settings'] = [
+       'title' => t('XML Sitemap Settings'),
+       'relationship' => [
+         'id' => 'standard',
