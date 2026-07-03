@@ -1,0 +1,34 @@
+Skip entity types without a views base table in xmlsitemap_views_data_alter().
+
+getBaseTable() returns NULL for config (and some other) entity types. Using
+that NULL value as an array offset triggers a runtime deprecation as of
+PHP 8.4 ("Using null as an array offset is deprecated"). Capture the base
+table once and continue when it is empty before using it as an array key.
+
+No upstream issue covers this runtime deprecation (drupal.org #3499531 only
+fixes implicitly-nullable function parameters), so this is a self-rolled patch.
+
+diff --git a/xmlsitemap.views.inc b/xmlsitemap.views.inc
+index 6a90675..85c6de3 100644
+--- a/xmlsitemap.views.inc
++++ b/xmlsitemap.views.inc
+@@ -71,10 +71,17 @@ function xmlsitemap_views_data() {
+  */
+ function xmlsitemap_views_data_alter(array &$data) {
+   foreach (\Drupal::entityTypeManager()->getDefinitions() as $id => $definition) {
+-    if (!xmlsitemap_link_entity_check_enabled($id) && !empty($data[$definition->getBaseTable()])) {
++    // Config entity types (and some others) have no views base table, in which
++    // case getBaseTable() returns NULL. Skip them: using NULL as an array
++    // offset is deprecated as of PHP 8.4 and there is nothing to alter anyway.
++    $base_table = $definition->getBaseTable();
++    if (empty($base_table)) {
+       continue;
+     }
+-    $data[$definition->getBaseTable()]['xmlsitemap_settings'] = [
++    if (!xmlsitemap_link_entity_check_enabled($id) && !empty($data[$base_table])) {
++      continue;
++    }
++    $data[$base_table]['xmlsitemap_settings'] = [
+       'title' => t('XML Sitemap Settings'),
+       'relationship' => [
+         'id' => 'standard',

@@ -16,12 +16,11 @@
     ],
     "require": {
         "composer/installers": "^2",
-        "cweagans/composer-patches": "^2",
+        "cweagans/composer-patches": "^1",
         "drupal/admin_toolbar": "^3.0",
         "drupal/autosave_form": "^1.2",
         "drupal/colorbox": "^2",
         "drupal/core-composer-scaffold": "^11",
-        "drupal/core-project-message": "^11",
         "drupal/core-recommended": "^11",
         "drupal/ctools": "^4.0",
         "drupal/diff": "^2",
@@ -67,7 +66,6 @@
             "cweagans/composer-patches": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
             "drupal/core-composer-scaffold": true,
-            "drupal/core-project-message": true,
             "php-http/discovery": true,
             "phpstan/extension-installer": true,
             "symfony/runtime": true,
@@ -125,27 +123,9 @@
             "drupal/core": "-p2"
         },
         "patches": {
-        },
-        "drupal-core-project-message": {
-            "include-keys": [
-                "homepage",
-                "support"
-            ],
-            "post-create-project-cmd-message": [
-                "<bg=blue;fg=white>                                                         </>",
-                "<bg=blue;fg=white>  Congratulations, you’ve installed the Drupal codebase  </>",
-                "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-                "<bg=blue;fg=white>                                                         </>",
-                "",
-                "<bg=yellow;fg=black>Next steps</>:",
-                "  * Install the site: https://www.drupal.org/docs/8/install",
-                "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-                "  * Get support: https://www.drupal.org/support",
-                "  * Get involved with the Drupal community:",
-                "      https://www.drupal.org/getting-involved",
-                "  * Remove the plugin that prints this message:",
-                "      composer remove drupal/core-project-message"
-            ]
+            "drupal/xmlsitemap": {
+                "3605641 PHP 8.4: xmlsitemap_views_data_alter() uses a NULL base table as an array offset": "patches/drupal/xmlsitemap/3605641.diff"
+            }
         }
     }
 }
