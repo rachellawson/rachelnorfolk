@@ -39,6 +39,6 @@ jobs:
 
     - name: Behat
       run: |
-        ./vendor/bin/drush site:install --existing-config
+        ./vendor/bin/drush site:install -y --existing-config --db-url=sqlite://sites/example.com/files/.ht.sqlite?module=sqlite#tableprefix
         ./vendor/bin/drush cache:rebuild
         ./vendor/bin/behat
