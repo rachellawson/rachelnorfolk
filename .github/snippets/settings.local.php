@@ -33,3 +33,7 @@ if (empty($settings['config_sync_directory'])) {
 // Enable verbose logging for errors.
 // https://www.drupal.org/forum/support/post-installation/2018-07-18/enable-drupal-8-backend-errorlogdebugging-mode
 $config['system.logging']['error_level'] = 'verbose';
+
+// To use Behat tests, we need to be able to login the traditional way.
+$config['openid_connect.settings']['user_login_display'] = 'above';
+

@@ -29,12 +29,16 @@ jobs:
       run: |
         ./vendor/bin/phpunit web/modules/custom
 
-    - name: Check Drupal Coding Standards
+    - name: Drupal Coding Standards
       run: |
         ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,js,css,module,install web/modules/custom
 
     - name: Drupal Rector
       run: |
-        composer require --dev palantirnet/drupal-rector
-        cp vendor/palantirnet/drupal-rector/rector.php .
-        ./vendor/bin/rector process web/modules/custom --dry-run
+        ./vendor/bin/rector process --dry-run
+
+    - name: Behat
+      run: |
+        ./vendor/bin/drush site:install --existing-config
+        ./vendor/bin/drush cache:rebuild
+        ./vendor/bin/behat
