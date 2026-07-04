@@ -1,0 +1,29 @@
+  name: Behaviour Tests
+  on: [pull_request]
+  jobs:
+    tests:
+      runs-on: ubuntu-22.04
+      steps:
+        # Actions from outside the project must be allowed in the project settings.
+        - name: Checkout
+          uses: actions/checkout@v3
+        - name: Setup DDEV
+          uses: ddev/github-action-setup-ddev@v1
+
+        # Composer install
+        - run: ddev composer install
+
+        # Get ready to test with an empty-ish site.
+        - name: Prime a new empty site to test
+          run: |
+            ddev exec drush -y site:install --existing-config
+            ddev exec drush cache:rebuild
+            ddev drush -y config:set openid_connect.settings user_login_display 'above'
+            ddev drush -y pm:install stage_file_proxy
+            ddev drush -y config:set stage_file_proxy.settings origin 'https://rachelnorfolk.me'
+            ddev exec drush cache:rebuild
+
+        # Finally, run the tests.
+        - name: Run Behat tests
+          run: |
+            ddev exec behat --colors

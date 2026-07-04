@@ -5,7 +5,6 @@ on: [pull_request]
 jobs:
   build-test:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout
       uses: actions/checkout@v3
@@ -36,9 +35,3 @@ jobs:
     - name: Drupal Rector
       run: |
         ./vendor/bin/rector process --dry-run
-
-    - name: Behat
-      run: |
-        ./vendor/bin/drush site:install -y --existing-config --db-url=sqlite://sites/example.com/files/.ht.sqlite?module=sqlite#tableprefix
-        ./vendor/bin/drush cache:rebuild
-        ./vendor/bin/behat
