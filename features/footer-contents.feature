@@ -5,5 +5,5 @@ Feature: Test Footer Contents
 
   Scenario: Test the ability to find Drupal reference in footer
     Given I am on the homepage
-    Then I should see Drupal in the "footer" region
+    Then I should see "Drupal" in the "footer" region
 
