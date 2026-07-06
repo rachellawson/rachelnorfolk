@@ -17,7 +17,7 @@ default:
       always_fullscreen: true
       failed_prefix: 'failed_'
       filename_pattern: '{datetime:u}.{feature_file}.feature_{step_line}.{ext}'
-      filename_pattern_failed: '{datetime:u}.{failed_prefix}{feature_file}.feature_{step_line}.{ext}'
+      filename_pattern_failed: '{datetime:u}.{failed_prefix}{feature_file}.feature_line_{step_line}.{ext}'
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
@@ -25,8 +25,9 @@ default:
         drupal_root: '/var/www/html/web'
       regions:
         header: "#header"
-        content: ".main-content"
-        social-bar: ".social-bar"
+        content_above: ".region--content-above"
+        content: ".region--content"
+        socialbar: ".social-bar"
         footer: "footer.site-footer"
     Behat\MinkExtension:
       base_url: http://rachelnorfolk.ddev.site
