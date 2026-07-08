@@ -26,5 +26,11 @@ enforce:
         - 'data:'
     default-src:
       base: self
+    object-src:
+      base: none
+    base-uri:
+      base: self
+    frame-ancestors:
+      base: self
   reporting:
     plugin: none
