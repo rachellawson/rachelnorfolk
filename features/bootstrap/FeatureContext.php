@@ -8,6 +8,7 @@ use Behat\Testwork\Hook\Scope\BeforeSuiteScope;
 use Behat\Testwork\Hook\Scope\AfterSuiteScope;
 use Behat\Hook\AfterSuite;
 use Behat\Hook\BeforeSuite;
+use Behat\Step\Then;
 
 /**
  * Defines application features from the specific context.
@@ -24,13 +25,25 @@ class FeatureContext extends RawDrupalContext {
   public function __construct() {
   }
 
-  #[BeforeSuite]
-  public static function setup(BeforeSuiteScope $scope) {
-    $suite = $scope->getSuite();
+  #[Then('I see a correct OsmAnd link')]
+  public function iSeeACorrectOsmandLink(): void
+  {
+    // Get the secret from config.
+    $secret = \Drupal::config('osmand_tracking.settings')->get('secret');
 
-//    $config = $this->getDrupal()->getConfig()
+    // Get the hostname.
+    $hostname = gethostname();
 
+    // Get the username.
+    $username = $this->userManager->getCurrentUser()->getValue('name');
 
+    // Formulate a correct url from hostname, username, and secret config.
+    $correct_url = $hostname . '/' . $secret . '/' . $username . '?lat={0}&amp;lon={1}&amp;timestamp={2}&amp;altitude={4}';
+
+    // Find the url on the page and compare.
+    // @todo
+
+    throw new PendingException();
   }
 
 
