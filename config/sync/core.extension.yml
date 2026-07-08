@@ -15,6 +15,7 @@ module:
   config: 0
   contextual: 0
   crop: 0
+  csp: 0
   ctools: 0
   dark_mode: 0
   datetime: 0

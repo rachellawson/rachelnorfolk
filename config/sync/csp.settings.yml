@@ -1,0 +1,30 @@
+_core:
+  default_config_hash: 68A3PDsSIoX2q7iFOa2lMdnYkgKgem4uh1_RBxcRVWU
+report-only:
+  enable: false
+  directives:
+    object-src:
+      base: none
+    default-src:
+      base: self
+    img-src:
+      base: self
+  reporting:
+    plugin: none
+enforce:
+  enable: true
+  directives:
+    style-src:
+      base: any
+      flags:
+        - report-sample
+        - unsafe-inline
+    img-src:
+      base: self
+      sources:
+        - tile.thunderforest.com
+        - 'data:'
+    default-src:
+      base: self
+  reporting:
+    plugin: none

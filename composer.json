@@ -22,6 +22,7 @@
         "drupal/colorbox": "^2",
         "drupal/core-composer-scaffold": "^11",
         "drupal/core-recommended": "^11",
+        "drupal/csp": "^2.2",
         "drupal/ctools": "^4.0",
         "drupal/diff": "^2",
         "drupal/environment_indicator": "^4.0",
