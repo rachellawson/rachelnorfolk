@@ -1,0 +1,5 @@
+services:
+  rachelnorfolk_custom.event_subscriber:
+    class: Drupal\rachelnorfolk_custom\EventSubscriber\CstsSubscriber
+    tags:
+      - { name: event_subscriber }

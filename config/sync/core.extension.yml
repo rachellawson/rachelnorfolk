@@ -15,6 +15,7 @@ module:
   config: 0
   contextual: 0
   crop: 0
+  csp: 0
   ctools: 0
   dark_mode: 0
   datetime: 0
@@ -64,6 +65,7 @@ module:
   path_alias: 0
   phpass: 0
   rachelnorfolk_blocks: 0
+  rachelnorfolk_custom: 0
   redirect: 0
   responsive_image: 0
   schema_article: 0
