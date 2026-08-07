@@ -1,5 +1,6 @@
 <?php
 
+use Drupal\Core\Url;
 use Drupal\DrupalExtension\Context\RawDrupalContext;
 use Behat\Gherkin\Node\PyStringNode;
 use Behat\Gherkin\Node\TableNode;
@@ -30,21 +31,33 @@ class FeatureContext extends RawDrupalContext {
   {
     // Get the secret from config.
     $secret = \Drupal::config('osmand_tracking.settings')->get('secret');
+    if (empty($secret)) {
+      throw new Exception('There does not appear to be a secret defined.');
+    }
 
     // Get the hostname.
-    $hostname = gethostname();
+    $url_options = [
+      'absolute' => TRUE,
+    ];
+    $host = Url::fromRoute('<front>', [], $url_options)->toString();
 
-    // Get the username.
-    $username = $this->userManager->getCurrentUser()->getValue('name');
+    // Get the user.
+    $uid = $this->userManager->getCurrentUser()->getId();
 
     // Formulate a correct url from hostname, username, and secret config.
-    $correct_url = $hostname . '/' . $secret . '/' . $username . '?lat={0}&amp;lon={1}&amp;timestamp={2}&amp;altitude={4}';
+    $correct_url = $host . $secret . '/' . $uid . '?lat={0}&lon={1}&timestamp={2}&altitude={4}';
 
     // Find the url on the page and compare.
-    // @todo
+    $observed_url = $this->getSession()->getPage()->findById('osmlink')->getText();
+    if (empty($observed_url)) {
+      throw new Exception('There does not appear to be an OsmAnd link on the page.');
+    }
 
-    throw new PendingException();
+    // Compare them.
+    if ($observed_url !== $correct_url) {
+      throw new Exception('The observed OsmLink does not look like the expected one.');
+    }
+
   }
-
 
 }

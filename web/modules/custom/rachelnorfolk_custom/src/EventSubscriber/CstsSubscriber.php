@@ -21,11 +21,12 @@ final class CstsSubscriber implements EventSubscriberInterface {
   protected $response;
 
   /**
-   * Send people immediately to https.
+   * Send people immediately to https and only send referrer at correct times.
    */
   public function onKernelResponse(ResponseEvent $event): void {
     $this->response = $event->getResponse();
     $this->response->headers->set('Strict-Transport-Security', 'max-age=31536000; includeSubDomains');
+    $this->response->headers->set('Referrer-Policy', 'strict-origin-when-cross-origin');
   }
 
   /**
