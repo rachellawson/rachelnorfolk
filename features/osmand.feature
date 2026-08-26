@@ -4,6 +4,9 @@ Feature: Test OsmAnd is appearing in right places
   As an Author
   I need to be able to see the correct url to enter into OsmAnd unique to my account
 
+  Background:
+    Given I set the configuration item osmand_tracking.settings with key secret to squirrel
+
   Scenario: Viewing the url to enter into OsmAnd
     Given I am logged in as a user with the "Author" role
     When I visit '/user'
