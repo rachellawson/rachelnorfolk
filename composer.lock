@@ -3207,7 +3207,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/osmand_tracking.git",
-                "reference": "6e5e6deafa132a68c27c8f8f8812ca6a770ac856"
+                "reference": "40c0d3b98d65093da6ef13a54505f407044c8cd1"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11 || ^12",
@@ -3220,7 +3220,7 @@
                 },
                 "drupal": {
                     "version": "1.0.x-dev",
-                    "datestamp": "1783019857",
+                    "datestamp": "1787765379",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
