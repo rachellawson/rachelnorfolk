@@ -49,7 +49,7 @@
         "platformsh/config-reader": "^3.0"
     },
     "require-dev": {
-        "drevops/behat-screenshot": "^2.3",
+        "drevops/behat-screenshot": "^3.0",
         "drupal/core-dev": "^11",
         "drupal/drupal-extension": "^6.0",
         "drupal/stage_file_proxy": "^3.1",
