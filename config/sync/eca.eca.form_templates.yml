@@ -1,0 +1,466 @@
+uuid: d9cb9c97-a301-4b48-a69c-e5cf66b8017a
+langcode: en
+status: true
+dependencies:
+  module:
+    - eca_base
+    - eca_form
+    - eca_tamper
+    - modeler_api
+third_party_settings:
+  modeler_api:
+    modeler_id: workflow_modeler
+    storage: none
+    label: 'Form API Templates'
+    version: 1.0.0
+_core:
+  default_config_hash: pZoN_vzAMeU4AXPj3zOS3jHQl8gZGCSQn98JAP3qlDQ
+id: form_templates
+weight: 0
+template: true
+events:
+  form__form_build_1:
+    plugin: 'form:form_build'
+    label: 'Hide fields when selected'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_tamper__explode_1
+        condition: ''
+  Event_13n4nzs:
+    plugin: 'form:form_build'
+    label: 'Show fields when selected'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_tamper__explode_1_2
+        condition: ''
+  form__form_build_0e5l8a2:
+    plugin: 'form:form_build'
+    label: 'Disable fields for certain value'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_tamper__explode_3
+        condition: ''
+  form__form_build_2_1:
+    plugin: 'form:form_build'
+    label: 'Set field value to selected index'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_add_ajax_06k804b
+        condition: ''
+      -
+        id: eca_form_field_get_value_0i6a4fx
+        condition: ''
+  form__form_build_0r0xtyx_1:
+    plugin: 'form:form_build'
+    label: 'Hide this field'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_access_1551lbu
+        condition: ''
+  Event_0wiqno1:
+    plugin: 'form:form_build'
+    label: 'Set default value'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_default_value_09t9flh
+        condition: ''
+  Event_0rt9t92:
+    plugin: 'form:form_build'
+    label: 'Set label'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_set_label_09oge92
+        condition: ''
+  form__form_validate_1:
+    plugin: 'form:form_validate'
+    label: 'Set max length'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_get_value_15rr0je
+        condition: ''
+  Event_1jgeza8:
+    plugin: 'form:form_build'
+    label: 'Disable this field'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_disable_0eszjxc
+        condition: ''
+  Event_1389t4l:
+    plugin: 'form:form_build'
+    label: 'Require this field'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_require_0iiza4e
+        condition: ''
+  form__form_build_1vaykny:
+    plugin: 'form:form_build'
+    label: 'Make field optional'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_require_1e8q2ir
+        condition: ''
+  Event_1fcvoae:
+    plugin: 'form:form_build'
+    label: 'Enable this field'
+    configuration:
+      form_ids: ''
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_disable_08dxxj7
+        condition: ''
+conditions:
+  eca_tamper__str_len_0ljnlbu_1_eca_form_field_set_error_1enbcup_condition:
+    plugin: eca_scalar
+    label: 'Length > max?'
+    configuration:
+      negate: false
+      left: '[fieldlength]'
+      right: '[eca-template:config:global:value:Max length]'
+      operator: greaterthan
+      type: numeric
+      case: false
+  Gateway_1tmwasn_eca_list_remove_1v8q142_condition:
+    plugin: eca_count
+    label: 'More fields in list?'
+    configuration:
+      negate: false
+      left: fieldnames
+      right: '0'
+      operator: greaterthan
+      type: numeric
+      case: false
+  Gateway_1xxgzdu_eca_list_remove_0d4jevu_condition:
+    plugin: eca_count
+    label: 'More fields in list?'
+    configuration:
+      negate: false
+      left: fieldnames
+      right: '0'
+      operator: greaterthan
+      type: numeric
+      case: false
+  Gateway_0dm5ka8_Activity_07a8n8t_condition:
+    plugin: eca_count
+    label: 'More fields in list?'
+    configuration:
+      negate: false
+      left: fieldnames
+      right: '0'
+      operator: greaterthan
+      type: numeric
+      case: false
+gateways:
+  Gateway_1tmwasn:
+    label: 'Loop over list of fields'
+    type: 0
+    successors:
+      -
+        id: eca_list_remove_1v8q142
+        condition: Gateway_1tmwasn_eca_list_remove_1v8q142_condition
+  Gateway_1xxgzdu:
+    label: 'Loop over list of fields'
+    type: 0
+    successors:
+      -
+        id: eca_list_remove_0d4jevu
+        condition: Gateway_1xxgzdu_eca_list_remove_0d4jevu_condition
+  Gateway_0dm5ka8:
+    label: 'Loop over list of fields'
+    type: 0
+    successors:
+      -
+        id: Activity_07a8n8t
+        condition: Gateway_0dm5ka8_Activity_07a8n8t_condition
+actions:
+  eca_form_field_add_state_1y60dja:
+    label: 'Hide when selected'
+    plugin: eca_form_field_add_state
+    configuration:
+      selector: '[name="[eca-template:select:form:field:type:checkbox]"]'
+      state: invisible
+      condition: checked
+      value: ''
+      field_name: '[fieldname]'
+    successors:
+      -
+        id: Gateway_1tmwasn
+        condition: ''
+  eca_tamper__explode_1:
+    label: 'Get list of fields'
+    plugin: 'eca_tamper:explode'
+    original_id: explode
+    configuration:
+      separator: ','
+      limit: null
+      eca_data: '[eca-template:config:form:fields:Fields to hide]'
+      eca_token_name: fieldnames
+    successors:
+      -
+        id: Gateway_1tmwasn
+        condition: ''
+  eca_list_remove_1v8q142:
+    label: 'Get next field'
+    plugin: eca_list_remove
+    configuration:
+      value: ''
+      token_name: fieldname
+      method: first
+      index: ''
+      list_token: fieldnames
+    successors:
+      -
+        id: eca_form_field_add_state_1y60dja
+        condition: ''
+  eca_form_field_add_state_0lexw0g:
+    label: 'Show when selected'
+    plugin: eca_form_field_add_state
+    configuration:
+      selector: '[name="[eca-template:select:form:field:type:checkbox]"]'
+      state: visible
+      condition: checked
+      value: ''
+      field_name: '[fieldname]'
+    successors:
+      -
+        id: Gateway_1xxgzdu
+        condition: ''
+  eca_tamper__explode_1_2:
+    label: 'Get list of fields'
+    plugin: 'eca_tamper:explode'
+    original_id: explode
+    configuration:
+      separator: ','
+      limit: null
+      eca_data: '[eca-template:config:form:fields:Fields to hide]'
+      eca_token_name: fieldnames
+    successors:
+      -
+        id: Gateway_1xxgzdu
+        condition: ''
+  eca_list_remove_0d4jevu:
+    label: 'Get next field'
+    plugin: eca_list_remove
+    configuration:
+      value: ''
+      token_name: fieldname
+      method: first
+      index: ''
+      list_token: fieldnames
+    successors:
+      -
+        id: eca_form_field_add_state_0lexw0g
+        condition: ''
+  eca_form_field_add_state_0f8yi0q:
+    label: 'Disable for value'
+    plugin: eca_form_field_add_state
+    configuration:
+      selector: '[name="[eca-template:select:form:field:type:select]"]'
+      state: disabled
+      condition: value
+      value: '[eca-template:config:global:value:Value that disables the fields]'
+      field_name: '[fieldname]'
+    successors:
+      -
+        id: Gateway_0dm5ka8
+        condition: ''
+  eca_tamper__explode_3:
+    label: 'Get list of fields'
+    plugin: 'eca_tamper:explode'
+    original_id: explode
+    configuration:
+      separator: ','
+      limit: null
+      eca_data: '[eca-template:config:form:fields:Fields to disable]'
+      eca_token_name: fieldnames
+    successors:
+      -
+        id: Gateway_0dm5ka8
+        condition: ''
+  Activity_07a8n8t:
+    label: 'Get next field'
+    plugin: eca_list_remove
+    configuration:
+      value: ''
+      token_name: fieldname
+      method: first
+      index: ''
+      list_token: fieldnames
+    successors:
+      -
+        id: eca_form_field_add_state_0f8yi0q
+        condition: ''
+  eca_form_add_ajax_06k804b:
+    label: 'Form: add Ajax handler'
+    plugin: eca_form_add_ajax
+    configuration:
+      disable_validation_errors: true
+      validate_fields: ''
+      target: '[eca-template:config:form:fields:Field to set value]'
+      field_name: '[eca-template:select:form:field:type:select]'
+    successors: {  }
+  eca_form_field_get_value_0i6a4fx:
+    label: 'Form field: get submitted value'
+    plugin: eca_form_field_get_value
+    configuration:
+      token_name: fieldvalue
+      field_name: '[eca-template:select:form:field:type:select]'
+      strip_tags: true
+      trim: true
+      xss_filter: true
+    successors:
+      -
+        id: eca_form_field_set_value_1hotce2
+        condition: ''
+  eca_form_field_set_value_1hotce2:
+    label: 'Form field: set value'
+    plugin: eca_form_field_set_value
+    configuration:
+      field_value: '[fieldvalue]'
+      use_yaml: false
+      validate_yaml: false
+      field_name: '[eca-template:config:form:fields:Field to set value]'
+      strip_tags: true
+      trim: true
+      xss_filter: true
+    successors: {  }
+  eca_form_field_access_1551lbu:
+    label: 'Form field: set access'
+    plugin: eca_form_field_access
+    configuration:
+      flag: false
+      field_name: '[eca-template:select:form:field:all]'
+    successors: {  }
+  eca_form_field_default_value_09t9flh:
+    label: 'Form field: set default value'
+    plugin: eca_form_field_default_value
+    configuration:
+      value: '[eca-template:config:global:value:Default value]'
+      field_name: '[eca-template:select:form:field:all]'
+      strip_tags: true
+      trim: true
+      xss_filter: true
+    successors: {  }
+  eca_form_field_set_label_09oge92:
+    label: 'Form field: set default value'
+    plugin: eca_form_field_set_label
+    configuration:
+      label: '[eca-template:config:global:value:Label]'
+      field_name: '[eca-template:select:form:field:all]'
+    successors: {  }
+  eca_form_field_get_value_15rr0je:
+    label: 'Get form value'
+    plugin: eca_form_field_get_value
+    configuration:
+      token_name: fieldvalue
+      field_name: '[eca-template:select:form:field:type:text]'
+      strip_tags: true
+      trim: true
+      xss_filter: true
+    successors:
+      -
+        id: eca_tamper__str_len_0ljnlbu_1
+        condition: ''
+  eca_tamper__str_len_0ljnlbu_1:
+    label: 'Tamper: Get string length'
+    plugin: 'eca_tamper:str_len'
+    original_id: str_len
+    configuration:
+      eca_data: '[fieldvalue]'
+      eca_token_name: fieldlength
+    successors:
+      -
+        id: eca_form_field_set_error_1enbcup
+        condition: eca_tamper__str_len_0ljnlbu_1_eca_form_field_set_error_1enbcup_condition
+  eca_form_field_set_error_1enbcup:
+    label: 'Form field: set validation error'
+    plugin: eca_form_field_set_error
+    configuration:
+      message: 'Content of [eca-template:select:form:field:type:text] is too long. Max length is [eca-template:config:global:value:Max length].'
+      field_name: '[eca-template:select:form:field:type:text]'
+    successors: {  }
+  eca_form_field_disable_0eszjxc:
+    label: 'Form field: set as disabled'
+    plugin: eca_form_field_disable
+    configuration:
+      flag: true
+      field_name: '[eca-template:select:form:field:disabled:no]'
+    successors: {  }
+  eca_form_field_require_0iiza4e:
+    label: 'Form field: set required'
+    plugin: eca_form_field_require
+    configuration:
+      flag: true
+      field_name: '[eca-template:select:form:field:required:no]'
+    successors: {  }
+  eca_form_field_require_1e8q2ir:
+    label: 'Form field: set optional'
+    plugin: eca_form_field_require
+    configuration:
+      flag: false
+      field_name: '[eca-template:select:form:field:required:yes]'
+    successors: {  }
+  eca_form_field_disable_08dxxj7:
+    label: 'Form field: set as enabled'
+    plugin: eca_form_field_disable
+    configuration:
+      flag: false
+      field_name: '[eca-template:select:form:field:disabled:yes]'
+    successors: {  }

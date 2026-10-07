@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0c24e43f3e590f3b5e87d250c723fad7",
+    "content-hash": "b82a084a2284f4e74d38870ae54b09ba",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1286,6 +1286,70 @@
             "time": "2026-01-20T14:10:26+00:00"
         },
         {
+            "name": "dragonmantank/cron-expression",
+            "version": "v3.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dragonmantank/cron-expression.git",
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dragonmantank/cron-expression/zipball/d61a8a9604ec1f8c3d150d09db6ce98b32675013",
+                "reference": "d61a8a9604ec1f8c3d150d09db6ce98b32675013",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.2|^8.3|^8.4|^8.5"
+            },
+            "replace": {
+                "mtdowling/cron-expression": "^1.0"
+            },
+            "require-dev": {
+                "phpstan/extension-installer": "^1.4.3",
+                "phpstan/phpstan": "^1.12.32|^2.1.31",
+                "phpunit/phpunit": "^8.5.48|^9.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cron\\": "src/Cron/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Tankersley",
+                    "email": "chris@ctankersley.com",
+                    "homepage": "https://github.com/dragonmantank"
+                }
+            ],
+            "description": "CRON for PHP: Calculate the next or previous run date and determine if a CRON expression is due",
+            "keywords": [
+                "cron",
+                "schedule"
+            ],
+            "support": {
+                "issues": "https://github.com/dragonmantank/cron-expression/issues",
+                "source": "https://github.com/dragonmantank/cron-expression/tree/v3.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/dragonmantank",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-10-31T18:51:33+00:00"
+        },
+        {
             "name": "drupal/admin_toolbar",
             "version": "3.6.3",
             "source": {
@@ -2113,6 +2177,208 @@
             }
         },
         {
+            "name": "drupal/eca",
+            "version": "3.1.9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/eca.git",
+                "reference": "3.1.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eca-3.1.9.zip",
+                "reference": "3.1.9",
+                "shasum": "b8f84d071748ae32b7b1b54f5246d82825f130a9"
+            },
+            "require": {
+                "dragonmantank/cron-expression": "^3.1",
+                "drupal/core": "^11.3 || ^12.0",
+                "drupal/modeler_api": "^1.1",
+                "ext-json": "*",
+                "php": ">=8.3"
+            },
+            "require-dev": {
+                "drupal/eca_endpoint": "*",
+                "drupal/eca_misc": "*",
+                "drupal/eca_render": "*",
+                "drupal/modeler": "^1.0",
+                "drupal/modeler_api": "*",
+                "drupal/project_browser": "^2.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.1.9",
+                    "datestamp": "1790066100",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                },
+                "patches": {
+                    "drupal/project_browser": {
+                        "#3622921 Implement getModulesToInstall in TestModuleInstaller": "https://git.drupalcode.org/issue/project_browser-3622921/-/commit/9afcce0676ca61ca1514a14b6d882cbd081c0045.diff"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "boromino",
+                    "homepage": "https://www.drupal.org/user/859722"
+                },
+                {
+                    "name": "danielspeicher",
+                    "homepage": "https://www.drupal.org/user/3621778"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                }
+            ],
+            "description": "Event, Conditions, Actions - powerful, versatile, and user-friendly rules engine for Drupal",
+            "homepage": "https://www.drupal.org/project/eca",
+            "support": {
+                "source": "https://drupal.org/project/eca",
+                "issues": "https://drupal.org/project/issues/eca"
+            }
+        },
+        {
+            "name": "drupal/eca_starterkit",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/eca_starterkit.git",
+                "reference": "bf9a69e884241825034a36c8e059a0c9d68228a9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://git.drupalcode.org/api/v4/projects/project%2Feca_starterkit/repository/archive.zip?sha=bf9a69e884241825034a36c8e059a0c9d68228a9",
+                "reference": "bf9a69e884241825034a36c8e059a0c9d68228a9",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/eca": "^3.1",
+                "drupal/eca_tamper": "^2.0",
+                "drupal/eca_tool": "^1.0",
+                "drupal/modeler": "^1.0",
+                "drupal/modeler_api": "^1.1"
+            },
+            "type": "drupal-recipe",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "This recipe provides a quick-start setup for ECA with the recommended models being downloaded and installed.",
+            "support": {
+                "source": "https://git.drupalcode.org/project/eca_starterkit/-/tree/1.0.0"
+            },
+            "time": "2026-03-20T12:37:48+00:00"
+        },
+        {
+            "name": "drupal/eca_tamper",
+            "version": "2.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/eca_tamper.git",
+                "reference": "2.0.11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eca_tamper-2.0.11.zip",
+                "reference": "2.0.11",
+                "shasum": "e71106d50826f6886851dded4d71bd8274be84f5"
+            },
+            "require": {
+                "drupal/core": "^10.4 || ^11 || ^12",
+                "drupal/eca": "^2.1||^3.0",
+                "drupal/tamper": "^1.0",
+                "php": ">=8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "2.0.11",
+                    "datestamp": "1788337435",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "danielspeicher",
+                    "homepage": "https://www.drupal.org/user/3621778"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                }
+            ],
+            "description": "Integrate ECA with the tamper module and its plugins available as actions.",
+            "homepage": "https://www.drupal.org/project/eca_tamper",
+            "support": {
+                "source": "https://drupal.org/project/eca_tamper",
+                "issues": "https://drupal.org/project/issues/eca_tamper"
+            }
+        },
+        {
+            "name": "drupal/eca_tool",
+            "version": "1.0.0-beta2",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/eca_tool.git",
+                "reference": "1.0.0-beta2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/eca_tool-1.0.0-beta2.zip",
+                "reference": "1.0.0-beta2",
+                "shasum": "d856c016bb5bb2daae961b1842a29186fd05996e"
+            },
+            "require": {
+                "drupal/core": "^11.3 || ^12",
+                "drupal/eca": "^3.0",
+                "drupal/tool": "^1.0",
+                "php": ">=8.1"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta2",
+                    "datestamp": "1791032291",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                }
+            ],
+            "description": "Integrate ECA with the Tool API module.",
+            "homepage": "https://www.drupal.org/project/eca_tool",
+            "support": {
+                "source": "https://drupal.org/project/eca_tool",
+                "issues": "https://drupal.org/project/issues/eca_tool"
+            }
+        },
+        {
             "name": "drupal/environment_indicator",
             "version": "4.0.25",
             "source": {
@@ -2189,17 +2455,17 @@
         },
         {
             "name": "drupal/externalauth",
-            "version": "2.0.13",
+            "version": "2.0.15",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/externalauth.git",
-                "reference": "2.0.13"
+                "reference": "2.0.15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/externalauth-2.0.13.zip",
-                "reference": "2.0.13",
-                "shasum": "7daa85bd385c850e1a9c7a92fad15f394e7891b9"
+                "url": "https://ftp.drupal.org/files/projects/externalauth-2.0.15.zip",
+                "reference": "2.0.15",
+                "shasum": "20fe35b605b4c137505d6f3c882690e53f31cd5d"
             },
             "require": {
                 "drupal/core": "^10.1 || ^11"
@@ -2207,8 +2473,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.13",
-                    "datestamp": "1786557339",
+                    "version": "2.0.15",
+                    "datestamp": "1790861291",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2789,17 +3055,17 @@
         },
         {
             "name": "drupal/leaflet",
-            "version": "10.4.12",
+            "version": "10.4.13",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/leaflet.git",
-                "reference": "10.4.12"
+                "reference": "10.4.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/leaflet-10.4.12.zip",
-                "reference": "10.4.12",
-                "shasum": "d444685e0c45ec1207e232ad945d9414aa7f72e5"
+                "url": "https://ftp.drupal.org/files/projects/leaflet-10.4.13.zip",
+                "reference": "10.4.13",
+                "shasum": "077dd415f4ac2c594655a61983209df3ed61e36a"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -2808,8 +3074,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "10.4.12",
-                    "datestamp": "1787845200",
+                    "version": "10.4.13",
+                    "datestamp": "1791390446",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3057,6 +3323,115 @@
                 "source": "https://git.drupalcode.org/project/metatag",
                 "issues": "https://www.drupal.org/project/issues/metatag",
                 "docs": "https://www.drupal.org/docs/8/modules/metatag"
+            }
+        },
+        {
+            "name": "drupal/modeler",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/modeler.git",
+                "reference": "1.0.9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/modeler-1.0.9.zip",
+                "reference": "1.0.9",
+                "shasum": "65bd165343bfaa05f9da0c1944e5bbc6c0f630dd"
+            },
+            "require": {
+                "drupal/core": "^11.3 || ^12.0",
+                "drupal/modeler_api": "^1.1.7",
+                "php": ">=8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.9",
+                    "datestamp": "1789807472",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "boromino",
+                    "homepage": "https://www.drupal.org/user/859722"
+                },
+                {
+                    "name": "danielspeicher",
+                    "homepage": "https://www.drupal.org/user/3621778"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                }
+            ],
+            "description": "A modern, React Flow based modeler for Drupal that integrates into Modeler API and supports platforms like ECA, AI Agents, etc.",
+            "homepage": "https://www.drupal.org/project/modeler",
+            "support": {
+                "source": "https://drupal.org/project/modeler",
+                "issues": "https://drupal.org/project/issues/modeler"
+            }
+        },
+        {
+            "name": "drupal/modeler_api",
+            "version": "1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/modeler_api.git",
+                "reference": "1.1.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/modeler_api-1.1.7.zip",
+                "reference": "1.1.7",
+                "shasum": "e479019d34ec8c61d0b19a5e8d90b75677da753f"
+            },
+            "require": {
+                "drupal/core": "^11.3 || ^12.0",
+                "php": ">=8.3"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.1.7",
+                    "datestamp": "1789545358",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "benjifisher",
+                    "homepage": "https://www.drupal.org/user/683300"
+                },
+                {
+                    "name": "cosmicdreams",
+                    "homepage": "https://www.drupal.org/user/42579"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                }
+            ],
+            "description": "Provides an API for modules to use modelers like BPMN.iO",
+            "homepage": "https://www.drupal.org/project/modeler_api",
+            "support": {
+                "source": "https://drupal.org/project/modeler_api",
+                "issues": "https://drupal.org/project/issues/modeler_api"
             }
         },
         {
@@ -3577,6 +3952,71 @@
             }
         },
         {
+            "name": "drupal/tamper",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tamper.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tamper-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "1e27ff4840c8ed3c72159f6f70dc28c3d5e62e74"
+            },
+            "require": {
+                "drupal/core": "^10.2 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1783501702",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "ericgsmith",
+                    "homepage": "https://www.drupal.org/user/1649952"
+                },
+                {
+                    "name": "jamesdixon",
+                    "homepage": "https://www.drupal.org/user/762570"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "megachriz",
+                    "homepage": "https://www.drupal.org/user/654114"
+                },
+                {
+                    "name": "twistor",
+                    "homepage": "https://www.drupal.org/user/473738"
+                }
+            ],
+            "description": "Generic plugin to modify data.",
+            "homepage": "https://www.drupal.org/project/tamper",
+            "keywords": [
+                "Drupal",
+                "tamper"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/tamper",
+                "issues": "http://drupal.org/project/issues/tamper"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.17.0",
             "source": {
@@ -3646,6 +4086,80 @@
             "homepage": "https://www.drupal.org/project/token",
             "support": {
                 "source": "https://git.drupalcode.org/project/token"
+            }
+        },
+        {
+            "name": "drupal/tool",
+            "version": "1.0.0-beta11",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/tool.git",
+                "reference": "1.0.0-beta11"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/tool-1.0.0-beta11.zip",
+                "reference": "1.0.0-beta11",
+                "shasum": "8e937783efbec4c440176ced173f0bcf33698831"
+            },
+            "require": {
+                "drupal/core": "^10.5 || ^11",
+                "php": ">=8.2"
+            },
+            "require-dev": {
+                "drupal/ai": "^1.2.16",
+                "drupal/ai_agents": "^1.2"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "1.0.0-beta11",
+                    "datestamp": "1790831917",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "ajits",
+                    "homepage": "https://www.drupal.org/user/981944"
+                },
+                {
+                    "name": "b_sharpe",
+                    "homepage": "https://www.drupal.org/user/2512258"
+                },
+                {
+                    "name": "jurgenhaas",
+                    "homepage": "https://www.drupal.org/user/168924"
+                },
+                {
+                    "name": "marcus_johansson",
+                    "homepage": "https://www.drupal.org/user/385947"
+                },
+                {
+                    "name": "mglaman",
+                    "homepage": "https://www.drupal.org/user/2416470"
+                },
+                {
+                    "name": "michaellander",
+                    "homepage": "https://www.drupal.org/user/636494"
+                },
+                {
+                    "name": "yautja_cetanu",
+                    "homepage": "https://www.drupal.org/user/626050"
+                }
+            ],
+            "description": "Provides a tool plugin for creating well defined actions.",
+            "homepage": "https://www.drupal.org/project/tool",
+            "support": {
+                "source": "https://drupal.org/project/tool",
+                "issues": "https://drupal.org/project/issues/tool"
             }
         },
         {

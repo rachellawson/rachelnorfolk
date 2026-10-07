@@ -1,0 +1,204 @@
+uuid: 3493fec9-ec19-45e3-996a-a0803dbf023a
+langcode: en
+status: true
+dependencies:
+  module:
+    - eca_base
+    - eca_form
+    - eca_tamper
+    - modeler_api
+third_party_settings:
+  modeler_api:
+    storage: none
+    label: 'Form user register form'
+    version: 1.0.0
+_core:
+  default_config_hash: XjLjoSwSlcXSsyQ4TXK7THihd1JJb42fQj-Mp_YLlW0
+id: form_user_register_form
+weight: 0
+template: false
+events:
+  Event_0wiqno1:
+    plugin: 'form:form_build'
+    label: 'Set default value'
+    configuration:
+      form_ids: user_register_form
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_default_value_09t9flh_1773843652
+        condition: ''
+    applied_templates:
+      - '["Event_0wiqno1","form_user_register_form","mail",{"eca-template:config:global:value:Default value":"max@drupal.org","Event_0wiqno1":{"form_ids":"user_register_form"}}]'
+  Event_0rt9t92:
+    plugin: 'form:form_build'
+    label: 'Set label'
+    configuration:
+      form_ids: user_register_form
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_set_label_09oge92_1773843652
+        condition: ''
+      -
+        id: eca_form_field_set_label_09oge92_1773848356
+        condition: ''
+    applied_templates:
+      - '["Event_0rt9t92","form_user_register_form","mail",{"eca-template:config:global:value:Label":"E-Mail","Event_0rt9t92":{"form_ids":"user_register_form"}}]'
+      - '["Event_0rt9t92","form_user_register_form","name",{"eca-template:config:global:value:Label":"Name","Event_0rt9t92":{"form_ids":"user_register_form"}}]'
+  form__form_build_1:
+    plugin: 'form:form_build'
+    label: 'Hide fields when selected'
+    configuration:
+      form_ids: user_register_form
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_tamper__explode_1_1773843676
+        condition: ''
+    applied_templates:
+      - '["form__form_build_1","form_user_register_form","roles[administrator]",{"eca-template:config:form:fields:Fields to hide":"notify,preferred_langcode,timezone","form__form_build_1":{"form_ids":"user_register_form"}}]'
+  form__form_validate_1:
+    plugin: 'form:form_validate'
+    label: 'Set max length'
+    configuration:
+      form_ids: user_register_form
+      entity_type_id: ''
+      bundle: ''
+      operation: ''
+    successors:
+      -
+        id: eca_form_field_get_value_15rr0je_1773848406
+        condition: ''
+    applied_templates:
+      - '["form__form_validate_1","form_user_register_form","name",{"eca-template:config:global:value:Max length":"8","form__form_validate_1":{"form_ids":"user_register_form"}}]'
+conditions:
+  Gateway_1tmwasn_eca_list_remove_1v8q142_condition_1773843676:
+    plugin: eca_count
+    label: 'More fields in list?'
+    configuration:
+      negate: false
+      left: fieldnames
+      right: '0'
+      operator: greaterthan
+      type: numeric
+      case: false
+  eca_tamper__str_len_0ljnlbu_1_eca_form_field_set_error_1enbcup_condition_1773848406:
+    plugin: eca_scalar
+    label: 'Length > max?'
+    configuration:
+      negate: false
+      left: '[fieldlength]'
+      right: '8'
+      operator: greaterthan
+      type: numeric
+      case: false
+gateways:
+  Gateway_1tmwasn_1773843676:
+    label: 'Loop over list of fields'
+    type: 0
+    successors:
+      -
+        id: eca_list_remove_1v8q142_1773843676
+        condition: Gateway_1tmwasn_eca_list_remove_1v8q142_condition_1773843676
+actions:
+  eca_form_field_default_value_09t9flh_1773843652:
+    label: 'Form field: set default value'
+    plugin: eca_form_field_default_value
+    configuration:
+      value: max@drupal.org
+      field_name: mail
+      strip_tags: true
+      trim: true
+      xss_filter: true
+    successors: {  }
+  eca_form_field_set_label_09oge92_1773843652:
+    label: 'Form field: set default value'
+    plugin: eca_form_field_set_label
+    configuration:
+      label: E-Mail
+      field_name: mail
+    successors: {  }
+  eca_tamper__explode_1_1773843676:
+    label: 'Get list of fields'
+    plugin: 'eca_tamper:explode'
+    original_id: explode
+    configuration:
+      separator: ','
+      limit: null
+      eca_data: 'notify,preferred_langcode,timezone'
+      eca_token_name: fieldnames
+    successors:
+      -
+        id: Gateway_1tmwasn_1773843676
+        condition: ''
+  eca_list_remove_1v8q142_1773843676:
+    label: 'Get next field'
+    plugin: eca_list_remove
+    configuration:
+      value: ''
+      token_name: fieldname
+      method: first
+      index: ''
+      list_token: fieldnames
+    successors:
+      -
+        id: eca_form_field_add_state_1y60dja_1773843676
+        condition: ''
+  eca_form_field_add_state_1y60dja_1773843676:
+    label: 'Hide when selected'
+    plugin: eca_form_field_add_state
+    configuration:
+      selector: '[name="roles[administrator]"]'
+      state: invisible
+      condition: checked
+      value: ''
+      field_name: '[fieldname]'
+    successors:
+      -
+        id: Gateway_1tmwasn_1773843676
+        condition: ''
+  eca_form_field_set_label_09oge92_1773848356:
+    label: 'Form field: set default value'
+    plugin: eca_form_field_set_label
+    configuration:
+      label: Name
+      field_name: name
+    successors: {  }
+  eca_form_field_get_value_15rr0je_1773848406:
+    label: 'Get form value'
+    plugin: eca_form_field_get_value
+    configuration:
+      token_name: fieldvalue
+      field_name: name
+      strip_tags: true
+      trim: true
+      xss_filter: true
+    successors:
+      -
+        id: eca_tamper__str_len_0ljnlbu_1_1773848406
+        condition: ''
+  eca_tamper__str_len_0ljnlbu_1_1773848406:
+    label: 'Tamper: Get string length'
+    plugin: 'eca_tamper:str_len'
+    original_id: str_len
+    configuration:
+      eca_data: '[fieldvalue]'
+      eca_token_name: fieldlength
+    successors:
+      -
+        id: eca_form_field_set_error_1enbcup_1773848406
+        condition: eca_tamper__str_len_0ljnlbu_1_eca_form_field_set_error_1enbcup_condition_1773848406
+  eca_form_field_set_error_1enbcup_1773848406:
+    label: 'Form field: set validation error'
+    plugin: eca_form_field_set_error
+    configuration:
+      message: 'Content of name is too long. Max length is 8.'
+      field_name: name
+    successors: {  }
