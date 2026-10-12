@@ -28,6 +28,9 @@ class LinksBlock extends BlockBase {
   public function build() {
     return [
       '#theme' => 'links_block',
+      '#attached' => [
+        'library' => ['rachelnorfolk_blocks.links'],
+      ],
       '#data' => [
         'GitHub' => 'https://github.com/rachellawson',
         'LinkedIn' => 'https://www.linkedin.com/in/rachel-norfolk',
