@@ -1364,10 +1364,14 @@
                 "shasum": "9dfd1088a96464237998c3606b63c2d71644a1bf"
             },
             "require": {
-                "drupal/core": "^9.5 || ^10 || ^11"
+                "drupal/core": "^9.5 || ^10 || ^11",
+                "drupal/toolbar": "*"
             },
             "conflict": {
                 "drupal/project_browser": "<2.1.0"
+            },
+            "require-dev": {
+                "drupal/toolbar": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1549,16 +1553,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "11.4.9",
+            "version": "11.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "cb07269d7829379f0960d469d7a0e6c045facd22"
+                "reference": "7dc54b5a0281efaf995a579f02a9b473424a9d09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/cb07269d7829379f0960d469d7a0e6c045facd22",
-                "reference": "cb07269d7829379f0960d469d7a0e6c045facd22",
+                "url": "https://api.github.com/repos/drupal/core/zipball/7dc54b5a0281efaf995a579f02a9b473424a9d09",
+                "reference": "7dc54b5a0281efaf995a579f02a9b473424a9d09",
                 "shasum": ""
             },
             "require": {
@@ -1731,7 +1735,7 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/11.4.9"
+                "source": "https://github.com/drupal/core/tree/11.4.10"
             },
             "funding": [
                 {
@@ -1739,11 +1743,11 @@
                     "type": "other"
                 }
             ],
-            "time": "2026-10-09T17:44:27+00:00"
+            "time": "2026-10-14T10:58:06+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "11.4.9",
+            "version": "11.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
@@ -1787,29 +1791,29 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.9"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/11.4.10"
             },
             "time": "2026-07-09T23:23:24+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "11.4.9",
+            "version": "11.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "d9a6466e0ed74b87b58761493bf31da75b1bc0f0"
+                "reference": "79668dc2db00f10a4d22e80b9005fc8f5042bdfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/d9a6466e0ed74b87b58761493bf31da75b1bc0f0",
-                "reference": "d9a6466e0ed74b87b58761493bf31da75b1bc0f0",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/79668dc2db00f10a4d22e80b9005fc8f5042bdfe",
+                "reference": "79668dc2db00f10a4d22e80b9005fc8f5042bdfe",
                 "shasum": ""
             },
             "require": {
                 "asm89/stack-cors": "~v2.4.0",
                 "composer/semver": "~3.4.4",
                 "doctrine/lexer": "~3.0.1",
-                "drupal/core": "11.4.9",
+                "drupal/core": "11.4.10",
                 "egulias/email-validator": "~4.0.4",
                 "justinrainbow/json-schema": "~6.8.2",
                 "marc-mabe/php-enum": "~v4.7.2",
@@ -1867,9 +1871,9 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/11.4.9"
+                "source": "https://github.com/drupal/core-recommended/tree/11.4.10"
             },
-            "time": "2026-10-09T17:44:27+00:00"
+            "time": "2026-10-14T10:58:06+00:00"
         },
         {
             "name": "drupal/crop",
@@ -2758,17 +2762,17 @@
         },
         {
             "name": "drupal/gin",
-            "version": "5.0.15",
+            "version": "5.0.16",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/gin.git",
-                "reference": "5.0.15"
+                "reference": "5.0.16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/gin-5.0.15.zip",
-                "reference": "5.0.15",
-                "shasum": "b02b1d890cade5e096c1c99a4a18ce7e23a186cd"
+                "url": "https://ftp.drupal.org/files/projects/gin-5.0.16.zip",
+                "reference": "5.0.16",
+                "shasum": "e6f6d582ccab1f3a5012afcd0a673a1ddaa67312"
             },
             "require": {
                 "drupal/core": "^11.2",
@@ -2777,8 +2781,8 @@
             "type": "drupal-theme",
             "extra": {
                 "drupal": {
-                    "version": "5.0.15",
-                    "datestamp": "1780500810",
+                    "version": "5.0.16",
+                    "datestamp": "1791998634",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4537,16 +4541,16 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.19.0",
+            "version": "v4.19.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf"
+                "reference": "5e0539132d934f936fbae2c88b55d58f9438623f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/b287d2a16aceffbf6e0295559b39662612b77fcf",
-                "reference": "b287d2a16aceffbf6e0295559b39662612b77fcf",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/5e0539132d934f936fbae2c88b55d58f9438623f",
+                "reference": "5e0539132d934f936fbae2c88b55d58f9438623f",
                 "shasum": ""
             },
             "require": {
@@ -4592,22 +4596,22 @@
             ],
             "support": {
                 "issues": "https://github.com/ezyang/htmlpurifier/issues",
-                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.0"
+                "source": "https://github.com/ezyang/htmlpurifier/tree/v4.19.1"
             },
-            "time": "2025-10-17T16:34:55+00:00"
+            "time": "2026-09-15T15:42:51+00:00"
         },
         {
             "name": "fileeye/mimemap",
-            "version": "2.2.5",
+            "version": "2.2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FileEye/MimeMap.git",
-                "reference": "d85461d6663501d29d1838d1ad65222a1ce44d7b"
+                "reference": "6c70e153a3de52de2bb90fb50445d8b006af1f78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/d85461d6663501d29d1838d1ad65222a1ce44d7b",
-                "reference": "d85461d6663501d29d1838d1ad65222a1ce44d7b",
+                "url": "https://api.github.com/repos/FileEye/MimeMap/zipball/6c70e153a3de52de2bb90fb50445d8b006af1f78",
+                "reference": "6c70e153a3de52de2bb90fb50445d8b006af1f78",
                 "shasum": ""
             },
             "require": {
@@ -4650,9 +4654,9 @@
             ],
             "support": {
                 "issues": "https://github.com/FileEye/MimeMap/issues",
-                "source": "https://github.com/FileEye/MimeMap/tree/2.2.5"
+                "source": "https://github.com/FileEye/MimeMap/tree/2.2.6"
             },
-            "time": "2026-03-22T21:57:45+00:00"
+            "time": "2026-08-30T15:12:50+00:00"
         },
         {
             "name": "fileeye/pel",
@@ -5334,16 +5338,16 @@
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.24",
+            "version": "v0.3.26",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "5d3cdef29e93ca3b62b1871359db3078cd99908b"
+                "reference": "2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/5d3cdef29e93ca3b62b1871359db3078cd99908b",
-                "reference": "5d3cdef29e93ca3b62b1871359db3078cd99908b",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0",
+                "reference": "2d1e9bf6bab8d3f383c254db7f2b4ea8816d55e0",
                 "shasum": ""
             },
             "require": {
@@ -5386,10 +5390,9 @@
             ],
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
-                "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.3.24"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.26"
             },
-            "time": "2026-08-20T12:55:36+00:00"
+            "time": "2026-10-09T14:45:13+00:00"
         },
         {
             "name": "league/container",
@@ -10587,20 +10590,20 @@
     "packages-dev": [
         {
             "name": "behat/behat",
-            "version": "v3.33.0",
+            "version": "v3.34.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Behat.git",
-                "reference": "a76fe078164e72d3183afc48224a6e8902dccaf0"
+                "reference": "044fea2f1706abafdf3184e6c4146ac9f9ba7d5a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Behat/zipball/a76fe078164e72d3183afc48224a6e8902dccaf0",
-                "reference": "a76fe078164e72d3183afc48224a6e8902dccaf0",
+                "url": "https://api.github.com/repos/Behat/Behat/zipball/044fea2f1706abafdf3184e6c4146ac9f9ba7d5a",
+                "reference": "044fea2f1706abafdf3184e6c4146ac9f9ba7d5a",
                 "shasum": ""
             },
             "require": {
-                "behat/gherkin": "^4.17.0",
+                "behat/gherkin": "^4.18.0",
                 "composer-runtime-api": "^2.2",
                 "composer/xdebug-handler": "^1.4 || ^2.0 || ^3.0",
                 "cucumber/tag-expressions": "^11.0",
@@ -10619,9 +10622,9 @@
                 "opis/json-schema": "^2.5",
                 "php-cs-fixer/shim": "^3.89",
                 "phpstan/phpstan": "2.1.46",
-                "phpunit/phpunit": "^9.6",
+                "phpunit/phpunit": "^11.5",
                 "rector/rector": "2.3.9",
-                "sebastian/diff": "^4.0",
+                "sebastian/diff": "^6.0",
                 "symfony/filesystem": "^5.4 || ^6.4 || ^7.0",
                 "symfony/polyfill-php84": "^1.31",
                 "symfony/process": "^5.4 || ^6.4 || ^7.0"
@@ -10672,7 +10675,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Behat/issues",
-                "source": "https://github.com/Behat/Behat/tree/v3.33.0"
+                "source": "https://github.com/Behat/Behat/tree/v3.34.0"
             },
             "funding": [
                 {
@@ -10688,20 +10691,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-09-07T14:37:47+00:00"
+            "time": "2026-09-27T15:42:00+00:00"
         },
         {
             "name": "behat/gherkin",
-            "version": "v4.17.0",
+            "version": "v4.18.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Behat/Gherkin.git",
-                "reference": "5c8b3149fac39b5a79942b64eeec59a5ee4001c0"
+                "reference": "496248b29d9d7848311a263c2d17c1860e4c7b6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/5c8b3149fac39b5a79942b64eeec59a5ee4001c0",
-                "reference": "5c8b3149fac39b5a79942b64eeec59a5ee4001c0",
+                "url": "https://api.github.com/repos/Behat/Gherkin/zipball/496248b29d9d7848311a263c2d17c1860e4c7b6c",
+                "reference": "496248b29d9d7848311a263c2d17c1860e4c7b6c",
                 "shasum": ""
             },
             "require": {
@@ -10709,11 +10712,12 @@
                 "php": ">=8.1 <8.6"
             },
             "require-dev": {
-                "cucumber/gherkin-monorepo": "dev-gherkin-v39.1.0",
+                "cucumber/gherkin-monorepo": "dev-gherkin-v42.0.1",
                 "friendsofphp/php-cs-fixer": "^3.77",
                 "mikey179/vfsstream": "^1.6",
                 "phpstan/extension-installer": "^1",
-                "phpstan/phpstan": "^2",
+                "phpstan/phpstan": "2.2.14",
+                "phpstan/phpstan-deprecation-rules": "^2.0",
                 "phpstan/phpstan-phpunit": "^2",
                 "phpunit/phpunit": "^10.5",
                 "symfony/yaml": "^5.4 || ^6.4 || ^7.0"
@@ -10755,7 +10759,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Behat/Gherkin/issues",
-                "source": "https://github.com/Behat/Gherkin/tree/v4.17.0"
+                "source": "https://github.com/Behat/Gherkin/tree/v4.18.0"
             },
             "funding": [
                 {
@@ -10771,7 +10775,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-05-18T09:33:47+00:00"
+            "time": "2026-09-25T21:26:10+00:00"
         },
         {
             "name": "behat/mink",
@@ -11977,7 +11981,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "11.4.9",
+            "version": "11.4.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -12031,7 +12035,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/11.4.9"
+                "source": "https://github.com/drupal/core-dev/tree/11.4.10"
             },
             "time": "2026-09-24T14:55:26+00:00"
         },
@@ -16107,16 +16111,16 @@
         },
         {
             "name": "symfony/browser-kit",
-            "version": "v7.4.17",
+            "version": "v7.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/browser-kit.git",
-                "reference": "7aff5c4b17a7b04ea6a8390773a93148d15a40b7"
+                "reference": "a65602070ad9a7b9971571924b5502218ba2a70e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/7aff5c4b17a7b04ea6a8390773a93148d15a40b7",
-                "reference": "7aff5c4b17a7b04ea6a8390773a93148d15a40b7",
+                "url": "https://api.github.com/repos/symfony/browser-kit/zipball/a65602070ad9a7b9971571924b5502218ba2a70e",
+                "reference": "a65602070ad9a7b9971571924b5502218ba2a70e",
                 "shasum": ""
             },
             "require": {
@@ -16156,7 +16160,7 @@
             "description": "Simulates the behavior of a web browser, allowing you to make requests, click on links and submit forms programmatically",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/browser-kit/tree/v7.4.17"
+                "source": "https://github.com/symfony/browser-kit/tree/v7.4.21"
             },
             "funding": [
                 {
@@ -16176,7 +16180,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-21T17:40:08+00:00"
+            "time": "2026-10-13T12:53:30+00:00"
         },
         {
             "name": "symfony/config",
@@ -16400,16 +16404,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v7.4.19",
+            "version": "v7.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "3a523f38dc399337ec45b2ab9628e8c37ceb23c7"
+                "reference": "121bf3a973bfd852db85ec32d0d64e9fbed4449b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/3a523f38dc399337ec45b2ab9628e8c37ceb23c7",
-                "reference": "3a523f38dc399337ec45b2ab9628e8c37ceb23c7",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/121bf3a973bfd852db85ec32d0d64e9fbed4449b",
+                "reference": "121bf3a973bfd852db85ec32d0d64e9fbed4449b",
                 "shasum": ""
             },
             "require": {
@@ -16477,7 +16481,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v7.4.19"
+                "source": "https://github.com/symfony/http-client/tree/v7.4.21"
             },
             "funding": [
                 {
@@ -16497,7 +16501,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-08T13:28:43+00:00"
+            "time": "2026-10-13T15:31:38+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
@@ -16583,16 +16587,16 @@
         },
         {
             "name": "symfony/lock",
-            "version": "v7.4.20",
+            "version": "v7.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/lock.git",
-                "reference": "80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0"
+                "reference": "a349566fa790ecad53f8445e1812c39ebf741801"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/lock/zipball/80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0",
-                "reference": "80a1a0f5ca166ddec7c68bc5f1b39cea19f333f0",
+                "url": "https://api.github.com/repos/symfony/lock/zipball/a349566fa790ecad53f8445e1812c39ebf741801",
+                "reference": "a349566fa790ecad53f8445e1812c39ebf741801",
                 "shasum": ""
             },
             "require": {
@@ -16642,7 +16646,7 @@
                 "semaphore"
             ],
             "support": {
-                "source": "https://github.com/symfony/lock/tree/v7.4.20"
+                "source": "https://github.com/symfony/lock/tree/v7.4.21"
             },
             "funding": [
                 {
@@ -16662,7 +16666,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-18T15:55:00+00:00"
+            "time": "2026-10-04T15:19:50+00:00"
         },
         {
             "name": "symfony/polyfill-php73",
