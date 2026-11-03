@@ -15,3 +15,9 @@ updates:
     allow:
       # Allow both direct and indirect updates for all packages
       - dependency-type: "direct"
+    groups:
+      drupal-core:
+        patterns:
+          - "drupal/core*"
+  - package-ecosystem: "github-actions"
+    directory: "/"
