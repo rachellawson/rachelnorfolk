@@ -11848,20 +11848,20 @@
         },
         {
             "name": "drevops/behat-screenshot",
-            "version": "3.0.0",
+            "version": "3.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drevops/behat-screenshot.git",
-                "reference": "ea29785e36458d9ff5434b8b661bbf6a1376fc78"
+                "reference": "d910756964b84d1a9094e41ba1d223547e926df0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drevops/behat-screenshot/zipball/ea29785e36458d9ff5434b8b661bbf6a1376fc78",
-                "reference": "ea29785e36458d9ff5434b8b661bbf6a1376fc78",
+                "url": "https://api.github.com/repos/drevops/behat-screenshot/zipball/d910756964b84d1a9094e41ba1d223547e926df0",
+                "reference": "d910756964b84d1a9094e41ba1d223547e926df0",
                 "shasum": ""
             },
             "require": {
-                "behat/behat": "^3.33.0 || ^4.0@alpha",
+                "behat/behat": "^3.34.0 || ^4.0",
                 "behat/mink": "^1.13",
                 "friends-of-behat/mink-extension": "^2.7.5 || ^3.0@alpha",
                 "php": ">=8.3",
@@ -11875,18 +11875,18 @@
                 "behat/mink-browserkit-driver": "^2.3",
                 "dantleech/gherkin-lint": "^0.2.4",
                 "dealerdirect/phpcodesniffer-composer-installer": "^1.2.1",
-                "dmore/behat-chrome-extension": "^1.4.1",
-                "dmore/chrome-mink-driver": "^2.10",
+                "dmore/behat-chrome-extension": "^1.5.0",
+                "dmore/chrome-mink-driver": "^2.11.2",
                 "drevops/behat-phpserver": "^3.0.0",
                 "drevops/phpcs-standard": "^0.7",
                 "drupal/coder": "^9.0.1",
                 "dvdoug/behat-code-coverage": "^5.5.0",
-                "ergebnis/composer-normalize": "^2.53.0",
+                "ergebnis/composer-normalize": "^2.56.0",
                 "lullabot/mink-selenium2-driver": "^1.7.4",
                 "lullabot/php-webdriver": "^2.0.7",
-                "phpstan/phpstan": "^2.2.14",
-                "phpunit/phpunit": "^12.5.35",
-                "rector/rector": "^2.6.7",
+                "phpstan/phpstan": "^2.3.5",
+                "phpunit/phpunit": "^12.5.43",
+                "rector/rector": "^2.8.4",
                 "symfony/process": "^7.4.18 || ^8.0"
             },
             "suggest": {
@@ -11926,7 +11926,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2026-09-17T01:40:21+00:00"
+            "time": "2026-11-07T03:02:01+00:00"
         },
         {
             "name": "drupal/coder",
@@ -16178,16 +16178,16 @@
         },
         {
             "name": "symfony/config",
-            "version": "v7.4.22",
+            "version": "v7.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "d7f9d7495992429d916aea42d1a4d76a12dfa29f"
+                "reference": "8ef666abf731e85e59cf478929dda6c7cb2fa9c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/d7f9d7495992429d916aea42d1a4d76a12dfa29f",
-                "reference": "d7f9d7495992429d916aea42d1a4d76a12dfa29f",
+                "url": "https://api.github.com/repos/symfony/config/zipball/8ef666abf731e85e59cf478929dda6c7cb2fa9c4",
+                "reference": "8ef666abf731e85e59cf478929dda6c7cb2fa9c4",
                 "shasum": ""
             },
             "require": {
@@ -16233,7 +16233,7 @@
             "description": "Helps you find, load, combine, autofill and validate configuration values of any kind",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/config/tree/v7.4.22"
+                "source": "https://github.com/symfony/config/tree/v7.4.23"
             },
             "funding": [
                 {
@@ -16253,7 +16253,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-25T14:40:16+00:00"
+            "time": "2026-11-04T08:27:22+00:00"
         },
         {
             "name": "symfony/css-selector",
@@ -16398,16 +16398,16 @@
         },
         {
             "name": "symfony/http-client",
-            "version": "v7.4.22",
+            "version": "v7.4.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client.git",
-                "reference": "9dd7ba9dc326b37d7f6e19588de79b5d91b20d66"
+                "reference": "ed012bfca0f7b45d97016efcdf9b0639c52a1722"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client/zipball/9dd7ba9dc326b37d7f6e19588de79b5d91b20d66",
-                "reference": "9dd7ba9dc326b37d7f6e19588de79b5d91b20d66",
+                "url": "https://api.github.com/repos/symfony/http-client/zipball/ed012bfca0f7b45d97016efcdf9b0639c52a1722",
+                "reference": "ed012bfca0f7b45d97016efcdf9b0639c52a1722",
                 "shasum": ""
             },
             "require": {
@@ -16475,7 +16475,7 @@
                 "http"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client/tree/v7.4.22"
+                "source": "https://github.com/symfony/http-client/tree/v7.4.23"
             },
             "funding": [
                 {
@@ -16495,7 +16495,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-10-26T21:52:50+00:00"
+            "time": "2026-11-04T08:27:22+00:00"
         },
         {
             "name": "symfony/http-client-contracts",
