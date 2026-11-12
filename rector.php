@@ -9,12 +9,12 @@
 
 declare(strict_types=1);
 
-use DrupalRector\Set\DrupalSetProvider;
+use DrupalRector\Set\DrupalSetList;
 use Rector\Config\RectorConfig;
 
 return RectorConfig::configure()
   ->withPaths([
     __DIR__ . '/web/modules/custom',
   ])
-  ->withSetProviders(DrupalSetProvider::class)
-  ->withComposerBased(twig: TRUE, phpunit: TRUE, symfony: TRUE, drupal: TRUE);
+  ->withSets([DrupalSetList::COMPOSER_BASED])
+  ->withComposerBased(twig: TRUE, phpunit: TRUE, drupal: TRUE);
