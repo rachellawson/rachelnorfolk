@@ -74,6 +74,10 @@
             "tbachert/spi": true
         }
     },
+    "scripts": {
+        "post-install-cmd": ["rm -f web/core/install.php"],
+        "post-update-cmd": ["rm -f web/core/install.php"]
+    },
     "extra": {
         "violinist": {
             "commit_message_convention": "conventional",
